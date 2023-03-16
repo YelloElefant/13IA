@@ -56,50 +56,45 @@ header li a:hover {
 
 #upcomingGamesContainer {
    float: right;
-   margin-right: 5%;
+   position: absolute;
+   margin-top: 10px;
+   width: 1000px;
+   text-align: center;
+   right: calc((100% - 381px)* 0.5 - 500px);
 }
 
 #quickStandings {
    float: left;
-   margin-left: 5%;
-   align-items: center;
-
+   margin-left: 2%;
+   margin-top: 10px;
+   background-color: aliceblue;
+   padding: 2px 2px 2px 2px;
 }
 
 #quickStandings ul {
    list-style: none;
-   text-align: center;
-   padding: 0px 5px 0px 5px;
+   padding: 0px 10px 0px 0px;
 }
 
-
-#listQuickStandings ul li {
-   display: inline;
-}
 
 #listQuickStandings ul {
+   display: inline;
+   float: left;
    margin-top: 2px;
 }
 
+
 #upcomingGamesContainer ul {
    list-style: none;
-   text-align: center;
    padding: 0px 5px 0px 5px;
 
 }
 
 #listContainerUpcomingGames {
    background-color: aliceblue;
-   margin-top: 10px;
    padding: 2px 2px 2px 2px;
 }
 
-#listContainerStandings {
-   margin-top: 10px;
-   padding: 2px 2px 2px 2px;
-   background-color: aliceblue;
-}
-
-#topContentContainer ul {
-   font-size: larger;
+#listQuickStandings ul li:first-child {
+   border-bottom: #111 solid thin;
 }
