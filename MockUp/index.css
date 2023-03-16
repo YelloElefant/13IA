@@ -50,53 +50,91 @@ header li a:hover {
 }
 
 
-
+/*over all container for 2 boxes at top*/
 #topContentContainer {
    display: inline;
 }
 
-#upcomingGamesContainer {
-   float: right;
-   margin-top: 10px;
-   width: 1000px;
-   text-align: center;
-   padding-right: calc((100% - 381px)* 0.5 - 500px);
-}
 
+/*box on left for quickstandings this element is a direct pearent to the ul that holds all the uls*/
 #quickStandings {
    float: left;
    margin-left: 2%;
-   margin-top: 10px;
+   /* margin-top: 10px; */
    background-color: aliceblue;
    padding: 2px 2px 2px 2px;
    border: #111 solid;
    border-radius: 2px;
+   display: flex;
+   flex-wrap: wrap;
 }
 
+/*reffering to the ul that holds all of the uls for the quickStandings box direct pearnt of them*/
 #quickStandings ul {
    list-style: none;
    padding: 0px 10px 0px 0px;
 }
 
-
+/*reffering to all of the uls in the quickStandings box eg. School/Points/Position*/
 #listQuickStandings ul {
    display: inline;
    float: left;
    margin-top: 2px;
 }
 
-
-#upcomingGamesContainer ul {
-   list-style: none;
-   padding: 0px 5px 0px 5px;
-
-}
-
-#listContainerUpcomingGames {
-   background-color: aliceblue;
-   padding: 2px 2px 2px 2px;
-}
-
+/*reffering to the first child in each list of the quickStandings box ie. the header of each colom*/
 #listQuickStandings ul li:first-child {
    border-bottom: #111 solid thin;
+}
+
+
+/*reffering to the ul that holds all the uls for the upcomingGames box direct pearnt of them*/
+#upcomingGames ul {
+   list-style: none;
+   padding: 0px 10px 0px 0px;
+
+}
+
+/*reffering to all the uls that hold the info for the upComingGames box eg. Game/Pool/School/Time/Venue*/
+#listUpcomingGames ul {
+   display: inline;
+   float: left;
+   margin-right: 20px;
+   margin-left: 20px;
+   margin-top: 2px;
+}
+
+
+/*the upcomingGames box*/
+#upcomingGames {
+   background-color: aliceblue;
+   padding: 2px 2px 2px 2px;
+   float: right;
+   /* margin-top: 10px; */
+   /* width: 1000px; */
+   border: #111 solid;
+   border-radius: 2px;
+   text-align: center;
+   margin: auto;
+   /* position: relative; */
+   /* left: 50%; */
+}
+
+/*reffering to the first memeber of each list in the upcomingGames box ie. the header of each colom*/
+#listUpcomingGames ul li:first-child {
+   border-bottom: #111 solid thin;
+}
+
+/*class for when a list needs a dummy first member to be invisable*/
+.dummyFirst li:first-child {
+   color: transparent;
+   border: none !important;
+}
+
+/*wrapper element for the upcomingGames box for position purposes*/
+#wrapperUpcomingGames {
+   /* background-color: aqua; */
+   display: flex;
+   margin-top: 10px;
+   flex-wrap: wrap;
 }
