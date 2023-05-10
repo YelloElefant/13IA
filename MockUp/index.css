@@ -30,11 +30,11 @@ header {
    background-color: #1f1f1f;
 }
 
-header ul li {
+header li {
    float: left;
 }
 
-header ul li a {
+header li a {
    display: block;
    color: white;
    text-align: center;
