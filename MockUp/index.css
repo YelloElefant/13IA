@@ -61,7 +61,7 @@ header li a:hover {
    float: left;
    margin-left: 2%;
    /* margin-top: 10px; */
-   background-color: aliceblue;
+   background-color: rgba(255, 255, 255, 0.644);
    padding: 2px 2px 2px 2px;
    border: #111 solid;
    border-radius: 2px;
@@ -70,27 +70,33 @@ header li a:hover {
 }
 
 /*reffering to the ul that holds all of the uls for the quickStandings box direct pearnt of them*/
-#quickStandings ul {
-   list-style: none;
+#quickStandings table {
+   table-layout: auto;
    padding: 0px 10px 0px 0px;
+   border-collapse: collapse;
 }
 
-/*reffering to all of the uls in the quickStandings box eg. School/Points/Position*/
-#listQuickStandings ul {
-   display: inline;
-   float: left;
-   margin-top: 2px;
-}
-
-/*reffering to the first child in each list of the quickStandings box ie. the header of each colom*/
-#listQuickStandings ul li:first-child {
+/* boarder around each row of the table*/
+#quickStandings table,
+th,
+tr,
+td {
+   border-top: #111 solid thin;
    border-bottom: #111 solid thin;
+   border-right: #979494 solid thin;
+   border-left: #979494 solid thin;
 }
+
+
+
+
+
+
 
 
 /*reffering to the ul that holds all the uls for the upcomingGames box direct pearnt of them*/
-#upcomingGames ul {
-   list-style: none;
+#upcomingGames table {
+   table-layout: auto;
    padding: 0px 10px 0px 0px;
 
 }
