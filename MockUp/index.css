@@ -76,17 +76,30 @@ header ul li a:hover {
 }
 
 /* boarder around each row of the table*/
-#quickStandings table,
-th,
-tr,
-td {
+#quickStandings table tr td,
+#quickStandings th {
    border-top: #111 solid thin;
    border-bottom: #111 solid thin;
    border-right: #979494 solid thin;
    border-left: #979494 solid thin;
 }
 
+/* quickStandings table data 3px padding left and right and a 2px padding top and bottom */
+#quickStandings table td,
+#quickStandings th {
+   padding: 3px 3px 3px 3px;
+   text-align: center;
+   font-weight: bold;
+   color: #111;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+
+
+
+#quickStandings table tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
 
 
 
@@ -101,19 +114,32 @@ td {
    border-collapse: collapse;
 }
 
-#upcomingGames table,
-th,
-tr,
-td {
+#upcomingGames table tr td,
+#upcomingGames th {
    border-top: #111 solid thin;
    border-bottom: #111 solid thin;
    border-right: #979494 solid thin;
    border-left: #979494 solid thin;
+   font-size: larger;
+
 }
 
-/* upcomingGames table data 5px padding all around*/
-#upcomingGames table td {
-   padding: 5px;
+
+
+/* upcomingGames table data 5px padding left and right and a 10px padding top and bottom*/
+#upcomingGames table td,
+#upcomingGames th {
+   padding: 5px 10px 5px 10px;
+
+   text-align: center;
+   font-size: larger;
+   font-weight: bold;
+   color: #111;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#upcomingGames table tr:nth-child(even) {
+   background-color: #f2f2f2;
 }
 
 /*the upcomingGames box*/
