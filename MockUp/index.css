@@ -30,22 +30,21 @@ header {
    background-color: #1f1f1f;
 }
 
-header li {
+header ul li {
    float: left;
 }
 
-header li a {
+header ul li a {
    display: block;
    color: white;
    text-align: center;
    padding: 14px 16px;
    text-decoration: none;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   user-select: none;
 }
 
 /* Change the link color to #111 (black) on hover */
-header li a:hover {
+header ul li a:hover {
    background-color: #111;
 }
 
@@ -92,28 +91,34 @@ td {
 
 
 
+/* seperator for css*/
 
 
 /*reffering to the ul that holds all the uls for the upcomingGames box direct pearnt of them*/
 #upcomingGames table {
    table-layout: auto;
    padding: 0px 10px 0px 0px;
-
+   border-collapse: collapse;
 }
 
-/*reffering to all the uls that hold the info for the upComingGames box eg. Game/Pool/School/Time/Venue*/
-#listUpcomingGames ul {
-   display: inline;
-   float: left;
-   margin-right: 20px;
-   margin-left: 20px;
-   margin-top: 2px;
+#upcomingGames table,
+th,
+tr,
+td {
+   border-top: #111 solid thin;
+   border-bottom: #111 solid thin;
+   border-right: #979494 solid thin;
+   border-left: #979494 solid thin;
 }
 
+/* upcomingGames table data 5px padding all around*/
+#upcomingGames table td {
+   padding: 5px;
+}
 
 /*the upcomingGames box*/
 #upcomingGames {
-   background-color: aliceblue;
+   background-color: rgba(255, 255, 255, 0.644);
    padding: 2px 2px 2px 2px;
    float: right;
    /* margin-top: 10px; */
@@ -126,16 +131,10 @@ td {
    /* left: 50%; */
 }
 
-/*reffering to the first memeber of each list in the upcomingGames box ie. the header of each colom*/
-#listUpcomingGames ul li:first-child {
-   border-bottom: #111 solid thin;
-}
 
-/*class for when a list needs a dummy first member to be invisable*/
-.dummyFirst li:first-child {
-   color: transparent;
-   border: none !important;
-}
+/* seperator for css*/
+
+
 
 /*wrapper element for the upcomingGames box for position purposes*/
 #wrapperUpcomingGames {

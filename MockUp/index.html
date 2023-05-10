@@ -13,12 +13,12 @@
    <header>
       <img src="./Images/hbhsLogoWithName.png" id="Logo" alt="logo">
       <div id="toolBar">
-         <ul id="toolBarList">
-            <li><a>Home</a></li>
-            <li><a>Rules</a></li>
-            <li><a>Teams</a></li>
-            <li><a>Standings</a></li>
-            <li><a>Upcoming Games</a></li>
+         <ul id="toolBartdst">
+            <td><a>Home</a></td>
+            <td><a>Rules</a></td>
+            <td><a>Teams</a></td>
+            <td><a>Standings</a></td>
+            <td><a>Upcoming Games</a></td>
          </ul>
       </div>
    </header>
@@ -27,9 +27,9 @@
    <div id="topContentContainer">
 
       <div id="quickStandings">
-         <!--converting to tables insead of lists-->
+         <!--converting to tables insead of tdsts-->
 
-         <table id="listQuickStandings">
+         <table id="tdstQuickStandings">
             <tbody>
                <tr>
                   <th>School</th>
@@ -72,7 +72,7 @@
                   <td>10</td>
                </tr>
                <tr>
-                  <td>Wellington College</td>
+                  <td>Weltdngton College</td>
                   <td>5</td>
                   <td>7</td>
                </tr>
@@ -124,98 +124,112 @@
 
 
       </div>
-      <!--
+
       <div id="wrapperUpcomingGames">
 
          <div id="upcomingGames">
+            <!--converting the tdsts to a table-->
+            <table id="tdstUpcomingGames">
+               <tbody>
+                  <tr>
+                     <th>Game</th>
+                     <th>Pool</th>
+                     <th>School</th>
+                     <th style="color: transparent;">.</th>
+                     <th>School</th>
+                     <th>Time</th>
+                     <th>Venue</th>
+                  </tr>
 
-            <ul id="listUpcomingGames">
 
-               <ul>
-                  <li>Game</li>
-                  <li>1</li>
-                  <li>2</li>
-                  <li>3</li>
-                  <li>4</li>
-                  <li>5</li>
-                  <li>6</li>
-                  <li>7</li>
-                  <li>8</li>
-               </ul>
-               <ul>
-                  <li>Pool</li>
-                  <li>D</li>
-                  <li>D</li>
-                  <li>B</li>
-                  <li>B</li>
-                  <li>C</li>
-                  <li>C</li>
-                  <li>A</li>
-                  <li>A</li>
-               </ul>
-               <ul>
-                  <li>School</li>
-                  <li>Auckland Grammar School</li>
-                  <li>Mt. Albert Grammar School</li>
-                  <li>Westlake BHS</li>
-                  <li>New Plymouth BHS</li>
-                  <li>Hastings BHS</li>
-                  <li>Otago BHS</li>
-                  <li>Christchurch BHS</li>
-                  <li>Wellington College</li>
-               </ul>
-               <ul class="dummyFirst">
-                  <li>.</li>
-                  <li>v</li>
-                  <li>v</li>
-                  <li>v</li>
-                  <li>v</li>
-                  <li>v</li>
-                  <li>v</li>
-                  <li>v</li>
-                  <li>v</li>
-               </ul>
-               <ul>
-                  <li>School</li>
-                  <li>Palmerston North BHS</li>
-                  <li>St. Bedes College</li>
-                  <li>Rotorua BHS</li>
-                  <li>St Pats Town</li>
-                  <li>Hamilton BHS</li>
-                  <li>Napier BHS</li>
-                  <li>Tauranga Boys College</li>
-                  <li>Wesley College</li>
-               </ul>
-               <ul>
-                  <li>Time</li>
-                  <li>10.30am</li>
-                  <li>10.30am</li>
-                  <li>10.30am</li>
-                  <li>10.30am</li>
-                  <li>10.30am</li>
-                  <li>10.30am</li>
-                  <li>10.30am</li>
-                  <li>10.30am</li>
-               </ul>
-               <ul>
-                  <li>Venue</li>
-                  <li>MARIST 1</li>
-                  <li>MARIST 2</li>
-                  <li>MARIST 3</li>
-                  <li>HBHS 3</li>
-                  <li>HBHS 1</li>
-                  <li>HBHS 2</li>
-                  <li>UNI 1</li>
-                  <li>UNI 2</li>
-               </ul>
 
-            </ul>
+                  <tr>
+                     <td>1</td>
+                     <td>D</td>
+                     <td>Auckland Grammar School</td>
+                     <td>v</td>
+                     <td>Palmerston North BHS</td>
+                     <td>10.30am</td>
+                     <td>MARIST 1</td>
+                  </tr>
+                  <tr>
+                     <td>2</td>
+                     <td>D</td>
+                     <td>Mt. Albert Grammar School</td>
+                     <td>v</td>
+                     <td>St. Bedes College</td>
+                     <td>10.30am</td>
+                     <td>MARIST 2</td>
+                  </tr>
+                  <tr>
+                     <td>3</td>
+                     <td>B</td>
+                     <td>Westlake BHS</td>
+                     <td>v</td>
+                     <td>Rotorua BHS</td>
+                     <td>10.30am</td>
+                     <td>MARIST 3</td>
+                  </tr>
+
+                  <tr>
+                     <td>4</td>
+                     <td>B</td>
+                     <td>New Plymouth BHS</td>
+                     <td>v</td>
+                     <td>St Pats Town</td>
+                     <td>10.30am</td>
+                     <td>HBHS 3</td>
+                  </tr>
+
+                  <tr>
+                     <td>5</td>
+                     <td>C</td>
+                     <td>Hastings BHS</td>
+                     <td>v</td>
+                     <td>Hamilton BHS</td>
+                     <td>10.30am</td>
+                     <td>HBHS 1</td>
+                  </tr>
+
+                  <tr>
+                     <td>6</td>
+                     <td>C</td>
+                     <td>Otago BHS</td>
+                     <td>v</td>
+                     <td>Napier BHS</td>
+                     <td>10.30am</td>
+                     <td>HBHS 2</td>
+                  </tr>
+
+                  <tr>
+                     <td>7</td>
+                     <td>A</td>
+                     <td>Christchurch BHS</td>
+                     <td>v</td>
+                     <td>Tauranga Boys College</td>
+                     <td>10.30am</td>
+                     <td>UNI 1</td>
+                  </tr>
+
+                  <tr>
+                     <td>8</td>
+                     <td>A</td>
+                     <td>Weltdngton College</td>
+                     <td>v</td>
+                     <td>Wesley College</td>
+                     <td>10.30am</td>
+                     <td>UNI 2</td>
+                  </tr>
+
+
+               </tbody>
+            </table>
 
 
 
          </div>
       </div>
-      -->
+
    </div>
 
 </body>
