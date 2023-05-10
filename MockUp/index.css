@@ -169,3 +169,31 @@ header ul li a:hover {
    margin-top: 10px;
    flex-wrap: wrap;
 }
+
+
+
+/* seperator for css*/
+
+/*wrapper element for the youtube box for position purposes and align center under the upcomingGames*/
+#wrapperYoutube {
+   /* background-color: aqua; */
+   display: flex;
+   margin-top: 10px;
+   flex-wrap: wrap;
+   position: relative;
+
+
+
+}
+
+#youTube {
+   /* background-color: aqua; */
+   display: flex;
+   margin-top: 10px;
+   flex-wrap: wrap;
+   margin: auto;
+   aspect-ratio: 16/9;
+   position: relative;
+   left: auto;
+
+}
