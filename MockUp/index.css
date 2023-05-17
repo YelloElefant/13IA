@@ -22,31 +22,97 @@ header {
    background-image: url("./Images/redBlackGradient.jpg");
 }
 
+#toolbar {
+   height: 60px;
+}
+
 #toolBarList {
+   height: 60px;
    list-style-type: none;
    margin: 0;
    padding: 0;
    overflow: hidden;
-   background-color: #1f1f1f;
+   background-color: rgba(150, 38, 43, 0.59);
 }
 
-header li {
+.menu-list-item {
    float: left;
+   height: 60px;
 }
 
-header li a {
-   display: block;
+.menu-link {
+   height: 60px;
+   box-sizing: border-box;
+   display: flex;
    color: white;
-   text-align: center;
-   padding: 14px 16px;
+   cursor: pointer;
+   /* vertical-align: middle; */
+   text-align: left;
+   align-items: center;
+   padding: 0px 16px;
    text-decoration: none;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   font-style: normal;
+   font-family: 'Roboto', sans-serif;
+   box-sizing: border-box;
 }
+
+.menu-text {
+   display: block;
+   line-height: normal;
+   font-size: 16px;
+   font-weight: 400;
+   font-style: normal;
+   font-family: 'Roboto', sans-serif;
+   box-sizing: border-box;
+}
+
+.menu-link::before {
+   content: "";
+   color: rgb(132, 117, 79);
+   bottom: 0px;
+   background-color: rgb(132, 117, 79);
+   cursor: pointer;
+   display: block;
+   height: 1px;
+   width: 154.188px;
+   position: absolute;
+   right: 50%;
+   top: 0;
+   background-color: transparent;
+   transition: ease-in-out;
+   box-sizing: border-box;
+}
+
+.ast-arrow-svg {
+   display: block;
+   height: .6em;
+   width: .6em;
+   position: relative;
+   margin-left: 10px;
+   color: white;
+   fill: white;
+}
+
 
 /* Change the link color to #111 (black) on hover */
-header ul li a:hover {
-   background-color: #111;
+
+
+.menu-list-item:hover .menu-link {
+   color: rgb(132, 117, 79);
+   box-sizing: border-box;
+   line-height: 60px;
+   text-decoration-color: rgb(132, 117, 79);
+   -webkit-box-align: center;
+
 }
+
+.menu-list-item:hover {
+   /* border-bottom: solid rgb(132, 117, 79) thin; */
+}
+
+
 
 
 /*over all container for 2 boxes at top*/
