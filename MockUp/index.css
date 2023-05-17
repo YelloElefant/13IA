@@ -36,8 +36,11 @@ header {
 }
 
 .menu-list-item {
+   display: flex;
    float: left;
    height: 60px;
+   line-height: 60px;
+   position: relative;
 }
 
 .menu-link {
@@ -56,7 +59,10 @@ header {
    font-style: normal;
    font-family: 'Roboto', sans-serif;
    box-sizing: border-box;
+   width: 100%;
+
 }
+
 
 .menu-text {
    display: block;
@@ -68,21 +74,33 @@ header {
    box-sizing: border-box;
 }
 
-.menu-link::before {
+.menu-list-item>.menu-link:before {
+   content: "";
+   color: transparent;
+   bottom: 0px;
+   background-color: transparent;
+   cursor: pointer;
+   height: 1px;
+   width: 100%;
+   position: absolute;
+   right: 0;
+   box-sizing: border-box;
+}
+
+.menu-list-item:hover>.menu-link:before {
    content: "";
    color: rgb(132, 117, 79);
    bottom: 0px;
    background-color: rgb(132, 117, 79);
    cursor: pointer;
-   display: block;
    height: 1px;
-   width: 154.188px;
+   width: calc(100% - 1.2em);
    position: absolute;
    right: 50%;
-   top: 0;
-   background-color: transparent;
    transition: ease-in-out;
    box-sizing: border-box;
+   transform: scale(1, 1) translate(50%, 0);
+   transition: transform 0.3s ease-in-out, color 0.0s ease-in-out;
 }
 
 .ast-arrow-svg {
