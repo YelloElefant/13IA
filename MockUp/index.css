@@ -42,7 +42,10 @@ header {
    display: block;
 }
 
-#toolbar {
+#toolBar {
+   padding-left: 35px;
+   background-color: rgba(150, 38, 43, 0.59);
+
    height: 60px;
 }
 
@@ -52,7 +55,6 @@ header {
    margin: 0;
    padding: 0;
    overflow: hidden;
-   background-color: rgba(150, 38, 43, 0.59);
 }
 
 .menu-list-item {
