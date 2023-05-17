@@ -3,10 +3,25 @@ html {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+html,
+body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   width: 100%;
+}
+
+#logoWrapper {
+   padding-top: 27px;
+   padding-bottom: 16px;
+   padding-left: 35px;
+   height: 135px;
+}
+
 #Logo {
    width: auto;
-   height: 200px;
-   padding: 27px;
+   height: 82px;
+
 }
 
 p {
@@ -19,7 +34,12 @@ ul {
 }
 
 header {
-   background-image: url("./Images/redBlackGradient.jpg");
+   background-image: url("./Images/darkGradientBackground.png");
+   background-color: #333;
+   width: 100%;
+   z-index: 99;
+   position: relative;
+   display: block;
 }
 
 #toolbar {
