@@ -57,7 +57,7 @@ header {
    overflow: hidden;
 }
 
-.menu-list-item {
+.menuListItem {
    display: flex;
    float: left;
    height: 60px;
@@ -65,7 +65,7 @@ header {
    position: relative;
 }
 
-.menu-link {
+.menuLink {
    height: 60px;
    box-sizing: border-box;
    display: flex;
@@ -86,7 +86,7 @@ header {
 }
 
 
-.menu-text {
+.menuText {
    display: block;
    line-height: normal;
    font-size: 16px;
@@ -96,7 +96,7 @@ header {
    box-sizing: border-box;
 }
 
-.menu-list-item>.menu-link:before {
+.menuListItem>.menuLink:before {
    content: "";
    color: transparent;
    bottom: 0px;
@@ -109,7 +109,7 @@ header {
    box-sizing: border-box;
 }
 
-.menu-list-item:hover>.menu-link:before {
+.menuListItem:hover>.menuLink:before {
    content: "";
    color: rgb(132, 117, 79);
    bottom: 0px;
@@ -125,7 +125,7 @@ header {
    transition: transform 0.3s ease-in-out, color 0.0s ease-in-out;
 }
 
-.ast-arrow-svg {
+.astArrowSvg {
    display: block;
    height: .6em;
    width: .6em;
@@ -139,7 +139,7 @@ header {
 /* Change the link color to #111 (black) on hover */
 
 
-.menu-list-item:hover .menu-link {
+.menuListItem:hover .menuLink {
    color: rgb(132, 117, 79);
    box-sizing: border-box;
    line-height: 60px;
@@ -148,7 +148,7 @@ header {
 
 }
 
-.menu-list-item:hover {
+.menuListItem:hover {
    /* border-bottom: solid rgb(132, 117, 79) thin; */
 }
 
