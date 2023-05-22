@@ -160,6 +160,11 @@ header {
    display: inline;
 }
 
+#tableTitle {
+   font-weight: bold;
+   text-decoration: underline;
+}
+
 
 /*box on left for quickstandings this element is a direct pearent to the ul that holds all the uls*/
 #quickStandings {
