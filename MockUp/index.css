@@ -11,6 +11,11 @@ body {
    width: 100%;
 }
 
+th,
+tr {
+   font-weight: normal;
+}
+
 #logoWrapper {
    padding-top: 27px;
    padding-bottom: 16px;
@@ -160,10 +165,6 @@ header {
    display: inline;
 }
 
-#tableTitle {
-   font-weight: bold;
-   text-decoration: underline;
-}
 
 
 /*box on left for quickstandings this element is a direct pearent to the ul that holds all the uls*/
@@ -173,7 +174,6 @@ header {
    /* margin-top: 10px; */
    background-color: rgba(255, 255, 255, 0.644);
    padding: 2px 2px 2px 2px;
-   border: #111 solid;
    border-radius: 2px;
    display: flex;
    flex-wrap: wrap;
@@ -183,6 +183,7 @@ header {
 #quickStandings table {
    table-layout: auto;
    padding: 0px 10px 0px 0px;
+   text-transform: uppercase;
    border-collapse: collapse;
    border: thin rgb(168, 167, 167) solid;
 }
@@ -197,11 +198,10 @@ header {
 }
 
 /* quickStandings table data 3px padding left and right and a 2px padding top and bottom */
-#quickStandings table td,
-#quickStandings th {
+#quickStandings table td:not(#tableTitle) {
    padding: 3px 3px 3px 3px;
+   text-transform: uppercase;
    text-align: center;
-   font-weight: bold;
    color: #111;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -215,7 +215,6 @@ header {
 
 
 
-
 /* seperator for css*/
 
 
@@ -226,28 +225,33 @@ header {
    border-collapse: collapse;
 }
 
-#upcomingGames table tr td,
-#upcomingGames th {
+#upcomingGames table tr td {
    border-top: #111 solid thin;
    border-bottom: #111 solid thin;
-   border-right: #979494 solid thin;
-   border-left: #979494 solid thin;
    font-size: larger;
-
+   text-transform: uppercase;
 }
 
 
+#upcomingGames table tr {
+   border-left: #979494 thin solid;
+   text-transform: uppercase;
+
+   border-right: #979494 thin solid;
+}
 
 /* upcomingGames table data 5px padding left and right and a 10px padding top and bottom*/
 #upcomingGames table td,
 #upcomingGames th {
    padding: 5px 10px 5px 10px;
 
-   text-align: center;
    font-size: larger;
-   font-weight: bold;
    color: #111;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#tableTitle {
+   text-align: left;
 }
 
 #upcomingGames table tr:nth-child(even) {
@@ -261,7 +265,6 @@ header {
    float: right;
    /* margin-top: 10px; */
    /* width: 1000px; */
-   border: #111 solid;
    border-radius: 2px;
    text-align: center;
    margin: auto;
@@ -416,4 +419,14 @@ header {
    to {
       opacity: 1
    }
+}
+
+body,
+td,
+th,
+li,
+a,
+span {
+   font-family: "Comic Sans MS" !important;
+
 }
