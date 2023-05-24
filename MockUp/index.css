@@ -11,6 +11,12 @@ body {
    width: 100%;
 }
 
+/* body {
+   background-image: url(./Images/profilePic.PNG) !important;
+   background-position: center;
+   background-repeat: no-repeat;
+} */
+
 th,
 tr {
    font-weight: normal;
@@ -166,7 +172,7 @@ header {
 
 
 /*box on left for quickstandings this element is a direct pearent to the ul that holds all the uls*/
-#quickStandings {
+#history {
    float: left;
    margin-left: 2%;
    /* margin-top: 10px; */
@@ -181,7 +187,7 @@ header {
 }
 
 /*reffering to the ul that holds all of the uls for the quickStandings box direct pearnt of them*/
-#quickStandings table {
+#history table {
    table-layout: auto;
    padding: 0px 10px 0px 0px;
    text-transform: uppercase;
@@ -192,22 +198,23 @@ header {
 
 
 /* quickStandings table data 3px padding left and right and a 2px padding top and bottom */
-#quickStandings table td {
-   padding: 5px 10px 5px 10px;
+#history table td {
+   padding: 5px 5px 5px 5px;
    text-transform: uppercase;
    text-align: center;
    color: #111;
    font-family: 'Source Sans Pro', sans-serif;
    border-top: rgb(211, 216, 221) solid thin;
    border-bottom: rgb(211, 216, 221) solid thin;
+   font-size: small;
 }
 
 
-#quickStandings table tr {
+#history table tr {
    background-color: white;
 }
 
-#quickStandings table tr:nth-child(even) {
+#history table tr:nth-child(even) {
    background-color: #f2f2f2;
 }
 
@@ -216,6 +223,10 @@ header {
 
 
 /* seperator for css*/
+
+
+
+
 
 /*the upcomingGames box*/
 #upcomingGames {
@@ -244,7 +255,7 @@ header {
    border-bottom: rgb(211, 216, 221) solid thin;
    font-size: larger;
    text-transform: uppercase;
-   padding: 10px 30px 10px 30px;
+   padding: 5px 15px 5px 15px;
    font-size: larger;
    color: #111;
    font-family: 'Source Sans Pro', sans-serif;
@@ -281,7 +292,7 @@ header {
 .teamLeft {
    text-align: right;
    font-weight: 600;
-   padding-right: 70px !important;
+   padding-right: 10px !important;
    padding-left: 70px !important;
 }
 
@@ -289,7 +300,7 @@ header {
    text-align: left;
    font-weight: 600;
    padding-right: 70px !important;
-   padding-left: 70px !important;
+   padding-left: 10px !important;
 }
 
 .tableV {
