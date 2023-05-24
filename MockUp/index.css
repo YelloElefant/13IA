@@ -1,5 +1,5 @@
 html {
-   background-color: white;
+   background-color: rgb(173, 172, 172);
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
@@ -153,9 +153,7 @@ header {
 
 }
 
-.menuListItem:hover {
-   /* border-bottom: solid rgb(132, 117, 79) thin; */
-}
+
 
 
 
@@ -172,8 +170,11 @@ header {
    float: left;
    margin-left: 2%;
    /* margin-top: 10px; */
-   background-color: rgba(255, 255, 255, 0.644);
-   padding: 2px 2px 2px 2px;
+   background-color: white;
+
+   padding: 3px 3px 3px 3px;
+
+
    border-radius: 2px;
    display: flex;
    flex-wrap: wrap;
@@ -185,29 +186,26 @@ header {
    padding: 0px 10px 0px 0px;
    text-transform: uppercase;
    border-collapse: collapse;
-   border: thin rgb(168, 167, 167) solid;
+
 }
 
-/* boarder around each row of the table*/
-#quickStandings table tr td,
-#quickStandings th {
-   border-top: #111 solid thin;
-   border-bottom: #111 solid thin;
-   border-right: #979494 solid thin;
-   border-left: #979494 solid thin;
-}
+
 
 /* quickStandings table data 3px padding left and right and a 2px padding top and bottom */
-#quickStandings table td:not(#tableTitle) {
-   padding: 3px 3px 3px 3px;
+#quickStandings table td {
+   padding: 5px 10px 5px 10px;
    text-transform: uppercase;
    text-align: center;
    color: #111;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: 'Source Sans Pro', sans-serif;
+   border-top: rgb(211, 216, 221) solid thin;
+   border-bottom: rgb(211, 216, 221) solid thin;
 }
 
 
-
+#quickStandings table tr {
+   background-color: white;
+}
 
 #quickStandings table tr:nth-child(even) {
    background-color: #f2f2f2;
@@ -215,52 +213,14 @@ header {
 
 
 
+
+
 /* seperator for css*/
-
-
-/*reffering to the ul that holds all the uls for the upcomingGames box direct pearnt of them*/
-#upcomingGames table {
-   table-layout: auto;
-   padding: 0px 10px 0px 0px;
-   border-collapse: collapse;
-}
-
-#upcomingGames table tr td {
-   border-top: #111 solid thin;
-   border-bottom: #111 solid thin;
-   font-size: larger;
-   text-transform: uppercase;
-}
-
-
-#upcomingGames table tr {
-   border-left: #979494 thin solid;
-   text-transform: uppercase;
-
-   border-right: #979494 thin solid;
-}
-
-/* upcomingGames table data 5px padding left and right and a 10px padding top and bottom*/
-#upcomingGames table td,
-#upcomingGames th {
-   padding: 5px 10px 5px 10px;
-
-   font-size: larger;
-   color: #111;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#tableTitle {
-   text-align: left;
-}
-
-#upcomingGames table tr:nth-child(even) {
-   background-color: #f2f2f2;
-}
 
 /*the upcomingGames box*/
 #upcomingGames {
-   background-color: rgba(255, 255, 255, 0.644);
+   /* background-color: rgba(255, 255, 255, 0.644); */
+   background-color: white;
    padding: 2px 2px 2px 2px;
    float: right;
    /* margin-top: 10px; */
@@ -272,8 +232,75 @@ header {
    /* left: 50%; */
 }
 
+/*reffering to the ul that holds all the uls for the upcomingGames box direct pearnt of them*/
+#upcomingGames table {
+   table-layout: auto;
+   padding: 0px 10px 0px 0px;
+   border-collapse: collapse;
+}
 
-/* seperator for css*/
+#upcomingGames table tr td {
+   border-top: rgb(211, 216, 221) solid thin;
+   border-bottom: rgb(211, 216, 221) solid thin;
+   font-size: larger;
+   text-transform: uppercase;
+   padding: 10px 30px 10px 30px;
+   font-size: larger;
+   color: #111;
+   font-family: 'Source Sans Pro', sans-serif;
+}
+
+#upcomingGames table tr {
+   background-color: white;
+   text-transform: uppercase;
+}
+
+#tableTitle {
+   text-transform: uppercase;
+   font-size: larger;
+   color: #111;
+}
+
+/* upcomingGames table data 5px padding left and right and a 10px padding top and bottom*/
+
+
+
+/*align tableTitleLeft text to the left and tableTitleRight to the right */
+#tableTitleLeft {
+   text-align: left;
+
+
+}
+
+#tableTitleRight {
+   text-align: right;
+}
+
+
+/*align teamLeft text to the right and align teamRight text to the left */
+.teamLeft {
+   text-align: right;
+   font-weight: 600;
+   padding-right: 70px !important;
+   padding-left: 70px !important;
+}
+
+.teamRight {
+   text-align: left;
+   font-weight: 600;
+   padding-right: 70px !important;
+   padding-left: 70px !important;
+}
+
+.tableV {
+   /* text-transform: lowercase !important; */
+}
+
+
+#upcomingGames table tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
 
 
 
@@ -284,6 +311,11 @@ header {
    margin-top: 10px;
    flex-wrap: wrap;
 }
+
+
+
+
+
 
 
 
@@ -419,14 +451,4 @@ header {
    to {
       opacity: 1
    }
-}
-
-body,
-td,
-th,
-li,
-a,
-span {
-   font-family: "Comic Sans MS" !important;
-
 }
