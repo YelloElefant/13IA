@@ -352,7 +352,7 @@ header {
    /* Top, left, right border solid thin white and bottom boarder thick white */
 
    border: white thin solid;
-   border-bottom: white thick solid;
+   border-bottom: white solid;
    user-select: none;
 }
 
