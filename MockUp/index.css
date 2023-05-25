@@ -1,5 +1,6 @@
 :root {
    --color-gold: rgb(132, 117, 79);
+   --font-source: 'Source Sans Pro', sans-serif;
 }
 
 html {
@@ -216,7 +217,7 @@ header {
    text-transform: uppercase;
    text-align: center;
    color: #111;
-   font-family: 'Source Sans Pro', sans-serif;
+   font-family: var(--font-source);
    border-top: rgb(211, 216, 221) solid thin;
    border-bottom: rgb(211, 216, 221) solid thin;
    font-size: small;
@@ -265,6 +266,10 @@ header {
    margin-left: auto;
    margin-right: auto;
    height: auto;
+   width: 100%;
+   margin-left: 10px;
+   margin-right: 10px;
+
    /* left: 50%; */
 }
 
@@ -273,6 +278,7 @@ header {
    table-layout: auto;
    padding: 0px 10px 0px 0px;
    border-collapse: collapse;
+   width: 100%;
 }
 
 #upcomingGames table tr td {
@@ -283,7 +289,7 @@ header {
    padding: 5px 15px 5px 15px;
    font-size: larger;
    color: #111;
-   font-family: 'Source Sans Pro', sans-serif;
+   font-family: var(--font-source);
 }
 
 #upcomingGames table tr {
@@ -350,38 +356,10 @@ header {
 
 
 
-/* seperator for css*/
-
-/*wrapper element for the youtube box for position purposes and align center under the upcomingGames*/
-/* #wrapperYoutube {
-   /* background-color: aqua; 
-   display: flex;
-   margin-top: 10px;
-   margin-left: 10px;
-   flex-wrap: wrap;
-   position: relative;
-
-
-
-}
-
-#youTube {
-   /* background-color: aqua; 
-   border: #ff0000 solid thick;
-   border-radius: 5px;
-   display: flex;
-   margin-top: 10px;
-   flex-wrap: wrap;
-   margin: auto;
-   aspect-ratio: 16/9;
-   position: relative;
-   left: auto;
-
-} */
-
-
 
 /* seperator for css*/
+
+
 /*wrapper element for slideshow for position purposes and align center under the youtube*/
 #wrapperSlideshow {
    /* background-color: aqua; */
@@ -487,10 +465,29 @@ header {
 
 #wrapperBlurb {
    /* background-color: aqua; */
-   display: flex;
+   background-color: white;
    /* float: right; */
    margin-top: 10px;
+   padding: 2px 3px 3px 3px;
    flex-wrap: wrap;
    position: relative;
    margin-left: 10px;
+   margin-right: 10px;
+   border-radius: 5px;
+}
+
+#wrapperBlurb h2 {
+   font-family: var(--font-source);
+   text-transform: uppercase;
+   font-size: 300%;
+   color: #111;
+   /* text-decoration: underline; */
+   font-weight: 700;
+   text-align: center;
+   margin: 0px 0 10px 0;
+}
+
+#wrapperBlurb p {
+   font-family: var(--font-source);
+   margin-top: 5px;
 }
