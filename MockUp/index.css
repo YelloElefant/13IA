@@ -343,8 +343,8 @@ header {
 /* seperator for css*/
 
 /*wrapper element for the youtube box for position purposes and align center under the upcomingGames*/
-#wrapperYoutube {
-   /* background-color: aqua; */
+/* #wrapperYoutube {
+   /* background-color: aqua; 
    display: flex;
    margin-top: 10px;
    margin-left: 10px;
@@ -356,7 +356,7 @@ header {
 }
 
 #youTube {
-   /* background-color: aqua; */
+   /* background-color: aqua; 
    border: #ff0000 solid thick;
    border-radius: 5px;
    display: flex;
@@ -367,7 +367,7 @@ header {
    position: relative;
    left: auto;
 
-}
+} */
 
 
 
