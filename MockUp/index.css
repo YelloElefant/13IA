@@ -14,6 +14,7 @@ body {
    padding: 0;
    height: 100%;
    width: 100%;
+   -webkit-font-smoothing: antialiased;
 }
 
 /* body {
@@ -306,22 +307,6 @@ header {
 
 
 
-/* upcomingGames table data 5px padding left and right and a 10px padding top and bottom*/
-
-
-
-/*align tableTitleLeft text to the left and tableTitleRight to the right */
-#tableTitleLeft {
-   text-align: left;
-
-
-}
-
-#tableTitleRight {
-   text-align: right;
-}
-
-
 /*align teamLeft text to the right and align teamRight text to the left */
 .teamLeft {
    text-align: right;
@@ -347,14 +332,36 @@ header {
 }
 
 
+/* distrabute days content to spread evenly across the table head*/
 
 
 
+#days {
+   font-family: var(--font-source);
+   font-weight: 600;
+   font-size: larger;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   width: 100%;
+}
+
+#days div {
+   padding: 5px 10px 5px 10px;
+   margin: 0;
+   /* Top, left, right border solid thin white and bottom boarder thick white */
+
+   border: white thin solid;
+   border-bottom: white thick solid;
+   user-select: none;
+}
 
 
-
-
-
+#days div:hover:not(#activeDay) {
+   /* border: #111 thin solid; */
+   color: var(--color-gold);
+   cursor: pointer;
+}
 
 
 /* seperator for css*/
@@ -381,7 +388,7 @@ header {
 }
 
 * {
-   box-sizing: border-box
+   box-sizing: border-box;
 }
 
 /* Slideshow container */
@@ -411,7 +418,6 @@ header {
    font-size: 18px;
    transition: 0.6s ease;
    border-radius: 0 3px 3px 0;
-   user-select: none;
 }
 
 /* Position the "next button" to the right */
