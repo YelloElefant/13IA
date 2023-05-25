@@ -170,8 +170,16 @@ header {
 
 /*over all container for 2 boxes at top*/
 #topContentContainer {
-   display: inline;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
 }
+
+#right {
+   flex: 2;
+}
+
+#left {}
 
 
 
@@ -179,6 +187,7 @@ header {
 #history {
    float: left;
    margin-left: 2%;
+   margin-top: 10px;
    /* margin-top: 10px; */
    background-color: white;
 
@@ -232,6 +241,14 @@ header {
 /* seperator for css*/
 
 
+/*wrapper element for the upcomingGames box for position purposes*/
+#wrapperUpcomingGames {
+   /* background-color: aqua; */
+   margin-top: 10px;
+   flex-wrap: wrap;
+   flex: 2;
+   display: flex;
+}
 
 
 
@@ -240,13 +257,14 @@ header {
    /* background-color: rgba(255, 255, 255, 0.644); */
    background-color: white;
    padding: 2px 2px 2px 2px;
-   float: right;
    /* margin-top: 10px; */
    /* width: 1000px; */
    border-radius: 2px;
    text-align: center;
-   margin: auto;
-   /* position: relative; */
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   height: auto;
    /* left: 50%; */
 }
 
@@ -324,14 +342,6 @@ header {
 
 
 
-
-/*wrapper element for the upcomingGames box for position purposes*/
-#wrapperUpcomingGames {
-   /* background-color: aqua; */
-   display: flex;
-   margin-top: 10px;
-   flex-wrap: wrap;
-}
 
 
 
@@ -472,4 +482,15 @@ header {
    to {
       opacity: 1
    }
+}
+
+
+#wrapperBlurb {
+   /* background-color: aqua; */
+   display: flex;
+   /* float: right; */
+   margin-top: 10px;
+   flex-wrap: wrap;
+   position: relative;
+   margin-left: 10px;
 }
