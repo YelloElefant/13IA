@@ -1,3 +1,7 @@
+:root {
+   --color-gold: rgb(132, 117, 79);
+}
+
 html {
    background-color: rgb(173, 172, 172);
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
@@ -10,6 +14,12 @@ body {
    height: 100%;
    width: 100%;
 }
+
+/* body {
+   background-image: url(./Images/profilePic.PNG) !important;
+   background-position: center;
+   background-repeat: no-repeat;
+} */
 
 th,
 tr {
@@ -116,9 +126,9 @@ header {
 
 .menuListItem:hover>.menuLink:before {
    content: "";
-   color: rgb(132, 117, 79);
+   color: var(--color-gold);
    bottom: 0px;
-   background-color: rgb(132, 117, 79);
+   background-color: var(--color-gold);
    cursor: pointer;
    height: 1px;
    width: calc(100% - 1.2em);
@@ -145,10 +155,10 @@ header {
 
 
 .menuListItem:hover .menuLink {
-   color: rgb(132, 117, 79);
+   color: var(--color-gold);
    box-sizing: border-box;
    line-height: 60px;
-   text-decoration-color: rgb(132, 117, 79);
+   text-decoration-color: var(--color-gold);
    -webkit-box-align: center;
 
 }
@@ -166,7 +176,7 @@ header {
 
 
 /*box on left for quickstandings this element is a direct pearent to the ul that holds all the uls*/
-#quickStandings {
+#history {
    float: left;
    margin-left: 2%;
    /* margin-top: 10px; */
@@ -181,7 +191,7 @@ header {
 }
 
 /*reffering to the ul that holds all of the uls for the quickStandings box direct pearnt of them*/
-#quickStandings table {
+#history table {
    table-layout: auto;
    padding: 0px 10px 0px 0px;
    text-transform: uppercase;
@@ -192,30 +202,38 @@ header {
 
 
 /* quickStandings table data 3px padding left and right and a 2px padding top and bottom */
-#quickStandings table td {
-   padding: 5px 10px 5px 10px;
+#history table td {
+   padding: 5px 5px 5px 5px;
    text-transform: uppercase;
    text-align: center;
    color: #111;
    font-family: 'Source Sans Pro', sans-serif;
    border-top: rgb(211, 216, 221) solid thin;
    border-bottom: rgb(211, 216, 221) solid thin;
+   font-size: small;
 }
 
 
-#quickStandings table tr {
+#history table tr {
    background-color: white;
 }
 
-#quickStandings table tr:nth-child(even) {
+#history table tr:nth-child(even) {
    background-color: #f2f2f2;
 }
 
 
-
+#history table tr td:nth-child(even) {
+   color: var(--color-gold);
+   font-weight: 600;
+}
 
 
 /* seperator for css*/
+
+
+
+
 
 /*the upcomingGames box*/
 #upcomingGames {
@@ -244,7 +262,7 @@ header {
    border-bottom: rgb(211, 216, 221) solid thin;
    font-size: larger;
    text-transform: uppercase;
-   padding: 10px 30px 10px 30px;
+   padding: 5px 15px 5px 15px;
    font-size: larger;
    color: #111;
    font-family: 'Source Sans Pro', sans-serif;
@@ -259,7 +277,10 @@ header {
    text-transform: uppercase;
    font-size: larger;
    color: #111;
+   text-decoration: underline;
 }
+
+
 
 /* upcomingGames table data 5px padding left and right and a 10px padding top and bottom*/
 
@@ -281,7 +302,7 @@ header {
 .teamLeft {
    text-align: right;
    font-weight: 600;
-   padding-right: 70px !important;
+   padding-right: 10px !important;
    padding-left: 70px !important;
 }
 
@@ -289,7 +310,7 @@ header {
    text-align: left;
    font-weight: 600;
    padding-right: 70px !important;
-   padding-left: 70px !important;
+   padding-left: 10px !important;
 }
 
 .tableV {
