@@ -1,3 +1,7 @@
+:root {
+   --color-gold: rgb(132, 117, 79);
+}
+
 html {
    background-color: rgb(173, 172, 172);
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
@@ -122,9 +126,9 @@ header {
 
 .menuListItem:hover>.menuLink:before {
    content: "";
-   color: rgb(132, 117, 79);
+   color: var(--color-gold);
    bottom: 0px;
-   background-color: rgb(132, 117, 79);
+   background-color: var(--color-gold);
    cursor: pointer;
    height: 1px;
    width: calc(100% - 1.2em);
@@ -151,10 +155,10 @@ header {
 
 
 .menuListItem:hover .menuLink {
-   color: rgb(132, 117, 79);
+   color: var(--color-gold);
    box-sizing: border-box;
    line-height: 60px;
-   text-decoration-color: rgb(132, 117, 79);
+   text-decoration-color: var(--color-gold);
    -webkit-box-align: center;
 
 }
@@ -219,7 +223,10 @@ header {
 }
 
 
-
+#history table tr td:nth-child(even) {
+   color: var(--color-gold);
+   font-weight: 600;
+}
 
 
 /* seperator for css*/
@@ -270,7 +277,10 @@ header {
    text-transform: uppercase;
    font-size: larger;
    color: #111;
+   text-decoration: underline;
 }
+
+
 
 /* upcomingGames table data 5px padding left and right and a 10px padding top and bottom*/
 
