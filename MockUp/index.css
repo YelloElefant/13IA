@@ -359,8 +359,9 @@ header {
 
 #days div:hover:not(#activeDay) {
    /* border: #111 thin solid; */
-   color: var(--color-gold);
+   color: var(--color-gold) !important;
    cursor: pointer;
+
 }
 
 
