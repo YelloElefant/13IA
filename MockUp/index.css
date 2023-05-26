@@ -365,6 +365,10 @@ header {
 
 }
 
+.tabContent {
+   display: none;
+}
+
 
 /* seperator for css*/
 
@@ -449,10 +453,7 @@ header {
 
 
 
-.active,
-.dot:hover {
-   background-color: #717171;
-}
+
 
 /* Fading animation */
 .fade {
