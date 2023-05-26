@@ -353,6 +353,7 @@ header {
 
    border: white thin solid;
    border-bottom: white solid;
+   -webkit-user-select: none;
    user-select: none;
 }
 
@@ -480,7 +481,8 @@ header {
    position: relative;
    margin-left: 10px;
    margin-right: 10px;
-   border-radius: 5px;
+   /* border-radius: 5px; */
+   text-align: center;
 }
 
 #wrapperBlurb h2 {
