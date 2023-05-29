@@ -477,13 +477,13 @@ header {
    background-color: white;
    /* float: right; */
    margin-top: 10px;
-   padding: 2px 3px 3px 3px;
+   padding: 2px 3px 5px 8px;
    flex-wrap: wrap;
    position: relative;
    margin-left: 10px;
    margin-right: 10px;
    /* border-radius: 5px; */
-   text-align: center;
+   text-align: left;
 }
 
 #wrapperBlurb h2 {
