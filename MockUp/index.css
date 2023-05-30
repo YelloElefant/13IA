@@ -1,12 +1,44 @@
+:root {
+   --color-gold: rgb(132, 117, 79);
+   --font-source: 'Source Sans Pro', sans-serif;
+}
+
 html {
-   background-color: #333;
+   background-color: rgb(173, 172, 172);
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+html,
+body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   width: 100%;
+   -webkit-font-smoothing: antialiased;
+}
+
+/* body {
+   background-image: url(./Images/profilePic.PNG) !important;
+   background-position: center;
+   background-repeat: no-repeat;
+} */
+
+th,
+tr {
+   font-weight: normal;
+}
+
+#logoWrapper {
+   padding-top: 27px;
+   padding-bottom: 16px;
+   padding-left: 35px;
+   height: 135px;
 }
 
 #Logo {
    width: auto;
-   height: 125px;
-   padding: 2px;
+   height: 82px;
+
 }
 
 p {
@@ -19,122 +51,453 @@ ul {
 }
 
 header {
-   background-color: rgb(116, 0, 0);
+   background-image: url("./Images/darkGradientBackground.png");
+   background-color: #333;
+   width: 100%;
+   z-index: 99;
+   position: relative;
+   display: block;
+}
+
+#toolBar {
+   padding-left: 35px;
+   background-color: rgba(150, 38, 43, 0.59);
+
+   height: 60px;
 }
 
 #toolBarList {
+   height: 60px;
    list-style-type: none;
    margin: 0;
    padding: 0;
    overflow: hidden;
-   background-color: #1f1f1f;
 }
 
-header li {
+.menuListItem {
+   display: flex;
    float: left;
+   height: 60px;
+   line-height: 60px;
+   position: relative;
 }
 
-header li a {
-   display: block;
+.menuLink {
+   height: 60px;
+   box-sizing: border-box;
+   display: flex;
    color: white;
-   text-align: center;
-   padding: 14px 16px;
+   cursor: pointer;
+   /* vertical-align: middle; */
+   text-align: left;
+   align-items: center;
+   padding: 0px 16px;
    text-decoration: none;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   user-select: none;
+   font-size: 16px;
+   font-weight: 400;
+   font-style: normal;
+   font-family: 'Roboto', sans-serif;
+   box-sizing: border-box;
+   width: 100%;
+
 }
+
+
+.menuText {
+   display: block;
+   line-height: normal;
+   font-size: 16px;
+   font-weight: 400;
+   font-style: normal;
+   font-family: 'Roboto', sans-serif;
+   box-sizing: border-box;
+}
+
+.menuListItem>.menuLink:before {
+   content: "";
+   color: transparent;
+   bottom: 0px;
+   background-color: transparent;
+   cursor: pointer;
+   height: 1px;
+   width: 100%;
+   position: absolute;
+   right: 0;
+   box-sizing: border-box;
+}
+
+.menuListItem:hover>.menuLink:before {
+   content: "";
+   color: var(--color-gold);
+   bottom: 0px;
+   background-color: var(--color-gold);
+   cursor: pointer;
+   height: 1px;
+   width: calc(100% - 1.2em);
+   position: absolute;
+   right: 50%;
+   transition: ease-in-out;
+   box-sizing: border-box;
+   transform: scale(1, 1) translate(50%, 0);
+   transition: transform 0.3s ease-in-out, color 0.0s ease-in-out;
+}
+
+.astArrowSvg {
+   display: block;
+   height: .6em;
+   width: .6em;
+   position: relative;
+   margin-left: 10px;
+   color: white;
+   fill: white;
+}
+
 
 /* Change the link color to #111 (black) on hover */
-header li a:hover {
-   background-color: #111;
+
+
+.menuListItem:hover .menuLink {
+   color: var(--color-gold);
+   box-sizing: border-box;
+   line-height: 60px;
+   text-decoration-color: var(--color-gold);
+   -webkit-box-align: center;
+
 }
+
+
+
+
 
 
 /*over all container for 2 boxes at top*/
 #topContentContainer {
-   display: inline;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
 }
+
+#right {
+   flex: 2;
+}
+
+#left {}
+
 
 
 /*box on left for quickstandings this element is a direct pearent to the ul that holds all the uls*/
-#quickStandings {
+#history {
    float: left;
    margin-left: 2%;
+   margin-top: 10px;
    /* margin-top: 10px; */
-   background-color: aliceblue;
-   padding: 2px 2px 2px 2px;
-   border: #111 solid;
+   background-color: white;
+
+   padding: 3px 3px 3px 3px;
+
+
    border-radius: 2px;
    display: flex;
    flex-wrap: wrap;
 }
 
 /*reffering to the ul that holds all of the uls for the quickStandings box direct pearnt of them*/
-#quickStandings ul {
-   list-style: none;
+#history table {
+   table-layout: auto;
    padding: 0px 10px 0px 0px;
-}
-
-/*reffering to all of the uls in the quickStandings box eg. School/Points/Position*/
-#listQuickStandings ul {
-   display: inline;
-   float: left;
-   margin-top: 2px;
-}
-
-/*reffering to the first child in each list of the quickStandings box ie. the header of each colom*/
-#listQuickStandings ul li:first-child {
-   border-bottom: #111 solid thin;
-}
-
-
-/*reffering to the ul that holds all the uls for the upcomingGames box direct pearnt of them*/
-#upcomingGames ul {
-   list-style: none;
-   padding: 0px 10px 0px 0px;
+   text-transform: uppercase;
+   border-collapse: collapse;
 
 }
 
-/*reffering to all the uls that hold the info for the upComingGames box eg. Game/Pool/School/Time/Venue*/
-#listUpcomingGames ul {
-   display: inline;
-   float: left;
-   margin-right: 20px;
-   margin-left: 20px;
-   margin-top: 2px;
-}
 
 
-/*the upcomingGames box*/
-#upcomingGames {
-   background-color: aliceblue;
-   padding: 2px 2px 2px 2px;
-   float: right;
-   /* margin-top: 10px; */
-   /* width: 1000px; */
-   border: #111 solid;
-   border-radius: 2px;
+/* quickStandings table data 3px padding left and right and a 2px padding top and bottom */
+#history table td {
+   padding: 5px 5px 5px 5px;
+   text-transform: uppercase;
    text-align: center;
-   margin: auto;
-   /* position: relative; */
-   /* left: 50%; */
+   color: #111;
+   font-family: var(--font-source);
+   border-top: rgb(211, 216, 221) solid thin;
+   border-bottom: rgb(211, 216, 221) solid thin;
+   font-size: small;
 }
 
-/*reffering to the first memeber of each list in the upcomingGames box ie. the header of each colom*/
-#listUpcomingGames ul li:first-child {
-   border-bottom: #111 solid thin;
+
+#history table tr {
+   background-color: white;
 }
 
-/*class for when a list needs a dummy first member to be invisable*/
-.dummyFirst li:first-child {
-   color: transparent;
-   border: none !important;
+#history table tr:nth-child(even) {
+   background-color: #f2f2f2;
 }
+
+
+#history table tr td:nth-child(even) {
+   color: var(--color-gold);
+   font-weight: 600;
+}
+
+
+/* seperator for css*/
+
 
 /*wrapper element for the upcomingGames box for position purposes*/
 #wrapperUpcomingGames {
    /* background-color: aqua; */
+   margin-top: 10px;
+   flex-wrap: wrap;
+   flex: 2;
+   display: flex;
+}
+
+
+
+/*the upcomingGames box*/
+#upcomingGames {
+   /* background-color: rgba(255, 255, 255, 0.644); */
+   background-color: white;
+   padding: 2px 2px 2px 2px;
+   /* margin-top: 10px; */
+   /* width: 1000px; */
+   border-radius: 2px;
+   text-align: center;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   height: auto;
+   width: 100%;
+   margin-left: 10px;
+   margin-right: 10px;
+
+   /* left: 50%; */
+}
+
+/*reffering to the ul that holds all the uls for the upcomingGames box direct pearnt of them*/
+#upcomingGames table {
+   table-layout: auto;
+   padding: 0px 10px 0px 0px;
+   border-collapse: collapse;
+   width: 100%;
+}
+
+#upcomingGames table tr td {
+   border-top: rgb(211, 216, 221) solid thin;
+   border-bottom: rgb(211, 216, 221) solid thin;
+   font-size: larger;
+   text-transform: uppercase;
+   padding: 5px 15px 5px 15px;
+   font-size: larger;
+   color: #111;
+   font-family: var(--font-source);
+}
+
+#upcomingGames table tr {
+   background-color: white;
+   text-transform: uppercase;
+}
+
+#tableTitle {
+   text-transform: uppercase;
+   font-size: larger;
+   color: #111;
+   text-decoration: underline;
+}
+
+
+
+/*align teamLeft text to the right and align teamRight text to the left */
+.teamLeft {
+   text-align: right;
+   font-weight: 600;
+   padding-right: 10px !important;
+   padding-left: 70px !important;
+}
+
+.teamRight {
+   text-align: left;
+   font-weight: 600;
+   padding-right: 70px !important;
+   padding-left: 10px !important;
+}
+
+.tableV {
+   /* text-transform: lowercase !important; */
+}
+
+
+#upcomingGames table tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+
+/* distrabute days content to spread evenly across the table head*/
+
+
+
+#days {
+   font-family: var(--font-source);
+   font-weight: 600;
+   font-size: larger;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   width: 100%;
+}
+
+#days div {
+   padding: 5px 10px 5px 10px;
+   margin: 0;
+   /* Top, left, right border solid thin white and bottom boarder thick white */
+
+   border: white thin solid;
+   border-bottom: white solid;
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+
+#days div:hover:not(#activeDay) {
+   /* border: #111 thin solid; */
+   color: var(--color-gold) !important;
+   cursor: pointer;
+
+}
+
+.tabContent {
+   display: none;
+}
+
+
+/* seperator for css*/
+
+
+/*wrapper element for slideshow for position purposes and align center under the youtube*/
+#wrapperSlideshow {
+   /* background-color: aqua; */
    display: flex;
    margin-top: 10px;
    flex-wrap: wrap;
+   position: relative;
+}
+
+#slideShow {
+   /* background-color: aqua; */
+   display: flex;
+   margin-top: 10px;
+   flex-wrap: wrap;
+   position: relative;
+   float: right;
+   margin: auto;
+   background-color: white;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+   max-width: 1000px;
+   position: relative;
+   margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+   display: none;
+   float: right;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: black;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+   background-color: rgba(44, 44, 44, 0.8);
+}
+
+/* Caption text */
+.text {
+   color: #f2f2f2;
+   font-size: 15px;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+}
+
+
+
+
+
+
+
+/* Fading animation */
+.fade {
+   animation-name: fade;
+   animation-duration: 1.5s;
+}
+
+@keyframes fade {
+   from {
+      opacity: .4
+   }
+
+   to {
+      opacity: 1
+   }
+}
+
+
+#wrapperBlurb {
+   /* background-color: aqua; */
+   background-color: white;
+   /* float: right; */
+   margin-top: 10px;
+   padding: 2px 3px 5px 8px;
+   flex-wrap: wrap;
+   position: relative;
+   margin-left: 10px;
+   margin-right: 10px;
+   /* border-radius: 5px; */
+   text-align: left;
+}
+
+#wrapperBlurb h2 {
+   font-family: var(--font-source);
+   text-transform: uppercase;
+   font-size: 300%;
+   color: #111;
+   /* text-decoration: underline; */
+   font-weight: 700;
+   text-align: center;
+   margin: 0px 0 10px 0;
+}
+
+#wrapperBlurb p {
+   font-family: var(--font-source);
+   margin-top: 5px;
 }
