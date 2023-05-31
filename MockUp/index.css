@@ -519,3 +519,13 @@ header {
    background-color: white;
    padding: 10px;
 }
+
+h2 {
+   text-align: center;
+   margin-top: 3rem;
+   text-transform: capitalize;
+}
+
+h2:first-child {
+   margin-top: 0.8em;
+}
