@@ -501,3 +501,21 @@ header {
    font-family: var(--font-source);
    margin-top: 5px;
 }
+
+
+.dotList {
+   padding-left: 40px;
+   list-style-type: circle !important;
+}
+
+.letterList {
+   list-style: lower-alpha;
+}
+
+#contentContainer {
+   margin: 20px;
+   font-family: var(--font-source);
+   line-height: 2rem;
+   background-color: white;
+   padding: 10px;
+}
