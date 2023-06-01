@@ -33,6 +33,10 @@ tr {
    padding-bottom: 16px;
    padding-left: 35px;
    height: 135px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+
 }
 
 #Logo {
@@ -57,13 +61,20 @@ header {
    z-index: 99;
    position: relative;
    display: block;
+   /* border: solid thin; */
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   background-size: cover;
 }
 
 #toolBar {
    padding-left: 35px;
    background-color: rgba(150, 38, 43, 0.59);
-
    height: 60px;
+   /* border: solid thin; */
+   /* border-radius: 10px; */
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
 }
 
 #toolBarList {
@@ -181,8 +192,6 @@ header {
    flex: 2;
 }
 
-#left {}
-
 
 
 /*box on left for quickstandings this element is a direct pearent to the ul that holds all the uls*/
@@ -196,7 +205,7 @@ header {
    padding: 3px 3px 3px 3px;
 
 
-   border-radius: 2px;
+   border-radius: 10px;
    display: flex;
    flex-wrap: wrap;
 }
@@ -250,6 +259,7 @@ header {
    flex-wrap: wrap;
    flex: 2;
    display: flex;
+   border-radius: 2px;
 }
 
 
@@ -258,10 +268,10 @@ header {
 #upcomingGames {
    /* background-color: rgba(255, 255, 255, 0.644); */
    background-color: white;
-   padding: 2px 2px 2px 2px;
+   padding: 2px 4px 4px 4px;
    /* margin-top: 10px; */
    /* width: 1000px; */
-   border-radius: 2px;
+   border-radius: 10px;
    text-align: center;
    display: block;
    margin-left: auto;
@@ -322,9 +332,7 @@ header {
    padding-left: 10px !important;
 }
 
-.tableV {
-   /* text-transform: lowercase !important; */
-}
+
 
 
 #upcomingGames table tr:nth-child(even) {
@@ -388,6 +396,8 @@ header {
    margin-right: 10px;
    /* border-radius: 5px; */
    text-align: left;
+   border-radius: 10px;
+
 }
 
 #wrapperBlurb h2 {
