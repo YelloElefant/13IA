@@ -1,6 +1,7 @@
 :root {
    --color-gold: rgb(132, 117, 79);
    --font-source: 'Source Sans Pro', sans-serif;
+   --font-header-source: 'Raleway', sans-serif;
 }
 
 html {
@@ -17,11 +18,9 @@ body {
    -webkit-font-smoothing: antialiased;
 }
 
-/* body {
-   background-image: url(./Images/profilePic.PNG) !important;
-   background-position: center;
-   background-repeat: no-repeat;
-} */
+h2 {
+   font-family: var(--font-header-source);
+}
 
 th,
 tr {
@@ -96,7 +95,6 @@ header {
    font-size: 16px;
    font-weight: 400;
    font-style: normal;
-   font-family: 'Roboto', sans-serif;
    box-sizing: border-box;
    width: 100%;
 
@@ -109,8 +107,8 @@ header {
    font-size: 16px;
    font-weight: 400;
    font-style: normal;
-   font-family: 'Roboto', sans-serif;
    box-sizing: border-box;
+   font-family: var(--font-source);
 }
 
 .menuListItem>.menuLink:before {
@@ -471,6 +469,33 @@ header {
    }
 }
 
+.card {
+   display: block;
+   /* width: 600px; */
+   width: 100%;
+   background-color: aqua;
+   margin-top: 20px;
+   margin: 20px 0px 0 0px;
+}
+
+p,
+ul {
+   display: none !important;
+
+}
+
+#contentContainer {
+   /* margin: 20px; */
+   line-height: 2rem;
+   background-color: white;
+   padding: 10px 10px 10px 20px;
+   display: flex;
+   flex-wrap: wrap;
+   /* justify-content: space-between; */
+
+
+}
+
 
 #wrapperBlurb {
    /* background-color: aqua; */
@@ -486,15 +511,14 @@ header {
    text-align: left;
 }
 
-#wrapperBlurb h2 {
-   font-family: var(--font-source);
+#wrapperBlurb div h2 {
    text-transform: uppercase;
    font-size: 300%;
    color: #111;
    /* text-decoration: underline; */
    font-weight: 700;
    text-align: center;
-   margin: 0px 0 10px 0;
+   margin: 10px 0 10px 0;
 }
 
 #wrapperBlurb p {
@@ -505,27 +529,17 @@ header {
 
 .dotList {
    padding-left: 40px;
-   list-style-type: circle !important;
+   list-style-type: circle;
 }
 
 .letterList {
    list-style: lower-alpha;
 }
 
-#contentContainer {
-   margin: 20px;
-   font-family: var(--font-source);
-   line-height: 2rem;
-   background-color: white;
-   padding: 10px;
-}
+
 
 h2 {
-   text-align: center;
+   text-align: left;
    margin-top: 3rem;
    text-transform: capitalize;
-}
-
-h2:first-child {
-   margin-top: 0.8em;
 }
