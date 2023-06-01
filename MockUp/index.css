@@ -1,6 +1,8 @@
 :root {
    --color-gold: rgb(132, 117, 79);
    --font-source: 'Source Sans Pro', sans-serif;
+   --font-header-source: 'Raleway', sans-serif;
+
 }
 
 html {
@@ -17,11 +19,16 @@ body {
    -webkit-font-smoothing: antialiased;
 }
 
-/* body {
-   background-image: url(./Images/profilePic.PNG) !important;
-   background-position: center;
-   background-repeat: no-repeat;
-} */
+h2 {
+   font-family: var(--font-header-source);
+   text-transform: uppercase;
+   font-size: 300%;
+   color: #111;
+   /* text-decoration: underline; */
+   font-weight: 700;
+   text-align: center;
+   margin: 0px 0 10px 0;
+}
 
 th,
 tr {
@@ -400,16 +407,7 @@ header {
 
 }
 
-#wrapperBlurb h2 {
-   font-family: var(--font-source);
-   text-transform: uppercase;
-   font-size: 300%;
-   color: #111;
-   /* text-decoration: underline; */
-   font-weight: 700;
-   text-align: center;
-   margin: 0px 0 10px 0;
-}
+
 
 #wrapperBlurb p {
    font-family: var(--font-source);
