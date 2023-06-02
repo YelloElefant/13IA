@@ -231,7 +231,7 @@ header {
 
 
 /* quickStandings table data 3px padding left and right and a 2px padding top and bottom */
-#history table td {
+#history table td:not(#tableTitle) {
    padding: 5px 5px 5px 5px;
    text-transform: uppercase;
    text-align: center;
@@ -257,6 +257,17 @@ header {
    font-weight: 600;
 }
 
+
+#tableTitle {
+   text-transform: uppercase;
+   font-size: larger;
+   color: #111;
+   font-family: var(--font-header-source);
+   text-align: center;
+
+
+
+}
 
 /* seperator for css*/
 
@@ -317,12 +328,7 @@ header {
    text-transform: uppercase;
 }
 
-#tableTitle {
-   text-transform: uppercase;
-   font-size: larger;
-   color: #111;
-   text-decoration: underline;
-}
+
 
 
 
