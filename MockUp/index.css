@@ -179,7 +179,7 @@ header {
    flex: 2;
 }
 
-#left {}
+
 
 
 
@@ -320,9 +320,7 @@ header {
    padding-left: 10px !important;
 }
 
-.tableV {
-   /* text-transform: lowercase !important; */
-}
+
 
 
 #upcomingGames table tr:nth-child(even) {
@@ -481,7 +479,7 @@ header {
 #contentContainer p,
 #contentContainer ul {
    display: none;
-
+   opacity: 0;
 }
 
 #contentContainer {
@@ -496,26 +494,28 @@ header {
 
 }
 
-#contentContainer * {
-   transition: visibility 0.5 ease-in-out;
-
+p,
+ul {
+   transition: opacity 5s;
 }
 
 
 #contentContainer div h2 {
    display: block !important;
+   opacity: 1 !important;
    text-align: left;
    padding: 20px;
    margin: 0;
    text-transform: capitalize;
-   user-select: none;
    -webkit-user-select: none;
+   user-select: none;
 
 }
 
 #contentContainer p {
    font-family: var(--font-source);
    margin-top: 5px;
+   padding-left: 20px;
 }
 
 
@@ -529,9 +529,8 @@ header {
 }
 
 
-
-h2 {}
-
 h2:hover {
    cursor: pointer;
 }
+
+/* seperator for css*/
