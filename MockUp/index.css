@@ -471,9 +471,11 @@ header {
    display: block;
    /* width: 600px; */
    width: 100%;
-   background-color: aqua;
+   /* background-color: aqua; */
+   background-color: #f2f2f2;
    margin-top: 20px;
    margin: 20px 0px 0 0px;
+   border: black thin solid;
 }
 
 #contentContainer p,
