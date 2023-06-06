@@ -476,7 +476,13 @@ header {
    margin-top: 20px;
    margin: 20px 0px 0 0px;
    border: black thin solid;
+   border-radius: 10px;
    cursor: pointer;
+   background-image: url("./Images/redBlackGradient.jpg");
+   color: white;
+   background-size: cover;
+   background-repeat: no-repeat;
+
 }
 
 #contentContainer p,
@@ -514,6 +520,7 @@ ul {
    user-select: none;
 
 }
+
 
 #contentContainer p {
    font-family: var(--font-source);
