@@ -1,6 +1,8 @@
 :root {
    --color-gold: rgb(132, 117, 79);
    --font-source: 'Source Sans Pro', sans-serif;
+   --font-header-source: 'Raleway', sans-serif;
+
 }
 
 html {
@@ -17,11 +19,16 @@ body {
    -webkit-font-smoothing: antialiased;
 }
 
-/* body {
-   background-image: url(./Images/profilePic.PNG) !important;
-   background-position: center;
-   background-repeat: no-repeat;
-} */
+h2 {
+   font-family: var(--font-header-source);
+   text-transform: uppercase;
+   font-size: 300%;
+   color: #111;
+   /* text-decoration: underline; */
+   font-weight: 700;
+   text-align: center;
+   margin: 0px 0 10px 0;
+}
 
 th,
 tr {
@@ -33,11 +40,17 @@ tr {
    padding-bottom: 16px;
    padding-left: 35px;
    height: 135px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
 }
 
 #Logo {
    width: auto;
-   height: 82px;
+   height: 100px;
+
+
 
 }
 
@@ -57,13 +70,20 @@ header {
    z-index: 99;
    position: relative;
    display: block;
+   /* border: solid thin; */
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   background-size: cover;
 }
 
 #toolBar {
    padding-left: 35px;
    background-color: rgba(150, 38, 43, 0.59);
-
    height: 60px;
+   /* border: solid thin; */
+   /* border-radius: 10px; */
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
 }
 
 #toolBarList {
@@ -96,7 +116,6 @@ header {
    font-size: 16px;
    font-weight: 400;
    font-style: normal;
-   font-family: 'Roboto', sans-serif;
    box-sizing: border-box;
    width: 100%;
 
@@ -106,11 +125,12 @@ header {
 .menuText {
    display: block;
    line-height: normal;
-   font-size: 16px;
+   font-size: 20px;
    font-weight: 400;
    font-style: normal;
-   font-family: 'Roboto', sans-serif;
    box-sizing: border-box;
+   font-family: var('Lato', sans-serif);
+
 }
 
 .menuListItem>.menuLink:before {
@@ -181,8 +201,6 @@ header {
    flex: 2;
 }
 
-#left {}
-
 
 
 /*box on left for quickstandings this element is a direct pearent to the ul that holds all the uls*/
@@ -196,9 +214,7 @@ header {
    padding: 3px 3px 3px 3px;
 
 
-   border-radius: 2px;
-   display: flex;
-   flex-wrap: wrap;
+   border-radius: 10px;
 }
 
 /*reffering to the ul that holds all of the uls for the quickStandings box direct pearnt of them*/
@@ -213,7 +229,7 @@ header {
 
 
 /* quickStandings table data 3px padding left and right and a 2px padding top and bottom */
-#history table td {
+#history table td:not(#tableTitle) {
    padding: 5px 5px 5px 5px;
    text-transform: uppercase;
    text-align: center;
@@ -240,6 +256,47 @@ header {
 }
 
 
+#tableTitle {
+   text-transform: uppercase;
+   font-size: larger;
+   color: #111;
+   font-family: var(--font-header-source);
+   text-align: center;
+
+
+
+}
+
+#showMore {
+   display: none;
+   transition: display 0.5s ease-in-out;
+}
+
+#showMore:hover {
+   cursor: pointer;
+   color: var(--color-gold);
+}
+
+#showMoreLink {
+   text-decoration: none;
+   color: var(--color-gold);
+   font-family: var(--font-source);
+   font-weight: 600;
+   font-size: larger;
+   text-transform: uppercase;
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+   width: 100%;
+   padding: 5px 0px 5px 0px;
+   border-radius: 10px;
+   background-color: white;
+   border: white thin solid;
+   border-bottom: white solid;
+   -webkit-user-select: none;
+   user-select: none;
+}
+
 /* seperator for css*/
 
 
@@ -250,6 +307,7 @@ header {
    flex-wrap: wrap;
    flex: 2;
    display: flex;
+   border-radius: 2px;
 }
 
 
@@ -258,10 +316,10 @@ header {
 #upcomingGames {
    /* background-color: rgba(255, 255, 255, 0.644); */
    background-color: white;
-   padding: 2px 2px 2px 2px;
+   padding: 2px 4px 4px 4px;
    /* margin-top: 10px; */
    /* width: 1000px; */
-   border-radius: 2px;
+   border-radius: 10px;
    text-align: center;
    display: block;
    margin-left: auto;
@@ -298,12 +356,7 @@ header {
    text-transform: uppercase;
 }
 
-#tableTitle {
-   text-transform: uppercase;
-   font-size: larger;
-   color: #111;
-   text-decoration: underline;
-}
+
 
 
 
@@ -322,9 +375,7 @@ header {
    padding-left: 10px !important;
 }
 
-.tableV {
-   /* text-transform: lowercase !important; */
-}
+
 
 
 #upcomingGames table tr:nth-child(even) {
@@ -388,18 +439,11 @@ header {
    margin-right: 10px;
    /* border-radius: 5px; */
    text-align: left;
+   border-radius: 10px;
+
 }
 
-#wrapperBlurb h2 {
-   font-family: var(--font-source);
-   text-transform: uppercase;
-   font-size: 300%;
-   color: #111;
-   /* text-decoration: underline; */
-   font-weight: 700;
-   text-align: center;
-   margin: 0px 0 10px 0;
-}
+
 
 #wrapperBlurb p {
    font-family: var(--font-source);
