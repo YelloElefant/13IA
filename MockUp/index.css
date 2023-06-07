@@ -215,8 +215,6 @@ header {
 
 
    border-radius: 10px;
-   display: flex;
-   flex-wrap: wrap;
 }
 
 /*reffering to the ul that holds all of the uls for the quickStandings box direct pearnt of them*/
@@ -267,6 +265,36 @@ header {
 
 
 
+}
+
+#showMore {
+   display: none;
+   transition: display 0.5s ease-in-out;
+}
+
+#showMore:hover {
+   cursor: pointer;
+   color: var(--color-gold);
+}
+
+#showMoreLink {
+   text-decoration: none;
+   color: var(--color-gold);
+   font-family: var(--font-source);
+   font-weight: 600;
+   font-size: larger;
+   text-transform: uppercase;
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+   width: 100%;
+   padding: 5px 0px 5px 0px;
+   border-radius: 10px;
+   background-color: white;
+   border: white thin solid;
+   border-bottom: white solid;
+   -webkit-user-select: none;
+   user-select: none;
 }
 
 /* seperator for css*/

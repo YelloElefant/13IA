@@ -41,3 +41,17 @@ function setActive(ele, evt, dayName) {
   evt.currentTarget.className += " active";
 
 }
+
+
+
+function showMore(ele) {
+  var x = document.getElementById("showMore");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    ele.innerHTML = "Show Less";
+
+  } else {
+    x.style.display = "none";
+    ele.innerHTML = "Show More";
+  }
+}
