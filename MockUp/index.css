@@ -272,11 +272,6 @@ header {
    transition: display 0.5s ease-in-out;
 }
 
-#showMore:hover {
-   cursor: pointer;
-   color: var(--color-gold);
-}
-
 #showMoreLink {
    text-decoration: none;
    color: var(--color-gold);
@@ -295,6 +290,7 @@ header {
    border-bottom: white solid;
    -webkit-user-select: none;
    user-select: none;
+   cursor: pointer;
 }
 
 /* seperator for css*/
