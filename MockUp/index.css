@@ -445,3 +445,12 @@ header {
    font-family: var(--font-source);
    margin-top: 5px;
 }
+
+footer {
+   background-image: url("./Images/dark-gradient-background-3.png");
+}
+
+
+#linksWrapper {
+   display: flex;
+}
