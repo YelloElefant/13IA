@@ -23,7 +23,7 @@ h2 {
    font-family: var(--font-header-source);
    text-transform: uppercase;
    font-size: 300%;
-   color: #111;
+   /* color: #111; */
    /* text-decoration: underline; */
    font-weight: 700;
    text-align: center;
@@ -448,9 +448,15 @@ header {
 
 footer {
    background-image: url("./Images/dark-gradient-background-3.png");
+   height: 300px;
+   margin-top: 10px;
 }
 
 
 #linksWrapper {
    display: flex;
+   color: white;
+   font-family: var(--font-source);
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
 }
