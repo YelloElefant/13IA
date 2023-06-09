@@ -478,7 +478,7 @@ header {
    border: black thin solid;
    border-radius: 10px;
    cursor: pointer;
-   background-image: url("./Images/redBlackGradient.jpg");
+   background-image: url("./Images/dark-gradient-background-3.png");
    color: white;
    background-size: cover;
    background-repeat: no-repeat;
