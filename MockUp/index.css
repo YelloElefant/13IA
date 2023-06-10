@@ -612,6 +612,7 @@ footer {
    align-items: center;
    flex: 2;
    padding: 10px;
+   border-top: rgba(150, 38, 43) thin solid;
 }
 
 #widgets {
