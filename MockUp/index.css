@@ -448,15 +448,49 @@ header {
 
 footer {
    background-image: url("./Images/dark-gradient-background-3.png");
-   height: 300px;
-   margin-top: 10px;
+   margin-top: 20px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
 }
 
 
-#linksWrapper {
+
+#sponsorsTitle {
    display: flex;
    color: white;
    font-family: var(--font-source);
    border-top-left-radius: 10px;
    border-top-right-radius: 10px;
+   /* background-color: rgba(255, 255, 255, 0.2); */
+   background-color: rgba(150, 38, 43, 0.59);
+
+   font-size: 20px;
+   font-weight: 600;
+   text-transform: uppercase;
+   padding: 10px 0px 10px 0px;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   border: white thin solid;
+   border-bottom: white solid;
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+#sponsors {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 10px 0px 10px 0px;
+   font-size: 20px;
+   font-weight: 600;
+   text-transform: uppercase;
+   transition: background-color 0.5s ease-in-out;
+}
+
+#sponsors img {
+   height: 100px;
+   width: auto;
 }
