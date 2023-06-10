@@ -448,7 +448,7 @@ header {
 
 
 #spacerContainer {
-   margin-top: 80px;
+   margin-top: 30px;
    margin-bottom: 80px;
 }
 
@@ -461,8 +461,8 @@ header {
 }
 
 #topImg {
-   width: calc(100% + 32px);
-   height: 100px;
+   width: 100%;
+   height: 125px;
    background-color: #1a1a1a;
    text-align: center;
    margin: 0px 0 5px 0;
@@ -522,7 +522,7 @@ footer {
    justify-content: center;
    align-items: center;
    margin: 0 auto;
-   border-bottom: white thin solid;
+   /* border-bottom: white thin solid; */
    -webkit-user-select: none;
    user-select: none;
 }
