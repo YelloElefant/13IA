@@ -537,3 +537,39 @@ footer {
 .red {
    color: rgba(150, 38, 43, 0.59);
 }
+
+#bottomLinksIconWrapper {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: top;
+   width: 100%;
+   height: auto;
+   flex-wrap: wrap;
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+
+.iconWrapper {
+   height: 35px;
+   width: 35px;
+
+}
+
+.iconLink {
+   display: flex;
+   height: inherit;
+   width: inherit;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(150, 38, 43, 0.59);
+   border-radius: 50%;
+
+
+}
+
+.icon {
+   fill: white;
+   height: 16px;
+}
