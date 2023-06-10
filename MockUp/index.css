@@ -446,6 +446,23 @@ header {
    margin-top: 5px;
 }
 
+
+#spacerContainer {
+   margin-top: 80px;
+   margin-bottom: 80px;
+}
+
+#spacer {
+   width: 100%;
+   background-color: rgba(150, 38, 43, 0.59);
+
+}
+
+
+
+
+
+
 footer {
    background-image: url("./Images/dark-gradient-background-3.png");
    margin-top: 20px;
@@ -538,6 +555,7 @@ footer {
 }
 
 #imgWrapper img {
+   aspect-ratio: 1.14/1;
    height: auto;
    max-width: 100%;
    display: block;
