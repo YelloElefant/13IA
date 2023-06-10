@@ -462,26 +462,28 @@ footer {
    padding: 0 35px 0 35px;
 }
 
+#sponsorsWrapper {
+   /* border-bottom: rgba(150, 38, 43) thin solid; */
+}
 
 #sponsorsTitle {
    display: flex;
    color: white;
-   font-family: var(--font-source);
+   font-family: var(--font-header-source);
    border-top-left-radius: 10px;
    border-top-right-radius: 10px;
    /* background-color: rgba(255, 255, 255, 0.2); */
    background-color: rgba(150, 38, 43, 0.59);
 
-   font-size: 20px;
+   font-size: 15px;
    font-weight: 600;
    text-transform: uppercase;
-   padding: 10px 0px 10px 0px;
+   padding: 5px 0px 5px 0px;
    text-align: center;
    justify-content: center;
    align-items: center;
    margin: 0 auto;
-   border: white thin solid;
-   border-bottom: white solid;
+   border-bottom: white thin solid;
    -webkit-user-select: none;
    user-select: none;
 }
@@ -496,15 +498,22 @@ footer {
    font-weight: 600;
    text-transform: uppercase;
    transition: background-color 0.5s ease-in-out;
+
+   margin: 0 15px 0 15px;
+
+
+   border-bottom: rgba(150, 38, 43) thin solid;
+
 }
 
 #sponsors img {
-   height: 100px;
+   height: 50px;
    width: auto;
 }
 
 #briefInfoParent {
    width: 100%;
+   margin-top: 5px;
 }
 
 #briefInfo {
