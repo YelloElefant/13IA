@@ -478,9 +478,11 @@ header {
    border: black thin solid;
    border-radius: 10px;
    cursor: pointer;
-   background-image: url("./Images/dark-gradient-background-3.png");
+   background-color: #1a1a1a;
+   background-image: url("./Images/hbhs_crest_banner.png");
+   background-size: contain;
+   background-position: center;
    color: white;
-   background-size: cover;
    background-repeat: no-repeat;
 }
 
