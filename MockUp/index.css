@@ -449,7 +449,7 @@ header {
 
 #spacerContainer {
    margin-top: 30px;
-   margin-bottom: 80px;
+   margin-bottom: 0px;
 }
 
 #spacer {
@@ -487,9 +487,9 @@ header {
 
 footer {
    background-image: url("./Images/dark-gradient-background-3.png");
-   margin-top: 20px;
-   border-top-left-radius: 10px;
-   border-top-right-radius: 10px;
+   margin-top: 0px;
+   /* border-top-left-radius: 10px;
+   border-top-right-radius: 10px; */
 }
 
 #footerWrapper {
@@ -509,8 +509,8 @@ footer {
    display: flex;
    color: white;
    font-family: var(--font-header-source);
-   border-top-left-radius: 10px;
-   border-top-right-radius: 10px;
+   /* border-top-left-radius: 10px;
+   border-top-right-radius: 10px; */
    /* background-color: rgba(255, 255, 255, 0.2); */
    background-color: rgba(150, 38, 43, 0.59);
 
