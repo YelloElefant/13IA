@@ -1,12 +1,57 @@
+:root {
+   --color-gold: rgb(132, 117, 79);
+   --font-source: 'Source Sans Pro', sans-serif;
+   --font-header-source: 'Raleway', sans-serif;
+
+}
+
 html {
-   background-color: #333;
+   background-color: rgb(173, 172, 172);
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+html,
+body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   width: 100%;
+   -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+   font-family: var(--font-header-source);
+   text-transform: uppercase;
+   font-size: 300%;
+   /* color: #111; */
+   /* text-decoration: underline; */
+   font-weight: 700;
+   text-align: center;
+   margin: 0px 0 10px 0;
+}
+
+th,
+tr {
+   font-weight: normal;
+}
+
+#logoWrapper {
+   padding-top: 27px;
+   padding-bottom: 16px;
+   padding-left: 35px;
+   height: 135px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
 }
 
 #Logo {
    width: auto;
-   height: 125px;
-   padding: 2px;
+   height: 100px;
+
+
+
 }
 
 p {
@@ -19,122 +64,618 @@ ul {
 }
 
 header {
-   background-color: rgb(116, 0, 0);
+   background-image: url("./Images/darkGradientBackground.png");
+   background-color: #333;
+   width: 100%;
+   z-index: 99;
+   position: relative;
+   display: block;
+   /* border: solid thin; */
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   background-size: cover;
+}
+
+#toolBar {
+   padding-left: 35px;
+   background-color: rgba(150, 38, 43, 0.59);
+   height: 60px;
+   /* border: solid thin; */
+   /* border-radius: 10px; */
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
 }
 
 #toolBarList {
+   height: 60px;
    list-style-type: none;
    margin: 0;
    padding: 0;
    overflow: hidden;
-   background-color: #1f1f1f;
 }
 
-header li {
+.menuListItem {
+   display: flex;
    float: left;
+   height: 60px;
+   line-height: 60px;
+   position: relative;
 }
 
-header li a {
-   display: block;
+.menuLink {
+   height: 60px;
+   box-sizing: border-box;
+   display: flex;
    color: white;
-   text-align: center;
-   padding: 14px 16px;
+   cursor: pointer;
+   /* vertical-align: middle; */
+   text-align: left;
+   align-items: center;
+   padding: 0px 16px;
    text-decoration: none;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   user-select: none;
+   font-size: 16px;
+   font-weight: 400;
+   font-style: normal;
+   box-sizing: border-box;
+   width: 100%;
+
 }
+
+
+.menuText {
+   display: block;
+   line-height: normal;
+   font-size: 20px;
+   font-weight: 400;
+   font-style: normal;
+   box-sizing: border-box;
+   font-family: var('Lato', sans-serif);
+
+}
+
+.menuListItem>.menuLink:before {
+   content: "";
+   color: transparent;
+   bottom: 0px;
+   background-color: transparent;
+   cursor: pointer;
+   height: 1px;
+   width: 100%;
+   position: absolute;
+   right: 0;
+   box-sizing: border-box;
+}
+
+.menuListItem:hover>.menuLink:before {
+   content: "";
+   color: var(--color-gold);
+   bottom: 0px;
+   background-color: var(--color-gold);
+   cursor: pointer;
+   height: 1px;
+   width: calc(100% - 1.2em);
+   position: absolute;
+   right: 50%;
+   transition: ease-in-out;
+   box-sizing: border-box;
+   transform: scale(1, 1) translate(50%, 0);
+   transition: transform 0.3s ease-in-out, color 0.0s ease-in-out;
+}
+
+.astArrowSvg {
+   display: block;
+   height: .6em;
+   width: .6em;
+   position: relative;
+   margin-left: 10px;
+   color: white;
+   fill: white;
+}
+
 
 /* Change the link color to #111 (black) on hover */
-header li a:hover {
-   background-color: #111;
+
+
+.menuListItem:hover .menuLink {
+   color: var(--color-gold);
+   box-sizing: border-box;
+   line-height: 60px;
+   text-decoration-color: var(--color-gold);
+   -webkit-box-align: center;
+
 }
+
+
+
+
 
 
 /*over all container for 2 boxes at top*/
 #topContentContainer {
-   display: inline;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
 }
+
+#right {
+   flex: 2;
+}
+
 
 
 /*box on left for quickstandings this element is a direct pearent to the ul that holds all the uls*/
-#quickStandings {
+#history {
    float: left;
    margin-left: 2%;
+   margin-top: 10px;
    /* margin-top: 10px; */
-   background-color: aliceblue;
-   padding: 2px 2px 2px 2px;
-   border: #111 solid;
-   border-radius: 2px;
-   display: flex;
-   flex-wrap: wrap;
+   background-color: white;
+
+   padding: 3px 3px 3px 3px;
+
+
+   border-radius: 10px;
 }
 
 /*reffering to the ul that holds all of the uls for the quickStandings box direct pearnt of them*/
-#quickStandings ul {
-   list-style: none;
+#history table {
+   table-layout: auto;
    padding: 0px 10px 0px 0px;
-}
-
-/*reffering to all of the uls in the quickStandings box eg. School/Points/Position*/
-#listQuickStandings ul {
-   display: inline;
-   float: left;
-   margin-top: 2px;
-}
-
-/*reffering to the first child in each list of the quickStandings box ie. the header of each colom*/
-#listQuickStandings ul li:first-child {
-   border-bottom: #111 solid thin;
-}
-
-
-/*reffering to the ul that holds all the uls for the upcomingGames box direct pearnt of them*/
-#upcomingGames ul {
-   list-style: none;
-   padding: 0px 10px 0px 0px;
+   text-transform: uppercase;
+   border-collapse: collapse;
 
 }
 
-/*reffering to all the uls that hold the info for the upComingGames box eg. Game/Pool/School/Time/Venue*/
-#listUpcomingGames ul {
-   display: inline;
-   float: left;
-   margin-right: 20px;
-   margin-left: 20px;
-   margin-top: 2px;
-}
 
 
-/*the upcomingGames box*/
-#upcomingGames {
-   background-color: aliceblue;
-   padding: 2px 2px 2px 2px;
-   float: right;
-   /* margin-top: 10px; */
-   /* width: 1000px; */
-   border: #111 solid;
-   border-radius: 2px;
+/* quickStandings table data 3px padding left and right and a 2px padding top and bottom */
+#history table td:not(#tableTitle) {
+   padding: 5px 5px 5px 5px;
+   text-transform: uppercase;
    text-align: center;
-   margin: auto;
-   /* position: relative; */
-   /* left: 50%; */
+   color: #111;
+   font-family: var(--font-source);
+   border-top: rgb(211, 216, 221) solid thin;
+   border-bottom: rgb(211, 216, 221) solid thin;
+   font-size: small;
 }
 
-/*reffering to the first memeber of each list in the upcomingGames box ie. the header of each colom*/
-#listUpcomingGames ul li:first-child {
-   border-bottom: #111 solid thin;
+
+#history table tr {
+   background-color: white;
 }
 
-/*class for when a list needs a dummy first member to be invisable*/
-.dummyFirst li:first-child {
-   color: transparent;
-   border: none !important;
+#history table tr:nth-child(even) {
+   background-color: #f2f2f2;
 }
+
+
+#history table tr td:nth-child(even) {
+   color: var(--color-gold);
+   font-weight: 600;
+}
+
+
+#tableTitle {
+   text-transform: uppercase;
+   font-size: larger;
+   color: #111;
+   font-family: var(--font-header-source);
+   text-align: center;
+
+
+
+}
+
+#showMore {
+   display: none;
+   transition: display 0.5s ease-in-out;
+}
+
+#showMoreLink {
+   text-decoration: none;
+   color: var(--color-gold);
+   font-family: var(--font-source);
+   font-weight: 600;
+   font-size: larger;
+   text-transform: uppercase;
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+   width: 100%;
+   padding: 5px 0px 5px 0px;
+   border-radius: 10px;
+   background-color: white;
+   border: white thin solid;
+   border-bottom: white solid;
+   -webkit-user-select: none;
+   user-select: none;
+   cursor: pointer;
+}
+
+/* seperator for css*/
+
 
 /*wrapper element for the upcomingGames box for position purposes*/
 #wrapperUpcomingGames {
    /* background-color: aqua; */
-   display: flex;
    margin-top: 10px;
    flex-wrap: wrap;
+   flex: 2;
+   display: flex;
+   border-radius: 2px;
+}
+
+
+
+/*the upcomingGames box*/
+#upcomingGames {
+   /* background-color: rgba(255, 255, 255, 0.644); */
+   background-color: white;
+   padding: 2px 4px 4px 4px;
+   /* margin-top: 10px; */
+   /* width: 1000px; */
+   border-radius: 10px;
+   text-align: center;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   height: auto;
+   width: 100%;
+   margin-left: 10px;
+   margin-right: 10px;
+
+   /* left: 50%; */
+}
+
+/*reffering to the ul that holds all the uls for the upcomingGames box direct pearnt of them*/
+#upcomingGames table {
+   table-layout: auto;
+   padding: 0px 10px 0px 0px;
+   border-collapse: collapse;
+   width: 100%;
+}
+
+#upcomingGames table tr td {
+   border-top: rgb(211, 216, 221) solid thin;
+   border-bottom: rgb(211, 216, 221) solid thin;
+   font-size: larger;
+   text-transform: uppercase;
+   padding: 5px 15px 5px 15px;
+   font-size: larger;
+   color: #111;
+   font-family: var(--font-source);
+}
+
+#upcomingGames table tr {
+   background-color: white;
+   text-transform: uppercase;
+}
+
+
+
+
+
+/*align teamLeft text to the right and align teamRight text to the left */
+.teamLeft {
+   text-align: right;
+   font-weight: 600;
+   padding-right: 10px !important;
+   padding-left: 70px !important;
+}
+
+.teamRight {
+   text-align: left;
+   font-weight: 600;
+   padding-right: 70px !important;
+   padding-left: 10px !important;
+}
+
+
+
+
+#upcomingGames table tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+
+/* distrabute days content to spread evenly across the table head*/
+
+
+
+#days {
+   font-family: var(--font-source);
+   font-weight: 600;
+   font-size: larger;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   width: 100%;
+}
+
+#days div {
+   padding: 5px 10px 5px 10px;
+   margin: 0;
+   /* Top, left, right border solid thin white and bottom boarder thick white */
+
+   border: white thin solid;
+   border-bottom: white solid;
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+
+#days div:hover:not(#activeDay) {
+   /* border: #111 thin solid; */
+   color: var(--color-gold) !important;
+   cursor: pointer;
+
+}
+
+.tabContent {
+   display: none;
+}
+
+
+/* seperator for css*/
+
+
+
+
+
+#wrapperBlurb {
+   /* background-color: aqua; */
+   background-color: white;
+   /* float: right; */
+   margin-top: 10px;
+   padding: 2px 3px 5px 8px;
+   flex-wrap: wrap;
+   position: relative;
+   margin-left: 10px;
+   margin-right: 10px;
+   /* border-radius: 5px; */
+   text-align: left;
+   border-radius: 10px;
+
+}
+
+
+
+#wrapperBlurb p {
+   font-family: var(--font-source);
+   margin-top: 5px;
+}
+
+
+#spacerContainer {
+   margin-top: 30px;
+   margin-bottom: 0px;
+}
+
+#spacer {
+   width: 100%;
+   background-color: rgba(150, 38, 43);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+#topImg {
+   width: 100%;
+   height: 125px;
+   background-color: #1a1a1a;
+   text-align: center;
+   margin: 0px 0 5px 0;
+}
+
+#topImg img {
+   width: auto;
+   height: 100%;
+}
+
+#bottomImg {
+   width: 100%;
+}
+
+#bottomImg img {
+   width: 100%;
+   height: auto;
+}
+
+
+
+
+footer {
+   background-image: url("./Images/dark-gradient-background-3.png");
+   margin-top: 0px;
+   /* border-top-left-radius: 10px;
+   border-top-right-radius: 10px; */
+}
+
+#footerWrapper {
+   padding-bottom: 100px;
+
+}
+
+#links {
+   padding: 0 35px 0 35px;
+}
+
+#sponsorsWrapper {
+   /* border-bottom: rgba(150, 38, 43) thin solid; */
+}
+
+#sponsorsTitle {
+   display: flex;
+   color: white;
+   font-family: var(--font-header-source);
+   /* border-top-left-radius: 10px;
+   border-top-right-radius: 10px; */
+   /* background-color: rgba(255, 255, 255, 0.2); */
+   background-color: rgba(150, 38, 43, 0.59);
+
+   font-size: 15px;
+   font-weight: 600;
+   text-transform: uppercase;
+   padding: 5px 0px 5px 0px;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   /* border-bottom: white thin solid; */
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+#sponsors {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 10px 0px 10px 0px;
+   font-size: 20px;
+   font-weight: 600;
+   text-transform: uppercase;
+   transition: background-color 0.5s ease-in-out;
+
+   margin: 0 15px 0 15px;
+
+
+   border-bottom: rgba(150, 38, 43) thin solid;
+
+}
+
+#sponsors img {
+   height: 50px;
+   width: auto;
+}
+
+#briefInfoParent {
+   width: 100%;
+   margin-top: 5px;
+}
+
+#briefInfo {
+   color: white;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   width: 14%;
+   align-content: center;
+   padding: 10px;
+}
+
+
+
+#imgWrapper {
+   width: auto;
+   padding: 0;
+   font-size: 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+#imgWrapper img {
+   aspect-ratio: 180/158;
+   height: auto;
+   /* max-width: 100%; */
+   display: block;
+   margin: 0;
+   vertical-align: top;
+   /* margin-bottom: 10px; */
+}
+
+#info {
+   margin: 25px;
+   font-size: 14px;
+   text-align: center;
+}
+
+#topInfo {
+   margin-bottom: 14px;
+}
+
+.red {
+   color: rgba(150, 38, 43, 0.59);
+}
+
+#bottomLinksWrapper {
+   width: 100%;
+}
+
+#bottomLinks {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+
+#bottomLinksIconWrapper {
+   /* display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: top; */
+   display: inline-block;
+   word-spacing: 5px;
+   width: 14%;
+   height: auto;
+   flex-wrap: wrap;
+   -webkit-user-select: none;
+   user-select: none;
+   padding: 10px;
+   justify-content: center;
+   justify-items: center;
+   text-align: center;
+}
+
+
+.iconWrapper {
+   height: 35px;
+   width: 35px;
+   display: inline-block;
+}
+
+.iconLink {
+   display: flex;
+   height: inherit;
+   width: inherit;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(150, 38, 43, 0.59);
+   border-radius: 50%;
+
+
+}
+
+.icon {
+   fill: white;
+   height: 16px;
+}
+
+#widgetsContainer {
+   color: white;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   flex: 2;
+   padding: 10px;
+   border-top: rgba(150, 38, 43) thin solid;
+}
+
+#widgets {
+   margin-right: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+}
+
+.widget a {
+   list-style: none;
+   color: white;
+   text-decoration: none;
+   padding: 15px 14px 15px 14px;
+   color: rgb(222, 221, 221);
+   font-size: 14px;
+   font-family: var(--font-source);
 }
