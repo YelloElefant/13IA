@@ -501,9 +501,7 @@ footer {
    padding: 0 35px 0 35px;
 }
 
-#sponsorsWrapper {
-   /* border-bottom: rgba(150, 38, 43) thin solid; */
-}
+
 
 #sponsorsTitle {
    display: flex;
@@ -582,7 +580,6 @@ footer {
    /* max-width: 100%; */
    display: block;
    margin: 0;
-   vertical-align: top;
    /* margin-bottom: 10px; */
 }
 
