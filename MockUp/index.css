@@ -742,3 +742,7 @@ footer {
 .cardContentContainer div table tbody tr * {
    border: #d3d8dd thin solid;
 }
+
+.smallFirstData tbody tr td:nth-child(odd) {
+   width: 25%;
+}
