@@ -329,14 +329,14 @@ header {
 }
 
 /*reffering to the ul that holds all the uls for the upcomingGames box direct pearnt of them*/
-#upcomingGames table {
+table {
    table-layout: auto;
    padding: 0px 10px 0px 0px;
    border-collapse: collapse;
    width: 100%;
 }
 
-#upcomingGames table tr td {
+table tr td {
    border-top: rgb(211, 216, 221) solid thin;
    border-bottom: rgb(211, 216, 221) solid thin;
    font-size: larger;
@@ -347,7 +347,7 @@ header {
    font-family: var(--font-source);
 }
 
-#upcomingGames table tr {
+table tr {
    background-color: white;
    text-transform: uppercase;
 }
@@ -678,4 +678,58 @@ footer {
    color: rgb(222, 221, 221);
    font-size: 14px;
    font-family: var(--font-source);
+}
+
+#cardsContainer {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+   margin: 10px;
+   padding: 10px;
+   border-top: rgba(150, 38, 43) thin solid;
+}
+
+.card {
+   background-color: #f2f2f2;
+   border-radius: 10px;
+
+
+}
+
+.cardTitle {
+   padding: 5px;
+   font-family: var(--font-header-source);
+   font-size: 15px;
+   font-weight: 600;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.cardContentWrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 0 10px 10px 10px;
+   border-top: rgba(150, 38, 43) thin solid;
+}
+
+.cardContentTitle {
+   padding: 5px;
+   font-family: var(--font-header-source);
+   font-size: 16px;
+   font-weight: 600;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.cardContentText {
+   padding: 5px;
+   font-family: var(--font-source);
+   font-size: 14px;
+   font-weight: 400;
+   text-transform: uppercase;
+   text-align: center;
 }
