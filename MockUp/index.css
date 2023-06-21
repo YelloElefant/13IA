@@ -707,7 +707,7 @@ footer {
    text-align: center;
 }
 
-.cardContentWrapper {
+.cardContentContainer {
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
@@ -716,20 +716,29 @@ footer {
    border-top: rgba(150, 38, 43) thin solid;
 }
 
-.cardContentTitle {
+.cardHeaderContainer {
    padding: 5px;
    font-family: var(--font-header-source);
-   font-size: 16px;
+   font-size: 12px;
    font-weight: 600;
    text-transform: uppercase;
    text-align: center;
 }
 
-.cardContentText {
+.cardContentContainer {
    padding: 5px;
    font-family: var(--font-source);
-   font-size: 14px;
+   font-size: 10px;
    font-weight: 400;
    text-transform: uppercase;
    text-align: center;
+}
+
+.cardContentContainer div {
+   width: 100%;
+   padding: 5px;
+}
+
+.cardContentContainer div table tbody tr * {
+   border: #d3d8dd thin solid;
 }
