@@ -374,7 +374,7 @@ table tr {
 
 
 
-table tr:nth-child(even) {
+table tbody tr:nth-child(even) {
    background-color: #f2f2f2;
 }
 
@@ -501,9 +501,7 @@ footer {
    padding: 0 35px 0 35px;
 }
 
-#sponsorsWrapper {
-   /* border-bottom: rgba(150, 38, 43) thin solid; */
-}
+
 
 #sponsorsTitle {
    display: flex;
