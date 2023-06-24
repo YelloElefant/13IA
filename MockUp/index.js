@@ -7,7 +7,7 @@ let activeDay = document.getElementById("activeDay");
 
 activeDay.style.borderBottom = "solid black";
 activeDay.style.color = "var(--color-gold)";
-document.getElementById('Monday').style.display = "table";
+document.getElementById('mondayAM').style.display = "table";
 
 
 function setActive(ele, evt, dayName) {

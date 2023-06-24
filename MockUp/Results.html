@@ -101,18 +101,20 @@
 
 
                 <div id="days">
-                    <div id="activeDay" onclick="setActive(this, event, 'Monday')" class="tabLinks">Monday</div>
+                    <div id="activeDay" onclick="setActive(this, event, 'mondayAM')" class="tabLinks">Monday AM</div>
+                    <div onclick="setActive(this, event, 'mondayPM')" class="tabLinks">Monday PM</div>
                     <div onclick="setActive(this, event, 'Tuesday')" class="tabLinks">Tuesday</div>
-                    <div onclick="setActive(this, event, 'Wednesday')" class="tabLinks">Wednesday</div>
-                    <div onclick="setActive(this, event, 'Thursday')" class="tabLinks">Thursday</div>
-                    <div onclick="setActive(this, event, 'Friday')" class="tabLinks">Friday</div>
+                    <div onclick="setActive(this, event, 'qFinals')" class="tabLinks">1/4 Finals</div>
+                    <div onclick="setActive(this, event, 'sFinals')" class="tabLinks">Semi Finals</div>
+                    <div onclick="setActive(this, event, 'finals')" class="tabLinks">Finals</div>
                 </div>
 
 
-                <table id="Monday" class="tabContent">
+                <table id="mondayAM" class="tabContent">
 
                     <tbody>
                         <tr>
+                            <td> 10:30AM </td>
                             <td class="teamLeft">Auckland Grammar School</td>
                             <td> points </td>
                             <td class="tableV">v</td>
@@ -120,6 +122,7 @@
                             <td class="teamRight">Palmerston North BHS</td>
                         </tr>
                         <tr>
+                            <td> 10:30AM </td>
                             <td class="teamLeft">Mt. Albert Grammar School</td>
                             <td> points </td>
                             <td class="tableV">v</td>
@@ -127,6 +130,7 @@
                             <td class="teamRight">St. Bedes College</td>
                         </tr>
                         <tr>
+                            <td> 10:30AM </td>
                             <td class="teamLeft">Westlake BHS</td>
                             <td> points </td>
                             <td class="tableV">v</td>
@@ -134,6 +138,7 @@
                             <td class="teamRight">Rotorua BHS</td>
                         </tr>
                         <tr>
+                            <td> 10:30AM </td>
                             <td class="teamLeft">New Plymouth BHS</td>
                             <td> points </td>
                             <td class="tableV">v</td>
@@ -141,6 +146,7 @@
                             <td class="teamRight">St Pats Town</td>
                         </tr>
                         <tr>
+                            <td> 10:30AM </td>
                             <td class="teamLeft">Hastings BHS</td>
                             <td> points </td>
                             <td class="tableV">v</td>
@@ -148,6 +154,7 @@
                             <td class="teamRight">Hamilton BHS</td>
                         </tr>
                         <tr>
+                            <td> 10:30AM </td>
                             <td class="teamLeft">Otago BHS</td>
                             <td> points </td>
                             <td class="tableV">v</td>
@@ -155,6 +162,7 @@
                             <td class="teamRight">Napier BHS</td>
                         </tr>
                         <tr>
+                            <td> 10:30AM </td>
                             <td class="teamLeft">Christchurch BHS</td>
                             <td> points </td>
                             <td class="tableV">v</td>
@@ -162,6 +170,7 @@
                             <td class="teamRight">Tauranga Boys College</td>
                         </tr>
                         <tr>
+                            <td> 10:30AM </td>
                             <td class="teamLeft">Wellington College</td>
                             <td> points </td>
                             <td class="tableV">v</td>
@@ -169,6 +178,7 @@
                             <td class="teamRight">Wesley College</td>
                         </tr>
                         <tr>
+                            <td> 2:30PM </td>
                             <td class='teamLeft'>Auckland Grammar School</td>
                             <td> points </td>
                             <td class="tableV">v</td>
@@ -176,6 +186,7 @@
                             <td class='teamRight'>Mt. Albert Grammar School</td>
                         </tr>
                         <tr>
+                            <td> 2:30PM </td>
                             <td class='teamLeft'>Palmerston North BHS</td>
                             <td> points </td>
                             <td class="tableV">v</td>
@@ -183,6 +194,7 @@
                             <td class='teamRight'>St. Bedes College</td>
                         </tr>
                         <tr>
+                            <td> 2:30PM </td>
                             <td class='teamLeft'>Westlake BHS</td>
                             <td> points </td>
                             <td class="tableV">v</td>
@@ -190,6 +202,7 @@
                             <td class='teamRight'>New Plymouth BHS</td>
                         </tr>
                         <tr>
+                            <td> 2:30PM </td>
                             <td class='teamLeft'>Rotorua BHS</td>
                             <td> points </td>
                             <td class="tableV">v</td>
@@ -197,6 +210,7 @@
                             <td class='teamRight'>St Pats Town</td>
                         </tr>
                         <tr>
+                            <td> 2:30PM </td>
                             <td class='teamLeft'>Hastings BHS</td>
                             <td> points </td>
                             <td class="tableV">v</td>
@@ -204,6 +218,7 @@
                             <td class='teamRight'>Otago BHS</td>
                         </tr>
                         <tr>
+                            <td> 2:30PM </td>
                             <td class='teamLeft'>Hamilton BHS</td>
                             <td> points </td>
                             <td class="tableV">v</td>
@@ -211,6 +226,7 @@
                             <td class='teamRight'>Napier BHS</td>
                         </tr>
                         <tr>
+                            <td> 2:30PM </td>
                             <td class='teamLeft'>Christchurch BHS</td>
                             <td> points </td>
                             <td class="tableV">v</td>
@@ -218,6 +234,7 @@
                             <td class='teamRight'>Wellington College</td>
                         </tr>
                         <tr>
+                            <td> 2:30PM </td>
                             <td class='teamLeft'>Tauranga Boys College</td>
                             <td> points </td>
                             <td class="tableV">v</td>
@@ -225,6 +242,148 @@
                             <td class='teamRight'>Wesley College</td>
                         </tr>
                     </tbody>
+
+
+
+
+
+                </table>
+
+                <table id="mondayPM" class="tabContent">
+
+                    <tbody>
+                        <tr>
+                            <td> 10:30AM </td>
+                            <td class="teamLeft">Auckland Grammar School</td>
+                            <td> points </td>
+                            <td class="tableV">v</td>
+                            <td> points </td>
+                            <td class="teamRight">Palmerston North BHS</td>
+                        </tr>
+                        <tr>
+                            <td> 10:30AM </td>
+                            <td class="teamLeft">Mt. Albert Grammar School</td>
+                            <td> points </td>
+                            <td class="tableV">v</td>
+                            <td> points </td>
+                            <td class="teamRight">St. Bedes College</td>
+                        </tr>
+                        <tr>
+                            <td> 10:30AM </td>
+                            <td class="teamLeft">Westlake BHS</td>
+                            <td> points </td>
+                            <td class="tableV">v</td>
+                            <td> points </td>
+                            <td class="teamRight">Rotorua BHS</td>
+                        </tr>
+                        <tr>
+                            <td> 10:30AM </td>
+                            <td class="teamLeft">New Plymouth BHS</td>
+                            <td> points </td>
+                            <td class="tableV">v</td>
+                            <td> points </td>
+                            <td class="teamRight">St Pats Town</td>
+                        </tr>
+                        <tr>
+                            <td> 10:30AM </td>
+                            <td class="teamLeft">Hastings BHS</td>
+                            <td> points </td>
+                            <td class="tableV">v</td>
+                            <td> points </td>
+                            <td class="teamRight">Hamilton BHS</td>
+                        </tr>
+                        <tr>
+                            <td> 10:30AM </td>
+                            <td class="teamLeft">Otago BHS</td>
+                            <td> points </td>
+                            <td class="tableV">v</td>
+                            <td> points </td>
+                            <td class="teamRight">Napier BHS</td>
+                        </tr>
+                        <tr>
+                            <td> 10:30AM </td>
+                            <td class="teamLeft">Christchurch BHS</td>
+                            <td> points </td>
+                            <td class="tableV">v</td>
+                            <td> points </td>
+                            <td class="teamRight">Tauranga Boys College</td>
+                        </tr>
+                        <tr>
+                            <td> 10:30AM </td>
+                            <td class="teamLeft">Wellington College</td>
+                            <td> points </td>
+                            <td class="tableV">v</td>
+                            <td> points </td>
+                            <td class="teamRight">Wesley College</td>
+                        </tr>
+                        <tr>
+                            <td> 2:30PM </td>
+                            <td class='teamLeft'>Auckland Grammar School</td>
+                            <td> points </td>
+                            <td class="tableV">v</td>
+                            <td> points </td>
+                            <td class='teamRight'>Mt. Albert Grammar School</td>
+                        </tr>
+                        <tr>
+                            <td> 2:30PM </td>
+                            <td class='teamLeft'>Palmerston North BHS</td>
+                            <td> points </td>
+                            <td class="tableV">v</td>
+                            <td> points </td>
+                            <td class='teamRight'>St. Bedes College</td>
+                        </tr>
+                        <tr>
+                            <td> 2:30PM </td>
+                            <td class='teamLeft'>Westlake BHS</td>
+                            <td> points </td>
+                            <td class="tableV">v</td>
+                            <td> points </td>
+                            <td class='teamRight'>New Plymouth BHS</td>
+                        </tr>
+                        <tr>
+                            <td> 2:30PM </td>
+                            <td class='teamLeft'>Rotorua BHS</td>
+                            <td> points </td>
+                            <td class="tableV">v</td>
+                            <td> points </td>
+                            <td class='teamRight'>St Pats Town</td>
+                        </tr>
+                        <tr>
+                            <td> 2:30PM </td>
+                            <td class='teamLeft'>Hastings BHS</td>
+                            <td> points </td>
+                            <td class="tableV">v</td>
+                            <td> points </td>
+                            <td class='teamRight'>Otago BHS</td>
+                        </tr>
+                        <tr>
+                            <td> 2:30PM </td>
+                            <td class='teamLeft'>Hamilton BHS</td>
+                            <td> points </td>
+                            <td class="tableV">v</td>
+                            <td> points </td>
+                            <td class='teamRight'>Napier BHS</td>
+                        </tr>
+                        <tr>
+                            <td> 2:30PM </td>
+                            <td class='teamLeft'>Christchurch BHS</td>
+                            <td> points </td>
+                            <td class="tableV">v</td>
+                            <td> points </td>
+                            <td class='teamRight'>Wellington College</td>
+                        </tr>
+                        <tr>
+                            <td> 2:30PM </td>
+                            <td class='teamLeft'>Tauranga Boys College</td>
+                            <td> points </td>
+                            <td class="tableV">v</td>
+                            <td> points </td>
+                            <td class='teamRight'>Wesley College</td>
+                        </tr>
+                    </tbody>
+
+
+
 
 
                 </table>
@@ -349,7 +508,7 @@
                     </tbody>
                 </table>
 
-                <table id="Wednesday" class="tabContent">
+                <table id="qFinals" class="tabContent">
 
 
 
@@ -469,7 +628,7 @@
                     </tbody>
                 </table>
 
-                <table id="Thursday" class="tabContent">
+                <table id="sFinals" class="tabContent">
 
 
 
@@ -589,7 +748,7 @@
                     </tbody>
                 </table>
 
-                <table id="Friday" class="tabContent">
+                <table id="finals" class="tabContent">
 
 
 
