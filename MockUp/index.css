@@ -685,7 +685,8 @@ footer {
 
 #resultsDayContainer {
    width: 75%;
-   margin: 10px;
+   margin: 20px 10px 50px 10px;
+
 }
 
 #dayTableContainer {
