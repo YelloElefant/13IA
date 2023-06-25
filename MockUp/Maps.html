@@ -98,24 +98,28 @@
         <div id="left">
             <div id="mapNavWrapper">
                 <div id="mapNav">
-                    <div class="tabs">
-                        <a>HBHS</a>
-                    </div>
-                    <div class="tabs">
-                        <a>HBHS</a>
-                    </div>
-                    <div class="tabs">
-                        <a>HBHS</a>
-                    </div>
-                    <div class="tabs">
-                        <a>HBHS</a>
-                    </div>
-                    <div class="tabs">
-                        <a>HBHS</a>
+                    <div id="tabsWrapper">
+
+                        <div id="activeDay" onclick="setActive(this, event, 'Monday')" class="tabs active"
+                            style="border-bottom: solid black; color: var(--color-gold); border-top: thin solid white; border-right: thin solid white; border-left: thin solid white; border-image: initial; transition: border-color 0.5s ease-in-out 0s;">
+                            Monday</div>
+                        <div onclick="setActive(this, event, 'Tuesday')" class="tabs" id=""
+                            style="transition: border-color 0.5s ease-in-out 0s; border-bottom: solid white; color: black; border-top: thin solid white; border-right: thin solid white; border-left: thin solid white; border-image: initial;">
+                            Tuesday</div>
+                        <div onclick="setActive(this, event, 'Wednesday')" class="tabs" id=""
+                            style="transition: border-color 0.5s ease-in-out 0s; border-bottom: solid white; color: black; border-top: thin solid white; border-right: thin solid white; border-left: thin solid white; border-image: initial;">
+                            Wednesday</div>
+                        <div onclick="setActive(this, event, 'Thursday')" class="tabs" id=""
+                            style="transition: border-color 0.5s ease-in-out 0s; border-bottom: solid white; color: black; border-top: thin solid white; border-right: thin solid white; border-left: thin solid white; border-image: initial;">
+                            Thursday</div>
+                        <div onclick="setActive(this, event, 'Friday')" class="tabs" id=""
+                            style="transition: border-color 0.5s ease-in-out 0s; border-bottom: solid white; color: black; border-top: thin solid white; border-right: thin solid white; border-left: thin solid white; border-image: initial;">
+                            Friday</div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div id="right">
             <div id="mapWrapper">
                 <div id="map">

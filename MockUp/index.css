@@ -5,7 +5,9 @@
 
 }
 
-
+* {
+   box-sizing: border-box;
+}
 
 html {
    background-color: rgb(173, 172, 172);

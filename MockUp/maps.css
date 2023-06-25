@@ -1,7 +1,7 @@
 #contentContainer {
    display: flex;
    flex-direction: row;
-   flex-wrap: wrap;
+   flex-wrap: nowrap;
    justify-content: space-evenly;
 }
 
@@ -10,12 +10,23 @@
 }
 
 #mapNavWrapper {
+   display: flex;
    height: 100%;
-   width: 100px;
+   width: 150px;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: start;
+
 
 }
 
 #mapNav {
+   background-color: #f2f2f2;
+   flex-grow: 1;
+   margin: 5px;
+}
+
+#tabsWrapper {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
@@ -23,6 +34,18 @@
    align-items: center;
    align-content: center;
    height: 100%;
+}
+
+.tabs {
+   display: flex;
+   background-color: white;
+   width: 100%;
+   justify-content: center;
+   flex-grow: 1;
+   align-items: center;
+   border: white solid thin;
+   border-right: black solid 5px;
+   margin: 2px;
 }
 
 #mapWrapper {
