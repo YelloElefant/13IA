@@ -49,6 +49,19 @@
             </li>
             <li class="menuListItem">
                <a class="menuLink">
+                  <span class="menuText">Venue Maps</span>
+                  <span class="astIcon iconArrow">
+                     <svg class="astArrowSvg" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px"
+                        height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043"
+                        xml:space="preserve">
+                        <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+                     </svg>
+                  </span>
+               </a>
+            </li>
+            <li class="menuListItem">
+               <a class="menuLink">
                   <span class="menuText">Teams</span>
                   <span class="astIcon iconArrow">
                      <svg class="astArrowSvg" xmlns="http://www.w3.org/2000/svg"
@@ -301,15 +314,17 @@
             <div id="upcomingGames">
 
                <div id="days">
-                  <div id="activeDay" onclick="setActive(this, event, 'Monday')" class="tabLinks">Monday</div>
+                  <div id="activeDay" onclick="setActive(this, event, 'mondayAM')" class="tabLinks">Monday AM</div>
+                  <div onclick="setActive(this, event, 'mondayPM')" class="tabLinks">Monday PM</div>
                   <div onclick="setActive(this, event, 'Tuesday')" class="tabLinks">Tuesday</div>
-                  <div onclick="setActive(this, event, 'Wednesday')" class="tabLinks">Wednesday</div>
-                  <div onclick="setActive(this, event, 'Thursday')" class="tabLinks">Thursday</div>
-                  <div onclick="setActive(this, event, 'Friday')" class="tabLinks">Friday</div>
+                  <div onclick="setActive(this, event, 'qFinals')" class="tabLinks">1/4 Finals</div>
+                  <div onclick="setActive(this, event, 'sFinals')" class="tabLinks">Semi Finals</div>
+                  <div onclick="setActive(this, event, 'finals')" class="tabLinks">Finals</div>
                </div>
 
 
-               <table id="Monday" class="tabContent">
+
+               <table id="mondayAM" class="tabContent">
 
                   <tbody>
                      <tr>
@@ -466,7 +481,7 @@
                   </tbody>
                </table>
 
-               <table id="Tuesday" class="tabContent">
+               <table id="mondayPM" class="tabContent">
 
 
 
@@ -553,7 +568,7 @@
                   </tbody>
                </table>
 
-               <table id="Wednesday" class="tabContent">
+               <table id="Tuesday" class="tabContent">
 
 
 
@@ -640,7 +655,7 @@
                   </tbody>
                </table>
 
-               <table id="Thursday" class="tabContent">
+               <table id="qFinals" class="tabContent">
 
 
 
@@ -727,7 +742,7 @@
                   </tbody>
                </table>
 
-               <table id="Friday" class="tabContent">
+               <table id="sFinals" class="tabContent">
 
 
 
@@ -814,6 +829,92 @@
                   </tbody>
                </table>
 
+               <table id="finals" class="tabContent">
+
+
+
+                  <tbody>
+                     <tr>
+                        <td>1</td>
+                        <td>D</td>
+                        <td class="teamLeft">friday</td>
+                        <td class="tableV">v</td>
+                        <td class="teamRight">Palmerston North BHS</td>
+                        <td>10.30am</td>
+                        <td>MARIST 1</td>
+                     </tr>
+                     <tr>
+                        <td>2</td>
+                        <td>D</td>
+                        <td class="teamLeft">Mt. Albert Grammar School</td>
+                        <td class="tableV">v</td>
+                        <td class="teamRight">St. Bedes College</td>
+                        <td>10.30am</td>
+                        <td>MARIST 2</td>
+                     </tr>
+                     <tr>
+                        <td>3</td>
+                        <td>B</td>
+                        <td class="teamLeft">Westlake BHS</td>
+                        <td class="tableV">v</td>
+                        <td class="teamRight">Rotorua BHS</td>
+                        <td>10.30am</td>
+                        <td>MARIST 3</td>
+                     </tr>
+
+                     <tr>
+                        <td>4</td>
+                        <td>B</td>
+                        <td class="teamLeft">New Plymouth BHS</td>
+                        <td class="tableV">v</td>
+                        <td class="teamRight">St Pats Town</td>
+                        <td>10.30am</td>
+                        <td>HBHS 3</td>
+                     </tr>
+
+                     <tr>
+                        <td>5</td>
+                        <td>C</td>
+                        <td class="teamLeft">Hastings BHS</td>
+                        <td class="tableV">v</td>
+                        <td class="teamRight">Hamilton BHS</td>
+                        <td>10.30am</td>
+                        <td>HBHS 1</td>
+                     </tr>
+
+                     <tr>
+                        <td>6</td>
+                        <td>C</td>
+                        <td class="teamLeft">Otago BHS</td>
+                        <td class="tableV">v</td>
+                        <td class="teamRight">Napier BHS</td>
+                        <td>10.30am</td>
+                        <td>HBHS 2</td>
+                     </tr>
+
+                     <tr>
+                        <td>7</td>
+                        <td>A</td>
+                        <td class="teamLeft">Christchurch BHS</td>
+                        <td class="tableV">v</td>
+                        <td class="teamRight">Tauranga Boys College</td>
+                        <td>10.30am</td>
+                        <td>UNI 1</td>
+                     </tr>
+
+                     <tr>
+                        <td>8</td>
+                        <td>A</td>
+                        <td class="teamLeft">Wellington College</td>
+                        <td class="tableV">v</td>
+                        <td class="teamRight">Wesley College</td>
+                        <td>10.30am</td>
+                        <td>UNI 2</td>
+                     </tr>
+
+
+                  </tbody>
+               </table>
 
 
             </div>

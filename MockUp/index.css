@@ -49,9 +49,6 @@ tr {
 #Logo {
    width: auto;
    height: 100px;
-
-
-
 }
 
 p {
@@ -499,10 +496,6 @@ footer {
 
 #links {
    padding: 0 35px 0 35px;
-}
-
-#sponsorsWrapper {
-   /* border-bottom: rgba(150, 38, 43) thin solid; */
 }
 
 #sponsorsTitle {
