@@ -46,6 +46,13 @@
    border: white solid thin;
    border-right: black solid 5px;
    margin: 2px;
+   cursor: pointer;
+   transition: border-color 0.5s ease-in-out 0s;
+   color: black;
+   border: thin solid white;
+   border-image: initial;
+   user-select: none;
+   -webkit-user-select: none;
 }
 
 #mapWrapper {
