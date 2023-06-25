@@ -196,6 +196,7 @@ header {
 
 #right {
    flex: 2;
+   margin-bottom: 50px;
 }
 
 
@@ -455,6 +456,7 @@ table tr:nth-child(even) {
    display: flex;
    flex-direction: column;
    justify-content: center;
+   margin-top: 120px;
 }
 
 #topImg {
