@@ -2,7 +2,6 @@
    --color-gold: rgb(132, 117, 79);
    --font-source: 'Source Sans Pro', sans-serif;
    --font-header-source: 'Raleway', sans-serif;
-
 }
 
 html {
@@ -28,6 +27,7 @@ h2 {
    font-weight: 700;
    text-align: center;
    margin: 0px 0 10px 0;
+
 }
 
 th,
@@ -171,9 +171,299 @@ header {
 
 
 /* Change the link color to #111 (black) on hover */
+.menuListItem:hover .menuLink {
+   color: var(--color-gold);
+   box-sizing: border-box;
+   line-height: 60px;
+   text-decoration-color: var(--color-gold);
+   -webkit-box-align: center;
 
+}
+
+
+
+
+
+
+
+/*over all container for 2 boxes at top*/
+#topContentContainer {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+}
+
+#right {
+   flex: 2;
+}
+
+
+
+
+
+/*box on left for quickstandings this element is a direct pearent to the ul that holds all the uls*/
+#history {
+   float: left;
+   margin-left: 2%;
+   margin-top: 10px;
+   /* margin-top: 10px; */
+   background-color: white;
+
+   padding: 3px 3px 3px 3px;
+
+
+   border-radius: 2px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+/*reffering to the ul that holds all of the uls for the quickStandings box direct pearnt of them*/
+#history table {
+   table-layout: auto;
+   padding: 0px 10px 0px 0px;
+   text-transform: uppercase;
+   border-collapse: collapse;
+
+}
+
+
+
+/* quickStandings table data 3px padding left and right and a 2px padding top and bottom */
+#history table td {
+   padding: 5px 5px 5px 5px;
+   text-transform: uppercase;
+   text-align: center;
+   color: #111;
+   font-family: var(--font-source);
+   border-top: rgb(211, 216, 221) solid thin;
+   border-bottom: rgb(211, 216, 221) solid thin;
+   font-size: small;
+}
+
+
+#history table tr {
+   background-color: white;
+}
+
+#history table tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+
+#history table tr td:nth-child(even) {
+   color: var(--color-gold);
+   font-weight: 600;
+}
+
+
+/* seperator for css*/
+
+
+/*wrapper element for the upcomingGames box for position purposes*/
+#wrapperUpcomingGames {
+   /* background-color: aqua; */
+   margin-top: 10px;
+   flex-wrap: wrap;
+   flex: 2;
+   display: flex;
+}
+
+
+
+/*the upcomingGames box*/
+#upcomingGames {
+   /* background-color: rgba(255, 255, 255, 0.644); */
+   background-color: white;
+   padding: 2px 2px 2px 2px;
+   /* margin-top: 10px; */
+   /* width: 1000px; */
+   border-radius: 2px;
+   text-align: center;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   height: auto;
+   width: 100%;
+   margin-left: 10px;
+   margin-right: 10px;
+
+   /* left: 50%; */
+}
 
 /*reffering to the ul that holds all the uls for the upcomingGames box direct pearnt of them*/
+#upcomingGames table {
+   table-layout: auto;
+   padding: 0px 10px 0px 0px;
+   border-collapse: collapse;
+   width: 100%;
+}
+
+#upcomingGames table tr td {
+   border-top: rgb(211, 216, 221) solid thin;
+   border-bottom: rgb(211, 216, 221) solid thin;
+   font-size: larger;
+   text-transform: uppercase;
+   padding: 5px 15px 5px 15px;
+   font-size: larger;
+   color: #111;
+   font-family: var(--font-source);
+}
+
+#upcomingGames table tr {
+   background-color: white;
+   text-transform: uppercase;
+}
+
+#tableTitle {
+   text-transform: uppercase;
+   font-size: larger;
+   color: #111;
+   text-decoration: underline;
+}
+
+
+
+/*align teamLeft text to the right and align teamRight text to the left */
+.teamLeft {
+   text-align: right;
+   font-weight: 600;
+   padding-right: 10px !important;
+   padding-left: 70px !important;
+}
+
+.teamRight {
+   text-align: left;
+   font-weight: 600;
+   padding-right: 70px !important;
+   padding-left: 10px !important;
+}
+
+
+
+
+#upcomingGames table tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+
+/* distrabute days content to spread evenly across the table head*/
+
+
+
+#days {
+   font-family: var(--font-source);
+   font-weight: 600;
+   font-size: larger;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   width: 100%;
+}
+
+#days div {
+   padding: 5px 10px 5px 10px;
+   margin: 0;
+   /* Top, left, right border solid thin white and bottom boarder thick white */
+
+   border: white thin solid;
+   border-bottom: white solid;
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+
+#days div:hover:not(#activeDay) {
+   /* border: #111 thin solid; */
+   color: var(--color-gold) !important;
+   cursor: pointer;
+
+}
+
+.tabContent {
+   display: none;
+}
+
+
+/* seperator for css*/
+
+
+
+
+footer {
+   background-image: url("./Images/dark-gradient-background-3.png");
+   margin-top: 0px;
+   /* border-top-left-radius: 10px;
+   border-top-right-radius: 10px; */
+}
+
+#footerWrapper {
+   padding-bottom: 100px;
+
+}
+
+#links {
+   padding: 0 35px 0 35px;
+}
+
+
+
+#sponsorsTitle {
+   display: flex;
+   color: white;
+   font-family: var(--font-header-source);
+   /* border-top-left-radius: 10px;
+   border-top-right-radius: 10px; */
+   /* background-color: rgba(255, 255, 255, 0.2); */
+   background-color: rgba(150, 38, 43, 0.59);
+
+   font-size: 15px;
+   font-weight: 600;
+   text-transform: uppercase;
+   padding: 5px 0px 5px 0px;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   /* border-bottom: white thin solid; */
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+#sponsors {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 10px 0px 10px 0px;
+   font-size: 20px;
+   font-weight: 600;
+   text-transform: uppercase;
+   transition: background-color 0.5s ease-in-out;
+
+   margin: 0 15px 0 15px;
+
+
+   border-bottom: rgba(150, 38, 43) thin solid;
+
+}
+
+#sponsors img {
+   height: 50px;
+   width: auto;
+}
+
+#briefInfoParent {
+   width: 100%;
+   margin-top: 5px;
+}
+
+#briefInfo {
+   color: white;
+   display: flex;
+   flex-wrap: wrap;
+
+}
+
 table {
    table-layout: auto;
    padding: 0px 10px 0px 0px;
@@ -299,7 +589,6 @@ footer {
    /* max-width: 100%; */
    display: block;
    margin: 0;
-   vertical-align: top;
    /* margin-bottom: 10px; */
 }
 
