@@ -2,7 +2,6 @@
    --color-gold: rgb(132, 117, 79);
    --font-source: 'Source Sans Pro', sans-serif;
    --font-header-source: 'Raleway', sans-serif;
-
 }
 
 html {
@@ -203,6 +202,9 @@ header {
 
 
 
+
+
+
 /*box on left for quickstandings this element is a direct pearent to the ul that holds all the uls*/
 #history {
    float: left;
@@ -355,7 +357,6 @@ header {
 
 
 
-
 /*align teamLeft text to the right and align teamRight text to the left */
 .teamLeft {
    text-align: right;
@@ -501,9 +502,7 @@ footer {
    padding: 0 35px 0 35px;
 }
 
-#sponsorsWrapper {
-   /* border-bottom: rgba(150, 38, 43) thin solid; */
-}
+
 
 #sponsorsTitle {
    display: flex;
@@ -582,7 +581,6 @@ footer {
    /* max-width: 100%; */
    display: block;
    margin: 0;
-   vertical-align: top;
    /* margin-bottom: 10px; */
 }
 
