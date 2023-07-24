@@ -1,14 +1,8 @@
-* {
-   /* box-sizing: border-box; */
-}
-
 :root {
    --color-gold: rgb(132, 117, 79);
    --font-source: 'Source Sans Pro', sans-serif;
    --font-header-source: 'Raleway', sans-serif;
 }
-
-
 
 html {
    background-color: rgb(173, 172, 172);
@@ -26,6 +20,14 @@ body {
 
 h2 {
    font-family: var(--font-header-source);
+   text-transform: uppercase;
+   font-size: 300%;
+   /* color: #111; */
+   /* text-decoration: underline; */
+   font-weight: 700;
+   text-align: center;
+   margin: 0px 0 10px 0;
+
 }
 
 th,
@@ -47,9 +49,6 @@ tr {
 #Logo {
    width: auto;
    height: 100px;
-
-
-
 }
 
 p {
@@ -172,8 +171,6 @@ header {
 
 
 /* Change the link color to #111 (black) on hover */
-
-
 .menuListItem:hover .menuLink {
    color: var(--color-gold);
    box-sizing: border-box;
@@ -408,8 +405,111 @@ footer {
    padding: 0 35px 0 35px;
 }
 
-#sponsorsWrapper {
-   /* border-bottom: rgba(150, 38, 43) thin solid; */
+
+
+#sponsorsTitle {
+   display: flex;
+   color: white;
+   font-family: var(--font-header-source);
+   /* border-top-left-radius: 10px;
+   border-top-right-radius: 10px; */
+   /* background-color: rgba(255, 255, 255, 0.2); */
+   background-color: rgba(150, 38, 43, 0.59);
+
+   font-size: 15px;
+   font-weight: 600;
+   text-transform: uppercase;
+   padding: 5px 0px 5px 0px;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   /* border-bottom: white thin solid; */
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+#sponsors {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 10px 0px 10px 0px;
+   font-size: 20px;
+   font-weight: 600;
+   text-transform: uppercase;
+   transition: background-color 0.5s ease-in-out;
+
+   margin: 0 15px 0 15px;
+
+
+   border-bottom: rgba(150, 38, 43) thin solid;
+
+}
+
+#sponsors img {
+   height: 50px;
+   width: auto;
+}
+
+#briefInfoParent {
+   width: 100%;
+   margin-top: 5px;
+}
+
+#briefInfo {
+   color: white;
+   display: flex;
+   flex-wrap: wrap;
+
+}
+
+table {
+   table-layout: auto;
+   padding: 0px 10px 0px 0px;
+   border-collapse: collapse;
+   width: 100%;
+}
+
+table tr td {
+   border-top: rgb(211, 216, 221) solid thin;
+   border-bottom: rgb(211, 216, 221) solid thin;
+   font-size: larger;
+   text-transform: uppercase;
+   padding: 5px 15px 5px 15px;
+   font-size: larger;
+   color: #111;
+   font-family: var(--font-source);
+}
+
+table tr {
+   background-color: white;
+   text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+   background-image: url("./Images/dark-gradient-background-3.png");
+   margin-top: 0px;
+   /* border-top-left-radius: 10px;
+   border-top-right-radius: 10px; */
+}
+
+#footerWrapper {
+   padding-bottom: 100px;
+
+}
+
+#links {
+   padding: 0 35px 0 35px;
 }
 
 #sponsorsTitle {
@@ -489,7 +589,6 @@ footer {
    /* max-width: 100%; */
    display: block;
    margin: 0;
-   vertical-align: top;
    /* margin-bottom: 10px; */
 }
 
