@@ -190,108 +190,7 @@ header {
 
 
 
-/*over all container for 2 boxes at top*/
-#topContentContainer {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: flex-start;
-}
 
-#right {
-   flex: 2;
-}
-
-
-
-/*box on left for quickstandings this element is a direct pearent to the ul that holds all the uls*/
-#history {
-   float: left;
-   margin-left: 2%;
-   margin-top: 10px;
-   /* margin-top: 10px; */
-   background-color: white;
-
-   padding: 3px 3px 3px 3px;
-
-
-   border-radius: 10px;
-}
-
-/*reffering to the ul that holds all of the uls for the quickStandings box direct pearnt of them*/
-#history table {
-   table-layout: auto;
-   padding: 0px 10px 0px 0px;
-   text-transform: uppercase;
-   border-collapse: collapse;
-
-}
-
-
-
-/* quickStandings table data 3px padding left and right and a 2px padding top and bottom */
-#history table td:not(#tableTitle) {
-   padding: 5px 5px 5px 5px;
-   text-transform: uppercase;
-   text-align: center;
-   color: #111;
-   font-family: var(--font-source);
-   border-top: rgb(211, 216, 221) solid thin;
-   border-bottom: rgb(211, 216, 221) solid thin;
-   font-size: small;
-}
-
-
-#history table tr {
-   background-color: white;
-}
-
-#history table tr:nth-child(even) {
-   background-color: #f2f2f2;
-}
-
-
-#history table tr td:nth-child(even) {
-   color: var(--color-gold);
-   font-weight: 600;
-}
-
-
-#tableTitle {
-   text-transform: uppercase;
-   font-size: larger;
-   color: #111;
-   font-family: var(--font-header-source);
-   text-align: center;
-
-
-
-}
-
-#showMore {
-   display: none;
-   transition: display 0.5s ease-in-out;
-}
-
-#showMoreLink {
-   text-decoration: none;
-   color: var(--color-gold);
-   font-family: var(--font-source);
-   font-weight: 600;
-   font-size: larger;
-   text-transform: uppercase;
-   text-align: center;
-   display: block;
-   margin: 0 auto;
-   width: 100%;
-   padding: 5px 0px 5px 0px;
-   border-radius: 10px;
-   background-color: white;
-   border: white thin solid;
-   border-bottom: white solid;
-   -webkit-user-select: none;
-   user-select: none;
-   cursor: pointer;
-}
 
 /* seperator for css*/
 
@@ -437,13 +336,6 @@ table tbody tr:nth-child(even) {
    text-align: left;
    border-radius: 10px;
 
-}
-
-
-
-#wrapperBlurb p {
-   font-family: var(--font-source);
-   margin-top: 5px;
 }
 
 
@@ -675,28 +567,4 @@ footer {
    color: rgb(222, 221, 221);
    font-size: 14px;
    font-family: var(--font-source);
-}
-
-#contentContainer {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-}
-
-#resultsDayContainer {
-   width: 75%;
-   margin: 20px 10px 50px 10px;
-
-}
-
-#dayTableContainer {
-   background-color: white;
-   border-radius: 10px;
-   padding: 2px 4px 4px 4px;
-}
-
-
-
-#dayTableContainer table {
-   width: 100%;
 }
