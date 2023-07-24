@@ -189,12 +189,6 @@ header {
 
 
 
-/*over all container for 2 boxes at top*/
-#topContentContainer {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: flex-start;
-}
 
 #right {
    flex: 2;
@@ -331,14 +325,14 @@ header {
 }
 
 /*reffering to the ul that holds all the uls for the upcomingGames box direct pearnt of them*/
-#upcomingGames table {
+table {
    table-layout: auto;
    padding: 0px 10px 0px 0px;
    border-collapse: collapse;
    width: 100%;
 }
 
-#upcomingGames table tr td {
+table tr td {
    border-top: rgb(211, 216, 221) solid thin;
    border-bottom: rgb(211, 216, 221) solid thin;
    font-size: larger;
@@ -349,7 +343,7 @@ header {
    font-family: var(--font-source);
 }
 
-#upcomingGames table tr {
+table tr {
    background-color: white;
    text-transform: uppercase;
 }
@@ -375,7 +369,7 @@ header {
 
 
 
-#upcomingGames table tr:nth-child(even) {
+table tbody tr:nth-child(even) {
    background-color: #f2f2f2;
 }
 
@@ -438,13 +432,6 @@ header {
    text-align: left;
    border-radius: 10px;
 
-}
-
-
-
-#wrapperBlurb p {
-   font-family: var(--font-source);
-   margin-top: 5px;
 }
 
 
