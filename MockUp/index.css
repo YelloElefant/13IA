@@ -27,7 +27,6 @@ h2 {
    font-weight: 700;
    text-align: center;
    margin: 0px 0 10px 0;
-
 }
 
 th,
@@ -49,6 +48,9 @@ tr {
 #Logo {
    width: auto;
    height: 100px;
+
+
+
 }
 
 p {
@@ -171,6 +173,8 @@ header {
 
 
 /* Change the link color to #111 (black) on hover */
+
+
 .menuListItem:hover .menuLink {
    color: var(--color-gold);
    box-sizing: border-box;
@@ -179,7 +183,6 @@ header {
    -webkit-box-align: center;
 
 }
-
 
 
 
@@ -201,6 +204,7 @@ header {
 
 
 
+
 /*box on left for quickstandings this element is a direct pearent to the ul that holds all the uls*/
 #history {
    float: left;
@@ -212,9 +216,7 @@ header {
    padding: 3px 3px 3px 3px;
 
 
-   border-radius: 2px;
-   display: flex;
-   flex-wrap: wrap;
+   border-radius: 10px;
 }
 
 /*reffering to the ul that holds all of the uls for the quickStandings box direct pearnt of them*/
@@ -229,7 +231,7 @@ header {
 
 
 /* quickStandings table data 3px padding left and right and a 2px padding top and bottom */
-#history table td {
+#history table td:not(#tableTitle) {
    padding: 5px 5px 5px 5px;
    text-transform: uppercase;
    text-align: center;
@@ -256,6 +258,43 @@ header {
 }
 
 
+#tableTitle {
+   text-transform: uppercase;
+   font-size: larger;
+   color: #111;
+   font-family: var(--font-header-source);
+   text-align: center;
+
+
+
+}
+
+#showMore {
+   display: none;
+   transition: display 0.5s ease-in-out;
+}
+
+#showMoreLink {
+   text-decoration: none;
+   color: var(--color-gold);
+   font-family: var(--font-source);
+   font-weight: 600;
+   font-size: larger;
+   text-transform: uppercase;
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+   width: 100%;
+   padding: 5px 0px 5px 0px;
+   border-radius: 10px;
+   background-color: white;
+   border: white thin solid;
+   border-bottom: white solid;
+   -webkit-user-select: none;
+   user-select: none;
+   cursor: pointer;
+}
+
 /* seperator for css*/
 
 
@@ -266,6 +305,7 @@ header {
    flex-wrap: wrap;
    flex: 2;
    display: flex;
+   border-radius: 2px;
 }
 
 
@@ -274,10 +314,10 @@ header {
 #upcomingGames {
    /* background-color: rgba(255, 255, 255, 0.644); */
    background-color: white;
-   padding: 2px 2px 2px 2px;
+   padding: 2px 4px 4px 4px;
    /* margin-top: 10px; */
    /* width: 1000px; */
-   border-radius: 2px;
+   border-radius: 10px;
    text-align: center;
    display: block;
    margin-left: auto;
@@ -314,12 +354,6 @@ header {
    text-transform: uppercase;
 }
 
-#tableTitle {
-   text-transform: uppercase;
-   font-size: larger;
-   color: #111;
-   text-decoration: underline;
-}
 
 
 
@@ -389,109 +423,65 @@ header {
 
 
 
-footer {
-   background-image: url("./Images/dark-gradient-background-3.png");
-   margin-top: 0px;
-   /* border-top-left-radius: 10px;
-   border-top-right-radius: 10px; */
-}
 
-#footerWrapper {
-   padding-bottom: 100px;
-
-}
-
-#links {
-   padding: 0 35px 0 35px;
-}
-
-
-
-#sponsorsTitle {
-   display: flex;
-   color: white;
-   font-family: var(--font-header-source);
-   /* border-top-left-radius: 10px;
-   border-top-right-radius: 10px; */
-   /* background-color: rgba(255, 255, 255, 0.2); */
-   background-color: rgba(150, 38, 43, 0.59);
-
-   font-size: 15px;
-   font-weight: 600;
-   text-transform: uppercase;
-   padding: 5px 0px 5px 0px;
-   text-align: center;
-   justify-content: center;
-   align-items: center;
-   margin: 0 auto;
-   /* border-bottom: white thin solid; */
-   -webkit-user-select: none;
-   user-select: none;
-}
-
-#sponsors {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   align-items: center;
-   padding: 10px 0px 10px 0px;
-   font-size: 20px;
-   font-weight: 600;
-   text-transform: uppercase;
-   transition: background-color 0.5s ease-in-out;
-
-   margin: 0 15px 0 15px;
-
-
-   border-bottom: rgba(150, 38, 43) thin solid;
+#wrapperBlurb {
+   /* background-color: aqua; */
+   background-color: white;
+   /* float: right; */
+   margin-top: 10px;
+   padding: 2px 3px 5px 8px;
+   flex-wrap: wrap;
+   position: relative;
+   margin-left: 10px;
+   margin-right: 10px;
+   /* border-radius: 5px; */
+   text-align: left;
+   border-radius: 10px;
 
 }
 
-#sponsors img {
-   height: 50px;
-   width: auto;
-}
 
-#briefInfoParent {
-   width: 100%;
+
+#wrapperBlurb p {
+   font-family: var(--font-source);
    margin-top: 5px;
 }
 
-#briefInfo {
-   color: white;
-   display: flex;
-   flex-wrap: wrap;
 
+#spacerContainer {
+   margin-top: 30px;
+   margin-bottom: 0px;
 }
 
-table {
-   table-layout: auto;
-   padding: 0px 10px 0px 0px;
-   border-collapse: collapse;
+#spacer {
+   width: 100%;
+   background-color: rgba(150, 38, 43);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+#topImg {
+   width: 100%;
+   height: 125px;
+   background-color: #1a1a1a;
+   text-align: center;
+   margin: 0px 0 5px 0;
+}
+
+#topImg img {
+   width: auto;
+   height: 100%;
+}
+
+#bottomImg {
    width: 100%;
 }
 
-table tr td {
-   border-top: rgb(211, 216, 221) solid thin;
-   border-bottom: rgb(211, 216, 221) solid thin;
-   font-size: larger;
-   text-transform: uppercase;
-   padding: 5px 15px 5px 15px;
-   font-size: larger;
-   color: #111;
-   font-family: var(--font-source);
+#bottomImg img {
+   width: 100%;
+   height: auto;
 }
-
-table tr {
-   background-color: white;
-   text-transform: uppercase;
-}
-
-
-
-
-
-
 
 
 
@@ -511,6 +501,8 @@ footer {
 #links {
    padding: 0 35px 0 35px;
 }
+
+
 
 #sponsorsTitle {
    display: flex;
