@@ -104,9 +104,6 @@
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
-    cursor: pointer;
-    user-select: none;
-    -webkit-user-select: none;
 }
 
 .cardContentContainer {
@@ -129,4 +126,23 @@
 
 .smallFirstData tbody tr td:nth-child(odd) {
     width: 25%;
+}
+
+.downArrow {
+    text-align: center;
+    background-color: grey;
+    border-radius: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    margin: 5px;
+}
+
+.downArrow svg {
+    fill: black;
+    margin: auto;
+    padding: 2px 0px 2px 0px;
+    height: 10px;
+    width: 30px;
 }
