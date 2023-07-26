@@ -5,10 +5,14 @@ function showMore(ele) {
     console.log(content)
     if (content.style.display == "none") {
         content.style.display = "block"
-        ele.style.display = "none"
+        ele.style.transform = "rotate(180deg)";
+
     }
     else {
         content.style.display = "none"
-        ele.style.display = "block"
+        ele.style.transform = "rotate(0deg)";
+
     }
+
+
 }
