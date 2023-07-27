@@ -115,7 +115,7 @@
     text-align: center;
 }
 
-.cardContentContainer div {
+.cardContentContainer>div {
     width: 100%;
     padding: 5px;
 }
@@ -124,9 +124,11 @@
     border: #d3d8dd thin solid;
 }
 
-.smallFirstData tbody tr td:nth-child(odd) {
+.smallFirstData tbody tr td {
     width: 25%;
 }
+
+
 
 .downArrow {
     text-align: center;
@@ -147,4 +149,29 @@
     width: 30px;
     transition: transform 0.5s ease-in-out;
 
+}
+
+
+.cardContentSponsors {}
+
+.sponsortitle {
+    width: 33%;
+    background-color: white;
+}
+
+.sponsorsLogos {
+    background-color: white;
+    border: #d3d8dd thin solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.sponsorsLogos img {
+    width: 35px;
+    height: auto;
+    margin: 5px;
 }
