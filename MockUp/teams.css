@@ -136,8 +136,8 @@
     border-radius: 20px;
     margin-top: 5px;
     cursor: pointer;
-    user-select: none;
     -webkit-user-select: none;
+    user-select: none;
     margin: 5px;
 }
 
@@ -152,7 +152,6 @@
 }
 
 
-.cardContentSponsors {}
 
 .sponsortitle {
     width: 33%;
