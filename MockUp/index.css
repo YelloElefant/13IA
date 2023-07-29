@@ -485,6 +485,21 @@ footer {
 
 }
 
+#sponsorsBar {
+   width: 100%;
+   background-color: #ecedea;
+   background-image: url("./Images/pallidan2.png");
+   background-size: contain;
+   height: 50px;
+   color: white;
+   text-align: center;
+}
+
+#sponsorsBar img {
+   height: 50px;
+   width: auto;
+}
+
 #links {
    padding: 0 35px 0 35px;
 }
