@@ -485,11 +485,29 @@ footer {
 
 }
 
+#sponsorsBar {
+   width: 100%;
+   background-color: #ecedea;
+   background-image: url("./Images/pallidan2.png");
+   background-size: contain;
+   height: 50px;
+   color: white;
+   text-align: center;
+}
+
+#sponsorsBar img {
+   height: 50px;
+   width: auto;
+}
+
 #links {
    padding: 0 35px 0 35px;
 }
 
-
+#sponsorsWrapper {
+   flex: 2;
+   margin-top: 10px;
+}
 
 #sponsorsTitle {
    display: flex;
@@ -539,6 +557,9 @@ footer {
 #briefInfoParent {
    width: 100%;
    margin-top: 5px;
+   display: flex;
+   padding-top: 5px;
+
 }
 
 #briefInfo {
