@@ -476,6 +476,7 @@ table tbody tr:nth-child(even) {
 footer {
    background-image: url("./Images/dark-gradient-background-3.png");
    margin-top: 0px;
+   display: block;
    /* border-top-left-radius: 10px;
    border-top-right-radius: 10px; */
 }
