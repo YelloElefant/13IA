@@ -1,5 +1,13 @@
 console.log("footer loading...")
+fetchStuff()
 
-fetch("https://localhost:80/9atrote/13IA/MockUp/footer.html")
-    .then(x => x.text())
-    .then(y => document.getElementById("footer").innerHTML = y);
+async function fetchStuff() {
+    const response = await fetch("http://localhost/9atrotte/13IA/MockUp/footer.html", {
+        mode: 'no-cors',
+        method: "get",
+        headers: {
+            "Content-Type": "text/html"
+        },
+    })
+    console.log(response);
+}
