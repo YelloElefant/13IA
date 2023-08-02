@@ -1,0 +1,5 @@
+C:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\TeamsCard\obj\Debug\net7.0\TeamsCard.csproj.AssemblyReference.cache
+C:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\TeamsCard\obj\Debug\net7.0\TeamsCard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\TeamsCard\obj\Debug\net7.0\TeamsCard.AssemblyInfoInputs.cache
+C:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\TeamsCard\obj\Debug\net7.0\TeamsCard.AssemblyInfo.cs
+C:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\TeamsCard\obj\Debug\net7.0\TeamsCard.csproj.CoreCompileInputs.cache

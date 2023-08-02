@@ -13,3 +13,18 @@ C:\Users\YelloElefant\OneDrive\Coding\visual studio\tableMaker\tableMaker\obj\De
 C:\Users\YelloElefant\OneDrive\Coding\visual studio\tableMaker\tableMaker\obj\Debug\net6.0\tableMaker.pdb
 C:\Users\YelloElefant\OneDrive\Coding\visual studio\tableMaker\tableMaker\obj\Debug\net6.0\tableMaker.genruntimeconfig.cache
 C:\Users\YelloElefant\OneDrive\Coding\visual studio\tableMaker\tableMaker\obj\Debug\net6.0\ref\tableMaker.dll
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\tableMaker\tableMaker\obj\Debug\net6.0\tableMaker.csproj.AssemblyReference.cache
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\tableMaker\tableMaker\obj\Debug\net6.0\tableMaker.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\tableMaker\tableMaker\obj\Debug\net6.0\tableMaker.AssemblyInfoInputs.cache
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\tableMaker\tableMaker\obj\Debug\net6.0\tableMaker.AssemblyInfo.cs
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\tableMaker\tableMaker\obj\Debug\net6.0\tableMaker.csproj.CoreCompileInputs.cache
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\tableMaker\tableMaker\obj\Debug\net6.0\tableMaker.dll
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\tableMaker\tableMaker\obj\Debug\net6.0\refint\tableMaker.dll
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\tableMaker\tableMaker\obj\Debug\net6.0\tableMaker.pdb
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\tableMaker\tableMaker\bin\Debug\net6.0\tableMaker.exe
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\tableMaker\tableMaker\bin\Debug\net6.0\tableMaker.deps.json
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\tableMaker\tableMaker\bin\Debug\net6.0\tableMaker.runtimeconfig.json
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\tableMaker\tableMaker\bin\Debug\net6.0\tableMaker.dll
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\tableMaker\tableMaker\bin\Debug\net6.0\tableMaker.pdb
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\tableMaker\tableMaker\obj\Debug\net6.0\tableMaker.genruntimeconfig.cache
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\tableMaker\tableMaker\obj\Debug\net6.0\ref\tableMaker.dll
