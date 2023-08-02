@@ -685,3 +685,8 @@ footer {
    font-size: 14px;
    font-family: var(--font-source);
 }
+
+.backWhite {
+   background-color: white;
+   padding: 2px;
+}
