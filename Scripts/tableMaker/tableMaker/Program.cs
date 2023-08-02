@@ -28,13 +28,14 @@ public class TableMaker
          {
             sw.WriteLine("<tr>");
 
-            sw.WriteLine($"<td> {time} </td>");
+            sw.WriteLine($"<td> {i + 1} </td>");
+            sw.WriteLine("<td> pool </td>");
 
             sw.WriteLine("<td class=\"teamLeft\">" + teams1[i] + "</td>");
-            sw.WriteLine("<td> points </td>");
             sw.WriteLine(tableV);
-            sw.WriteLine("<td> points </td>");
             sw.WriteLine("<td class=\"teamRight\">" + teams2[i] + "</td>");
+            sw.WriteLine($"<td> {time} </td>");
+            sw.WriteLine("<td> VENUE </td>");
             sw.WriteLine("</tr>");
          }
          sw.WriteLine("</tbody>");

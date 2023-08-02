@@ -1,66 +1,74 @@
 <tbody>
 <tr>
-<td> 10:00AM </td>
-<td class="teamLeft">Loser Game 33</td>
-<td> points </td>
+<td> 1 </td>
+<td> pool </td>
+<td class="teamLeft">LOSER GAME 33</td>
 <td class="tableV">v</td>
-<td> points </td>
-<td class="teamRight">Loser Game 34</td>
+<td class="teamRight">LOSER GAME 34</td>
+<td> 2:30PM </td>
+<td> VENUE </td>
 </tr>
 <tr>
-<td> 10:00AM </td>
-<td class="teamLeft">Winner Game 33</td>
-<td> points </td>
+<td> 2 </td>
+<td> pool </td>
+<td class="teamLeft">WINNER GAME 33</td>
 <td class="tableV">v</td>
-<td> points </td>
-<td class="teamRight">Winner Game 34</td>
+<td class="teamRight">WINNER GAME 34</td>
+<td> 2:30PM </td>
+<td> VENUE </td>
 </tr>
 <tr>
-<td> 10:00AM </td>
-<td class="teamLeft">Loser game 35</td>
-<td> points </td>
+<td> 3 </td>
+<td> pool </td>
+<td class="teamLeft">LOSER GAME 35</td>
 <td class="tableV">v</td>
-<td> points </td>
-<td class="teamRight">Loser Game 36</td>
+<td class="teamRight">LOSER GAME 36</td>
+<td> 2:30PM </td>
+<td> VENUE </td>
 </tr>
 <tr>
-<td> 10:00AM </td>
-<td class="teamLeft">Winner  Game 35</td>
-<td> points </td>
+<td> 4 </td>
+<td> pool </td>
+<td class="teamLeft">WINNER GAME 35</td>
 <td class="tableV">v</td>
-<td> points </td>
-<td class="teamRight">Winner Game 36</td>
+<td class="teamRight">WINNER GAME 36</td>
+<td> 2:30PM </td>
+<td> VENUE </td>
 </tr>
 <tr>
-<td> 10:00AM </td>
-<td class="teamLeft">Loser Game 37</td>
-<td> points </td>
+<td> 5 </td>
+<td> pool </td>
+<td class="teamLeft">LOSER GAME 37</td>
 <td class="tableV">v</td>
-<td> points </td>
-<td class="teamRight">Loser Game 38</td>
+<td class="teamRight">LOSER GAME 38</td>
+<td> 2:30PM </td>
+<td> VENUE </td>
 </tr>
 <tr>
-<td> 10:00AM </td>
-<td class="teamLeft">Winner Game 37</td>
-<td> points </td>
+<td> 6 </td>
+<td> pool </td>
+<td class="teamLeft">WINNER GAME 37</td>
 <td class="tableV">v</td>
-<td> points </td>
-<td class="teamRight">Winner Game 38</td>
+<td class="teamRight">WINNER GAME 38</td>
+<td> 2:30PM </td>
+<td> VENUE </td>
 </tr>
 <tr>
-<td> 10:00AM </td>
-<td class="teamLeft">Loser Game 39</td>
-<td> points </td>
+<td> 7 </td>
+<td> pool </td>
+<td class="teamLeft">LOSER GAME 39</td>
 <td class="tableV">v</td>
-<td> points </td>
-<td class="teamRight">Loser Game 40</td>
+<td class="teamRight">LOSER GAME 40</td>
+<td> 2:30PM </td>
+<td> VENUE </td>
 </tr>
 <tr>
-<td> 10:00AM </td>
-<td class="teamLeft">Winner Game 39</td>
-<td> points </td>
+<td> 8 </td>
+<td> pool </td>
+<td class="teamLeft">WINNER GAME 39</td>
 <td class="tableV">v</td>
-<td> points </td>
-<td class="teamRight">Winner Game 40</td>
+<td class="teamRight">WINNER GAME 40</td>
+<td> 2:30PM </td>
+<td> VENUE </td>
 </tr>
 </tbody>
