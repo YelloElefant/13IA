@@ -9,5 +9,6 @@ async function fetchStuff() {
             "Content-Type": "text/html"
         },
     })
+    
     console.log(response);
 }
