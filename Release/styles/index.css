@@ -63,7 +63,7 @@ ul {
 }
 
 header {
-   background-image: url("./Images/darkGradientBackground.png");
+   background-image: url("../Images/darkGradientBackground.png");
    background-color: #333;
    width: 100%;
    z-index: 99;
@@ -474,7 +474,7 @@ table tbody tr:nth-child(even) {
 
 
 footer {
-   background-image: url("./Images/dark-gradient-background-3.png");
+   background-image: url("../Images/dark-gradient-background-3.png");
    margin-top: 0px;
    /* border-top-left-radius: 10px;
    border-top-right-radius: 10px; */
@@ -488,7 +488,7 @@ footer {
 #sponsorsBar {
    width: 100%;
    background-color: #ecedea;
-   background-image: url("./Images/pallidan2.png");
+   background-image: url("../Images/pallidan2.png");
    background-size: contain;
    height: 50px;
    color: white;
