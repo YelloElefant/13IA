@@ -212,6 +212,14 @@ table tr:nth-child(even) {
     display: none;
 }
 
+.noPool tbody tr td:nth-child(2) {
+    color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+
 
 /* seperator for css*/
 
