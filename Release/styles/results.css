@@ -29,4 +29,6 @@
 
 #poolResults {
     border-radius: 10px;
+    background-color: white;
+    padding: 2px 4px 4px 4px;
 }
