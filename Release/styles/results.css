@@ -37,6 +37,7 @@
     padding: 0 2px 0 2px;
     text-align: center;
     height: 80%;
+    font-size: 19.2px;
 }
 
 .tablePoints td:nth-child(1) {
