@@ -1,0 +1,23 @@
+#contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#resultsDayContainer {
+    width: 75%;
+    margin: 20px 10px 50px 10px;
+
+}
+
+#dayTableContainer {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2px 4px 4px 4px;
+}
+
+
+
+#dayTableContainer table {
+    width: 100%;
+}
