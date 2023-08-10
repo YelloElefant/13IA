@@ -41,6 +41,10 @@
 
 }
 
+.tablePointsHeading {
+    border-top: thin solid black;
+}
+
 .tablePoints td:nth-child(n + 1) {
     padding: 0 2px 0 2px;
     text-align: center;
@@ -68,4 +72,6 @@
     font-size: 12px;
     margin-top: 5px;
     width: 100%;
+    border-top: thin solid black;
+    color: rgb(143, 143, 143);
 }
