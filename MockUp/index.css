@@ -4,6 +4,10 @@
    --font-header-source: 'Raleway', sans-serif;
 }
 
+* {
+   box-sizing: border-box;
+}
+
 html {
    background-color: rgb(173, 172, 172);
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
