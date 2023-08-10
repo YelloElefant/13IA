@@ -15,27 +15,23 @@ public class TableMaker
    static void Main(string[] args)
    {
       filePathTeams1 = args[0];
-      filePathTeams2 = args[1];
-      string time = args[2];
+      //filePathTeams2 = args[1];
+      //string time = args[2];
 
       FileStuff.FileStuff.ReadFiles(filePathTeams1, teams1);
-      FileStuff.FileStuff.ReadFiles(filePathTeams2, teams2);
+      //FileStuff.FileStuff.ReadFiles(filePathTeams2, teams2);
 
       using (StreamWriter sw = new StreamWriter(@"./output.txt"))
       {
          sw.WriteLine("<tbody>");
          for (int i = 0; i < teams1.Count; i++)
          {
-            sw.WriteLine("<tr>");
+            sw.WriteLine("<tr class=\"tablePoints\">");
 
-            sw.WriteLine($"<td> {i + 1} </td>");
-            sw.WriteLine("<td> pool </td>");
+            sw.WriteLine($"<td> {teams1[i]} </td>");
 
-            sw.WriteLine("<td class=\"teamLeft\">" + teams1[i] + "</td>");
-            sw.WriteLine(tableV);
-            sw.WriteLine("<td class=\"teamRight\">" + teams2[i] + "</td>");
-            sw.WriteLine($"<td> {time} </td>");
-            sw.WriteLine("<td> VENUE </td>");
+            for (int l = 0; l < 13; l++) { sw.WriteLine("<td>0</td>"); }
+
             sw.WriteLine("</tr>");
          }
          sw.WriteLine("</tbody>");

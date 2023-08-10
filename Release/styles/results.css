@@ -36,13 +36,19 @@
     padding: 2px 4px 4px 4px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-
 
 }
 
-.tablePointsHeading {
-    border-top: thin solid black;
+.tablePointsHeading th {
+    /* border-top: thin solid black; */
+    padding: 2px 2px 0 2px;
+    column-span: all;
+}
+
+
+.tablePointsHeading th:first-child {
+    border-right: thin solid black;
+    width: auto;
 }
 
 .tablePoints td:nth-child(n + 1) {
@@ -56,17 +62,11 @@
     padding: 0 2px 0 2px;
     height: 80%;
     font-size: small;
+    text-align: left;
 }
 
 
 
-.tablePointsHeading th {
-    padding: 2px 2px 0 2px;
-}
-
-.tablePointsHeading th:first-child {
-    border-right: thin solid black;
-}
 
 .smallBottomText {
     font-size: 12px;
