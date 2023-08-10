@@ -1,5 +1,15 @@
 console.log("index.js loaded");
 
+let currentPath = window.location.pathname;
+currentPath = currentPath.split("/");
+if (currentPath == "index.html") {
+  currentPath = "Home"
+}
+
+currentPath = currentPath[8].split(".")[0];
+let navToHighlight = document.getElementById(currentPath);
+navToHighlight = navToHighlight.children[0].children[0];
+navToHighlight.style.color = "var(--color-gold)";
 
 
 let activeDay = document.getElementById("activeDay");

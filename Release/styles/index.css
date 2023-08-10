@@ -42,7 +42,7 @@ tr {
    display: flex;
    flex-direction: row;
    align-items: center;
-   justify-content: center;
+   justify-content: space-evenly;
 }
 
 #Logo {
@@ -52,6 +52,14 @@ tr {
 
 
 }
+
+#uniLogo {
+   padding: 5px;
+   margin: 10px;
+   height: 125px;
+   width: auto;
+}
+
 
 p {
    margin: 0;

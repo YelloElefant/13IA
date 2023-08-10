@@ -8,6 +8,8 @@
     width: 75%;
     margin: 20px 10px 50px 10px;
 
+    flex: 2;
+
 }
 
 #dayTableContainer {
@@ -20,4 +22,56 @@
 
 #dayTableContainer table {
     width: 100%;
+}
+
+#poolResultsContainer {
+    margin: 20px 10px 10px 10px;
+    flex: 1;
+
+}
+
+#poolResults {
+    border-radius: 10px;
+    background-color: white;
+    padding: 2px 4px 4px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.tablePointsHeading {
+    border-top: thin solid black;
+}
+
+.tablePoints td:nth-child(n + 1) {
+    padding: 0 2px 0 2px;
+    text-align: center;
+    height: 80%;
+    font-size: 15px;
+}
+
+.tablePoints td:nth-child(1) {
+    padding: 0 2px 0 2px;
+    height: 80%;
+    font-size: small;
+}
+
+
+
+.tablePointsHeading th {
+    padding: 2px 2px 0 2px;
+}
+
+.tablePointsHeading th:first-child {
+    border-right: thin solid black;
+}
+
+.smallBottomText {
+    font-size: 12px;
+    margin-top: 5px;
+    width: 100%;
+    border-top: thin solid black;
+    color: rgb(143, 143, 143);
 }
