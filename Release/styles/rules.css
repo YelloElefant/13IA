@@ -1,0 +1,79 @@
+.card {
+    display: block;
+    /* width: 600px; */
+    width: 100%;
+    /* background-color: aqua; */
+    background-color: #f2f2f2;
+    margin-top: 20px;
+    margin: 20px 0px 0 0px;
+    border: black thin solid;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #1a1a1a;
+    background-image: url("../Images/hbhs_crest_banner.png");
+    background-size: contain;
+    background-position: center;
+    color: white;
+    background-repeat: no-repeat;
+}
+
+
+#contentContainer p,
+#contentContainer ul {
+    display: none;
+    opacity: 0;
+}
+
+#contentContainer {
+    /* margin: 20px; */
+    line-height: 2rem;
+    background-color: white;
+    padding: 10px 10px 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+
+
+}
+
+p,
+ul {
+    transition: all 5s;
+}
+
+
+#contentContainer div h2 {
+    display: block !important;
+    opacity: 1 !important;
+    text-align: left;
+    padding: 20px;
+    margin: 0;
+    text-transform: capitalize;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 30px;
+}
+
+
+#contentContainer p {
+    font-family: var(--font-source);
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+
+.dotList {
+    padding-left: 40px;
+    list-style-type: circle;
+}
+
+.letterList {
+    list-style: lower-alpha;
+}
+
+
+h2:hover {
+    cursor: pointer;
+}
+
+/* seperator for css*/

@@ -2,7 +2,6 @@
    --color-gold: rgb(132, 117, 79);
    --font-source: 'Source Sans Pro', sans-serif;
    --font-header-source: 'Raleway', sans-serif;
-
 }
 
 * {
@@ -194,16 +193,13 @@ header {
 
 
 
-/*over all container for 2 boxes at top*/
-#topContentContainer {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: flex-start;
-}
 
 #right {
    flex: 2;
 }
+
+
+
 
 
 
@@ -333,14 +329,14 @@ header {
 }
 
 /*reffering to the ul that holds all the uls for the upcomingGames box direct pearnt of them*/
-#upcomingGames table {
+table {
    table-layout: auto;
    padding: 0px 10px 0px 0px;
    border-collapse: collapse;
    width: 100%;
 }
 
-#upcomingGames table tr td {
+table tr td {
    border-top: rgb(211, 216, 221) solid thin;
    border-bottom: rgb(211, 216, 221) solid thin;
    font-size: larger;
@@ -351,11 +347,10 @@ header {
    font-family: var(--font-source);
 }
 
-#upcomingGames table tr {
+table tr {
    background-color: white;
    text-transform: uppercase;
 }
-
 
 
 
@@ -378,7 +373,7 @@ header {
 
 
 
-#upcomingGames table tr:nth-child(even) {
+table tbody tr:nth-child(even) {
    background-color: #f2f2f2;
 }
 
@@ -444,13 +439,6 @@ header {
 }
 
 
-
-#wrapperBlurb p {
-   font-family: var(--font-source);
-   margin-top: 5px;
-}
-
-
 #spacerContainer {
    margin-top: 30px;
    margin-bottom: 0px;
@@ -501,12 +489,28 @@ footer {
 
 }
 
+#sponsorsBar {
+   width: 100%;
+   background-color: #ecedea;
+   background-image: url("./Images/pallidan2.png");
+   background-size: contain;
+   height: 50px;
+   color: white;
+   text-align: center;
+}
+
+#sponsorsBar img {
+   height: 50px;
+   width: auto;
+}
+
 #links {
    padding: 0 35px 0 35px;
 }
 
 #sponsorsWrapper {
-   /* border-bottom: rgba(150, 38, 43) thin solid; */
+   flex: 2;
+   margin-top: 10px;
 }
 
 #sponsorsTitle {
@@ -557,6 +561,9 @@ footer {
 #briefInfoParent {
    width: 100%;
    margin-top: 5px;
+   display: flex;
+   padding-top: 5px;
+
 }
 
 #briefInfo {
@@ -586,7 +593,6 @@ footer {
    /* max-width: 100%; */
    display: block;
    margin: 0;
-   vertical-align: top;
    /* margin-bottom: 10px; */
 }
 
