@@ -8,6 +8,8 @@
     width: 75%;
     margin: 20px 10px 50px 10px;
 
+    flex: 2;
+
 }
 
 #dayTableContainer {
@@ -24,6 +26,7 @@
 
 #poolResultsContainer {
     margin: 20px 10px 10px 10px;
+    flex: 1;
 
 }
 
@@ -31,6 +34,11 @@
     border-radius: 10px;
     background-color: white;
     padding: 2px 4px 4px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
 }
 
 .tablePoints td:nth-child(n + 1) {
@@ -41,11 +49,23 @@
 }
 
 .tablePoints td:nth-child(1) {
-    padding: 5px;
+    padding: 0 2px 0 2px;
     height: 80%;
 
 }
 
-.tablePointsHeading {
-    padding: 0 2px 0 2px;
+
+
+.tablePointsHeading th {
+    padding: 2px 2px 0 2px;
+}
+
+.tablePointsHeading th:first-child {
+    border-right: thin solid black;
+}
+
+.smallBottomText {
+    font-size: 12px;
+    margin-top: 5px;
+    width: 100%;
 }
