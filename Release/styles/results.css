@@ -45,13 +45,13 @@
     padding: 0 2px 0 2px;
     text-align: center;
     height: 80%;
-    font-size: 19.2px;
+    font-size: 15px;
 }
 
 .tablePoints td:nth-child(1) {
     padding: 0 2px 0 2px;
     height: 80%;
-
+    font-size: small;
 }
 
 
