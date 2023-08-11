@@ -2,7 +2,7 @@ console.log("index.js loaded");
 
 let currentPath = window.location.pathname;
 currentPath = currentPath.split("/");
-if (currentPath == "index.html") {
+if (currentPath == "index.html" || currentPath == "" || currentPath == "index" || currentPath == "/") {
   currentPath = "Home"
 }
 
