@@ -234,7 +234,7 @@ header {
 
 /* quickStandings table data 3px padding left and right and a 2px padding top and bottom */
 #history table td:not(#tableTitle) {
-   padding: 5px 5px 5px 5px;
+   padding: 5px 5px 5px 8px;
    text-transform: uppercase;
    text-align: center;
    color: #111;
