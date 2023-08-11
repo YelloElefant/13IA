@@ -6,7 +6,9 @@ if (currentPath == "index.html") {
   currentPath = "Home"
 }
 
-currentPath = currentPath[8].split(".")[0];
+currentPath = currentPath[currentPath.length - 1].split(".")[0];
+
+
 let navToHighlight = document.getElementById(currentPath);
 navToHighlight = navToHighlight.children[0].children[0];
 navToHighlight.style.color = "var(--color-gold)";
