@@ -43,12 +43,13 @@
     /* border-top: thin solid black; */
     padding: 2px 2px 0 2px;
     column-span: all;
+    width: calc(55% / 7);
 }
 
 
 .tablePointsHeading th:first-child {
     border-right: thin solid black;
-    width: auto;
+    width: 45%;
 }
 
 .tablePoints td:nth-child(n + 1) {
