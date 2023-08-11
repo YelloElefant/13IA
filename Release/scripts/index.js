@@ -2,14 +2,21 @@ console.log("index.js loaded");
 
 let currentPath = window.location.pathname;
 currentPath = currentPath.split("/");
+
+
+currentPath = currentPath[currentPath.length - 1];
+console.log(currentPath)
 if (currentPath == "index.html" || currentPath == "" || currentPath == "index" || currentPath == "/") {
-  currentPath = "Home"
+  currentPath = "index"
+} else {
+
+  currentPath = currentPath[currentPath.length - 1].split(".")[0];
 }
 
-currentPath = currentPath[currentPath.length - 1].split(".")[0];
 
-
+console.log(currentPath)
 let navToHighlight = document.getElementById(currentPath);
+console.log(navToHighlight);
 navToHighlight = navToHighlight.children[0].children[0];
 navToHighlight.style.color = "var(--color-gold)";
 
