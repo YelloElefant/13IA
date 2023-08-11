@@ -10,7 +10,7 @@ if (currentPath == "index.html" || currentPath == "" || currentPath == "index" |
   currentPath = "index"
 } else {
 
-  currentPath = currentPath[currentPath.length - 1].split(".")[0];
+  currentPath = currentPath.split(".")[0];
 }
 
 
