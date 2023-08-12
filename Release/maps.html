@@ -36,16 +36,17 @@
                         </span>
                     </a>
                 </li>
-                <!-- <li class="menuListItem" id="maps">
-               <a class="menuLink" href="maps.html">
-                  <span class="menuText">Venue Maps</span>
-               </a>
-            </li>
-            <li class="menuListItem" id="teams">
-               <a class="menuLink" href="teams.html">
-                  <span class="menuText">Teams</span>
-               </a>
-            </li> -->
+                <li class="menuListItem" id="maps">
+                    <a class="menuLink" href="maps.html">
+                        <span class="menuText">Venue Maps</span>
+                    </a>
+                </li>
+                <!--
+                <li class="menuListItem" id="teams">
+                    <a class="menuLink" href="teams.html">
+                        <span class="menuText">Teams</span>
+                    </a>
+                </li> -->
                 <li class="menuListItem" id="results">
                     <a class="menuLink" href="results.html">
                         <span class="menuText">Results/Fixtures</span>
@@ -63,11 +64,13 @@
                 <div id="mapNav">
                     <div id="tabsWrapper">
 
-                        <div id="activeDay" onclick="setActive(this, event, 'hbhs')" class="tabs active">HBHS</div>
-                        <div onclick="setActive(this, event, 'maris')" class="tabs" id="">Maris</div>
-                        <div onclick="setActive(this, event, 'steel')" class="tabs" id="">Steel</div>
-                        <div onclick="setActive(this, event, 'uni')" class="tabs" id="">Uni</div>
-                        <div onclick="setActive(this, event, 'Friday')" class="tabs" id="">Friday</div>
+                        <div id="activePlace" onclick="setActivePlace(this, event, 'hbhs')" class="tabs active">HBHS
+                        </div>
+                        <div onclick="setActivePlace(this, event, 'marist')" class="tabs" id="">Maris</div>
+                        <div onclick="setActivePlace(this, event, 'steel')" class="tabs" id="">Steel</div>
+                        <div onclick="setActivePlace(this, event, 'uni')" class="tabs" id="">Uni</div>
+                        <div onclick="setActivePlace(this, event, 'cambridge')" class="tabs" id="">Cambridge HS</div>
+                        <div onclick="setActivePlace(this, event, 'hautapu')" class="tabs" id="">Hautapu</div>
                     </div>
                 </div>
             </div>
@@ -76,10 +79,10 @@
         <div id="right">
             <div id="mapWrapper">
                 <div id="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.880547964314!2d175.2893773152588!3d-37.77899997975963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
-                    1!3m3!1m2!1s0x6d6d2b3b6b6b6b6b%3A0x1b0b0b0b0b0b0b0b!2sHamilton%20Boys'%20High%20School!5e0!3m2!1sen!2snz!4v163355
-                    7647644!5m2!1sen!2snz" width="100%" height="450" style="border:0;" allowfullscreen="true"
-                        loading="lazy">
+                    <iframe
+                        src="https://www.google.com/maps/embed/v1/place?q=Hamilton%20Boys%20High%20School&key=AIzaSyA_tMXSrrQSrdKlEB7P3_Wo8U9fq0Htn3A"
+                        width="100%" height="450" style="border:0;" allowfullscreen="true" loading="lazy"
+                        id="mapIframe">
                     </iframe>
                 </div>
             </div>
@@ -206,6 +209,6 @@
     </footer>
 
 
-    <script src="./styles/maps.js"></script>
-    <script src="./styles/index.js"></script>
+    <script src="./scripts/maps.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
