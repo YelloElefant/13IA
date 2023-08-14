@@ -8,7 +8,8 @@ placesMap.set("steel", "Steel%20Park");
 placesMap.set("uni", "University%20of%20Waikato")
 placesMap.set("cambridge", "Cambridge%20High%20School");
 placesMap.set("hautapu", "Hautapu%20Sports%20Club");
-
+placesMap.set("don", "Don%20Llewellyn%20Sports%20Pavillion")
+placesMap.set("pa", "waikato%20uni%20pa")
 
 //https://www.google.com/maps/embed/v1/place?q=Marist%20Park&key=AIzaSyA_tMXSrrQSrdKlEB7P3_Wo8U9fq0Htn3A
 
