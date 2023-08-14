@@ -85,12 +85,14 @@
 #history table tbody tr td:first-child {
     width: 145px;
     padding-left: 8px;
-    text-align: left !important;
+    /* text-align: left; */
 }
 
 #history table tbody tr td:nth-child(3) {
-padding-left: 5px;
-text-align: left !important;
+
+    padding-left: 5px;
+
+    text-align: left;
 }
 
 #history table tr:nth-child(even) {
@@ -315,4 +317,8 @@ table tr:nth-child(even) {
 #bottomImg img {
     width: 100%;
     height: auto;
+}
+
+.centerAlign {
+    text-align: center !important;
 }
