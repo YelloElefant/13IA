@@ -1,0 +1,15 @@
+#contentContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#blurbContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blurb {
+    
+}
+
