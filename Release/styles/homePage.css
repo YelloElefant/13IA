@@ -242,7 +242,6 @@ table tr:nth-child(even) {
 
 .tabContent {
     display: none;
-    font-size: large !important;
 }
 
 .noPool tbody tr td:nth-child(2) {
