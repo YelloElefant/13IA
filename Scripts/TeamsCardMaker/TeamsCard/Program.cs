@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection.Metadata;
 using System.Text.Encodings.Web;
 
 namespace TeamsCard;
@@ -153,25 +154,27 @@ class TeamsCardHtml
    public static string makeTable(List<string> inputs)
    {
       var output = @$"";
-      output += $"<tr>";
 
-      for (int i = 0; i < inputs.Count; i++)
+
+
+      for (var i = 0; i < inputs.Count; i++)
       {
-         if (i % 3 == 0)
-         {
-            output += $"<tr>";
-         }
-
-         output += $"<td>{inputs[i]}</td>";
-
-         if (i % 3 == 0)
-         {
-            output += $"<tr>";
-         }
+         inputs[i] = "<td>" + inputs[i] + "</td>";
       }
 
+      var count = inputs.Count;
+      for (var i = 0; i < count / 3; i++)
+      {
+         output += "<tr>";
+         output += inputs[0];
+         output += inputs[1];
+         output += inputs[2];
 
-      output += $"</tr>";
+         inputs.RemoveRange(0, 3);
+         output += "</tr>";
+
+      }
+
       return output;
 
 

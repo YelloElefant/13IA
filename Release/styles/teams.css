@@ -75,7 +75,7 @@
 .card {
     background-color: #f2f2f2;
     border-radius: 10px;
-
+    width: 462.05px;
 
 }
 
@@ -102,8 +102,13 @@
     font-family: var(--font-header-source);
     font-size: 12px;
     font-weight: 600;
+    width: auto;
     text-transform: uppercase;
     text-align: center;
+}
+
+.cardHeaderTitle {
+    width: 100%;
 }
 
 .cardContentContainer {
