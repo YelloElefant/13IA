@@ -345,7 +345,7 @@ table tr td {
    border-bottom: rgb(211, 216, 221) solid thin;
    font-size: medium;
    text-transform: uppercase;
-   padding: 5px 15px 5px 15px;
+   padding: 5px 10px 5px 15px;
    font-size: larger;
    color: #111;
    font-family: var(--font-source);
