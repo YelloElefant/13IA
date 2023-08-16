@@ -250,6 +250,9 @@ table tr:nth-child(even) {
     user-select: none;
 }
 
+.signOff {
+    font-weight: bold;
+}
 
 
 
