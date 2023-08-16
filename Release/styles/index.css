@@ -21,7 +21,7 @@ body {
 h2 {
    font-family: var(--font-header-source);
    text-transform: uppercase;
-   font-size: 300%;
+   font-size: 250%;
    /* color: #111; */
    /* text-decoration: underline; */
    font-weight: 700;
