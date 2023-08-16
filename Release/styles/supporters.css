@@ -20,3 +20,12 @@
     width: 100%;
 }
 
+#qrCodes {
+    text-align: center;
+    margin: 10px;
+}
+
+#parentQR {
+    width: 300px;
+    height: auto;
+}
