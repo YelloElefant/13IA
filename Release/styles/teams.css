@@ -73,10 +73,15 @@
 }
 
 .card {
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
+    background-color: white;
     border-radius: 10px;
     width: 462.05px;
+    height: 387px;
     margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
@@ -110,6 +115,11 @@
 
 .cardHeaderTitle {
     width: 100%;
+}
+
+.cardHeaderImg img {
+    width: auto;
+    height: 256px;
 }
 
 .cardContentContainer {

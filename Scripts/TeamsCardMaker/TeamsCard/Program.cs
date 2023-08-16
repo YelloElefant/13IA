@@ -32,11 +32,17 @@ class TeamsCardHtml
 
    public static string makeHtml(List<string> teamData)
    {
+
+      var imgPath = teamData[0].Split(" ")[0] + ".png";
+
+
+
+
       string html = @$"
          <div class=""card"">
             <div class=""cardHeaderContainer"">
                <div class=""cardHeaderImg"">
-                  <img src = ""./Images/sponserPlaceHolder.png"" alt=""Team1"">
+                  <img src = ""./Images/{imgPath}"" alt=""Team1"">
 
                </div>
 
