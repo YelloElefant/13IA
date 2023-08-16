@@ -10,16 +10,30 @@ class TeamsCardHtml
 {
    static void Main(string[] args)
    {
-      var teamData = ReadFiles(args[0]);
+      var data = ReadFiles(args[0]);
+
+
+
+
+      using StreamWriter writer = new($@"./TeamsCard/output/output.html");
+      foreach (var list in data)
+      {
+         var html = makeHtml(list.Split(',').ToList());
+         writer.WriteLine(html);
+      }
 
 
 
 
 
 
+
+   }
+
+   public static string makeHtml(List<string> teamData)
+   {
       string html = @$"
-      <div class=""card"">
-
+         <div class=""card"">
             <div class=""cardHeaderContainer"">
                <div class=""cardHeaderImg"">
                   <img src = ""./Images/sponserPlaceHolder.png"" alt=""Team1"">
@@ -30,16 +44,17 @@ class TeamsCardHtml
                   <h2>{teamData[0]}</h2>
                </div>
 
-               <div class=""cardContentBlurb"">
-                  <p>{teamData[1]}</p>
-               </div>
+               
 
             </div>
 
 
             <div class=""cardContent"" style=""display: none;"">
                <div class=""cardContentContainer"">
-
+                  <div class=""cardContentBlurb"">
+                     <p>{teamData[1]}</p>
+                  </div>
+                  
                   <div class=""cardContentColours"">
                      <table class=""smallFirstData"">
                         <thead>
@@ -124,33 +139,33 @@ class TeamsCardHtml
                </span>
             </div>
          </div>
+      
+
    
    
    
    ";
 
-      using StreamWriter writer = new("./output.html");
-      writer.WriteLine(html);
-
+      return html;
 
    }
-
-
-
-
-
    public static List<string> ReadFiles(string filePath)
    {
       var output = new List<string>();
       using StreamReader reader = new(filePath);
 
-      var line = reader.ReadLine();
-      output.Add(line);
+      var i = 0;
+      while (!reader.EndOfStream)
+      {
+         var line = reader.ReadLine();
 
-      Console.WriteLine(line);
-      return output[0].Split(',').ToList();
+         output.Add(line);
+         i += 1;
+      }
+
+      return output;
+
    }
-
    public static string makeTable(List<string> inputs)
    {
       var output = @$"";
