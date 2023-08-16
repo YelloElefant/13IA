@@ -15,11 +15,11 @@ public class TableMaker
    static void Main(string[] args)
    {
       filePathTeams1 = args[0];
-      //filePathTeams2 = args[1];
-      //string time = args[2];
+      filePathTeams2 = args[1];
+      string time = args[2];
 
       FileStuff.FileStuff.ReadFiles(filePathTeams1, teams1);
-      //FileStuff.FileStuff.ReadFiles(filePathTeams2, teams2);
+      FileStuff.FileStuff.ReadFiles(filePathTeams2, teams2);
 
       using (StreamWriter sw = new StreamWriter(@"./output.txt"))
       {
