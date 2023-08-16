@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\TeamsCard\\TeamsCard.csproj": {}
+    "c:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\TeamsCardMaker\\TeamsCard\\TeamsCard.csproj": {}
   },
   "projects": {
-    "C:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\TeamsCard\\TeamsCard.csproj": {
+    "c:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\TeamsCardMaker\\TeamsCard\\TeamsCard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\TeamsCard\\TeamsCard.csproj",
+        "projectUniqueName": "c:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\TeamsCardMaker\\TeamsCard\\TeamsCard.csproj",
         "projectName": "TeamsCard",
-        "projectPath": "C:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\TeamsCard\\TeamsCard.csproj",
+        "projectPath": "c:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\TeamsCardMaker\\TeamsCard\\TeamsCard.csproj",
         "packagesPath": "C:\\Users\\YelloElefant\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\TeamsCard\\obj\\",
+        "outputPath": "c:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\TeamsCardMaker\\TeamsCard\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
