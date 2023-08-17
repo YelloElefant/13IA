@@ -63,6 +63,7 @@
    height: 100%;
    -webkit-user-select: none;
    user-select: none;
+
 }
 
 
@@ -92,8 +93,8 @@
    color: black;
    border: thin solid white;
    border-image: initial;
-   user-select: none;
    -webkit-user-select: none;
+   user-select: none;
 }
 
 #mapWrapper {

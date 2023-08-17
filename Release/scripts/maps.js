@@ -77,8 +77,8 @@ function setActivePlace(ele, evt, placeName) {
       foldOutDivs[1].style.color = "transparent";
       foldOutDivs[0].style.border = "none";
       foldOutDivs[1].style.border = "none";
-      foldOutDivs[0].style.cursor = "none";
-      foldOutDivs[1].style.cursor = "none";
+      foldOutDivs[0].style.cursor = "unset";
+      foldOutDivs[1].style.cursor = "unset";
       foldOutAllowed = false;
    }
 
