@@ -61,6 +61,8 @@
    margin: 2px;
    padding: 1px;
    height: 100%;
+   -webkit-user-select: none;
+   user-select: none;
 }
 
 

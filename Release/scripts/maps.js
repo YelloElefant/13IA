@@ -18,8 +18,12 @@ activePlace.style.borderRight = "solid black";
 activePlace.style.color = "var(--color-gold)";
 //document.getElementById('activeDay').style.display = "table";
 
+let foldOutAllowed = false;
 
 function setActivePlace(ele, evt, placeName) {
+   if (foldOutAllowed == false && (placeName == "pa" || placeName == "don")) {
+      return
+   }
    //removing the active day
    activePlace = document.getElementById("activePlace");
    activePlace.style.border = "solid white thin";
@@ -60,6 +64,9 @@ function setActivePlace(ele, evt, placeName) {
       foldOutDivs[1].style.backgroundColor = "white";
       foldOutDivs[0].style.color = "black";
       foldOutDivs[1].style.color = "black";
+      foldOutDivs[0].style.cursor = "pointer";
+      foldOutDivs[1].style.cursor = "pointer";
+      foldOutAllowed = true;
 
    } else {
       foldOut.style.color = "transparent";
@@ -70,6 +77,9 @@ function setActivePlace(ele, evt, placeName) {
       foldOutDivs[1].style.color = "transparent";
       foldOutDivs[0].style.border = "none";
       foldOutDivs[1].style.border = "none";
+      foldOutDivs[0].style.cursor = "none";
+      foldOutDivs[1].style.cursor = "none";
+      foldOutAllowed = false;
    }
 
 }
