@@ -145,6 +145,18 @@
     border: #d3d8dd thin solid;
 }
 
+.cardContentTeamMembers table tbody {
+    counter-reset: cssCounter 0;
+}
+
+.cardContentTeamMembers table tbody tr td {
+    counter-increment: cssCounter 1;
+}
+
+.cardContentTeamMembers table tbody tr td::before {
+    content: counter(cssCounter) ". ";
+}
+
 .smallFirstData tbody tr td {
     width: 25%;
 }
