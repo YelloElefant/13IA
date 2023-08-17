@@ -4,7 +4,7 @@ let placesMap = new Map();
 
 placesMap.set("hbhs", "Hamilton%20Boys%20High%20School");
 placesMap.set("marist", "Marist%20Park");
-placesMap.set("steel", "Steel%20Park");
+placesMap.set("stAndrews", "te%20rapa%20rugby%20club");
 placesMap.set("uni", "University%20of%20Waikato")
 placesMap.set("cambridge", "Cambridge%20High%20School");
 placesMap.set("hautapu", "Hautapu%20Sports%20Club");
