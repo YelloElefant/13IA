@@ -11,6 +11,7 @@ function openCard(ele) {
         ele.children[0].children[0].style.transform = "rotate(180deg)";
         img.style.height = "100px";
         card.style.height = "auto";
+        card.style.width = "550px";
 
     } else {
         content.style.display = "none"

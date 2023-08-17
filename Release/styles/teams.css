@@ -125,10 +125,15 @@
 .cardContentContainer {
     padding: 5px;
     font-family: var(--font-source);
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
+}
+
+.cardContentBlurb p {
+    text-align: left;
+    margin: 5px;
 }
 
 .cardContentContainer>div {
@@ -186,7 +191,12 @@
 }
 
 .sponsorsLogos img {
-    width: 35px;
+    width: 80px;
     height: auto;
     margin: 5px;
+}
+
+.backBlack {
+    background-color: black;
+    padding: 2px;
 }
