@@ -36,7 +36,7 @@ function openUpCard(ele) {
     ele.children[0].children[0].style.transform = "rotate(180deg)";
     img.style.height = "100px";
     card.style.height = "auto";
-    card.style.width = "550px";
+    card.style.width = "500px";
 }
 
 function closeCard(ele) {
@@ -48,5 +48,5 @@ function closeCard(ele) {
     img.style.height = "256px";
     img.style.width = "auto";
     card.style.height = "387px";
-    card.style.width = "462.05px";
+    card.style.width = "400px";
 }

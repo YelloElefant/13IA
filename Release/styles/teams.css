@@ -76,7 +76,7 @@
     /* background-color: #f2f2f2; */
     background-color: white;
     border-radius: 10px;
-    width: 462.05px;
+    width: 400px;
     height: 387px;
     margin: 5px;
     display: flex;
@@ -101,6 +101,12 @@
     align-items: center;
     padding: 0 10px 10px 10px;
     border-top: rgba(150, 38, 43) thin solid;
+    padding: 5px;
+    font-family: var(--font-source);
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
 }
 
 .cardHeaderContainer {
@@ -122,14 +128,7 @@
     height: 256px;
 }
 
-.cardContentContainer {
-    padding: 5px;
-    font-family: var(--font-source);
-    font-size: 15px;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: left;
-}
+
 
 .cardContentBlurb p {
     text-align: left;
