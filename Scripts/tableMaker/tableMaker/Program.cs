@@ -21,17 +21,20 @@ public class TableMaker
       var file = new StreamReader(filePathTeams1).ReadToEnd(); // big string
       var lines = file.Split(new char[] { '\n' });           // big array
       var count = lines.Count();                               // big number
+      var l = 1;
 
 
-
-      using (StreamWriter sw = new StreamWriter(@"./output.txt"))
+      using (StreamWriter sw = new StreamWriter(@"./output.html"))
       {
+         var returned = FileStuff.FileStuff.ReadFiles(filePathTeams1, coaches, managers, acommidation);
          for (int i = 0; i < count; i++)
          {
-            var returned = FileStuff.FileStuff.ReadFiles(filePathTeams1, coaches, managers, acommidation);
             coaches = returned[0];
             managers = returned[1];
             acommidation = returned[2];
+
+
+
             foreach (var coach in coaches)
             {
                sw.WriteLine("<tr>");
@@ -53,6 +56,7 @@ public class TableMaker
                sw.WriteLine($"<td>{acommidation}</td>");
                sw.WriteLine("</tr>");
             }
+            sw.WriteLine("<!-- next team -->");
 
          }
       }

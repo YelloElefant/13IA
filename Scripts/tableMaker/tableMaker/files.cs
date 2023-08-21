@@ -11,10 +11,10 @@ public static class FileStuff
       while (!reader.EndOfStream)
       {
          var line = reader.ReadLine();
-         var values = line.Split(';');
-         coaches = values[0].Split(',').ToList();
-         managers = values[1].Split(',').ToList();
-         acommidation = values[2].Split(',').ToList();
+         var values = line.Split('"');
+         coaches.Add(values[0]);
+         managers.Add(values[1]);
+         acommidation.Add(values[2]);
       }
 
       return new List<List<string>> { coaches, managers, acommidation };
