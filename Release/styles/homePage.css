@@ -40,6 +40,20 @@
     border-radius: 10px;
 }
 
+#headingsLong th:first-child {
+    padding-left: 5px;
+    text-align: left;
+}
+
+#headingsLong th:nth-child(3) {
+    text-align: left;
+    padding-left: 8px;
+}
+
+#headingsLong th:nth-child(1) {
+    padding-left: 5px;
+}
+
 /*reffering to the ul that holds all of the uls for the quickStandings box direct pearnt of them*/
 #history table {
     table-layout: auto;
@@ -53,7 +67,7 @@
 
 /* quickStandings table data 3px padding left and right and a 2px padding top and bottom */
 #history table td:not(#tableTitle) {
-    padding: 5px 5px 5px 5px;
+    /* padding: 5px 5px 5px 5px; */
     text-transform: uppercase;
     text-align: left;
     color: #111;
@@ -68,9 +82,23 @@
     background-color: white;
 }
 
+#history table tbody tr td:first-child {
+    width: 145px;
+    padding-left: 8px;
+    /* text-align: left; */
+}
+
+#history table tbody tr td:nth-child(3) {
+
+    padding-left: 5px;
+
+    text-align: left;
+}
+
 #history table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
 
 
 #history table tr td:nth-child(even) {
@@ -93,6 +121,10 @@
 #showMore {
     display: none;
     transition: display 0.5s ease-in-out;
+}
+
+#showMore table tbody tr td:first-child {
+    width: 145px;
 }
 
 #showMoreLink {
@@ -285,4 +317,8 @@ table tr:nth-child(even) {
 #bottomImg img {
     width: 100%;
     height: auto;
+}
+
+.centerAlign {
+    text-align: center !important;
 }

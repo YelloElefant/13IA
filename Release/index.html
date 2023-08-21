@@ -21,9 +21,13 @@
 <body>
    <header>
       <div id="logoWrapper">
-         <img src="Images/uni.png" id="uniLogo" alt="uniLogo">
+         <a href="https://www.waikato.ac.nz/">
+            <img src="Images/uni.png" id="uniLogo" alt="uniLogo">
+         </a>
 
-         <img src="./Images/hbhsLogoWithName.png" id="Logo" alt="logo">
+         <a href="https://www.hbhs.school.nz/">
+            <img src="./Images/hbhsLogoWithName.png" id="Logo" alt="logo">
+         </a>
       </div>
       <div id="toolBar">
          <ul id="toolBarList">
@@ -38,11 +42,11 @@
                   </span>
                </a>
             </li>
-            <!-- <li class="menuListItem" id="maps">
+            <li class="menuListItem" id="maps">
                <a class="menuLink" href="maps.html">
                   <span class="menuText">Venue Maps</span>
                </a>
-            </li>-->
+            </li>
             <li class="menuListItem" id="teams">
                <a class="menuLink" href="teams.html">
                   <span class="menuText">Teams</span>
@@ -51,6 +55,12 @@
             <li class="menuListItem" id="results">
                <a class="menuLink" href="results.html">
                   <span class="menuText">Results/Fixtures</span>
+               </a>
+            </li>
+
+            <li class="menuListItem" id="supporters">
+               <a class="menuLink" href="supporters.html">
+                  <span class="menuText">Supporters</span>
                </a>
             </li>
          </ul>
@@ -66,45 +76,74 @@
             <!--converting to tables insead of tdsts-->
 
             <table id="tdstHistory">
-               <tbody>
+               <thead>
                   <tr>
                      <td colspan="3" id="tableTitle">Winners</td>
                   </tr>
+                  <tr id="headingsLong">
+                     <th>Host</th>
+                     <th>Year</th>
+                     <th>Winner</th>
+                  </tr>
+               </thead>
+               <tbody>
 
                   <tr>
-                     <td>Auckland Grammar 2018</td>
+                     <td>Christchurch BHS</td>
+                     <td>2022</td>
+                     <td>Christchurch BHS</td>
+                  </tr>
+                  <tr>
+                     <td colspan=3 class="centerAlign">2020-2021: COVID cancellation</td>
+                  </tr>
+                  <tr>
+                     <td>NAPIER BHS</td>
+                     <td>2019</td>
+                     <td>Hastings BHS</td>
+                  </tr>
+                  <tr>
+                     <td>Auckland Grammar </td>
+                     <td>2018</td>
                      <td>Hamilton BHS</td>
                   </tr>
                   <tr>
-                     <td>Wellington 2017 </td>
+                     <td>Wellington </td>
+                     <td>2017 </td>
                      <td>Christchurch BHS </td>
                   </tr>
                   <tr>
-                     <td>Massey High School 2016 </td>
+                     <td>Massey High School </td>
+                     <td>2016 </td>
                      <td>Auckland Grammar </td>
                   </tr>
                   <tr>
-                     <td>Dunedin 2015 </td>
+                     <td>Dunedin </td>
+                     <td>2015 </td>
                      <td>Wesley College </td>
                   </tr>
                   <tr>
-                     <td>Palmerston North 2014 </td>
+                     <td>Palmerston North </td>
+                     <td>2014 </td>
                      <td> Hamilton BHS </td>
                   </tr>
                   <tr>
-                     <td>Auckland 2013 </td>
+                     <td>Auckland </td>
+                     <td>2013 </td>
                      <td> Hamilton BHS </td>
                   </tr>
                   <tr>
-                     <td>Rotorua 2012 </td>
+                     <td>Rotorua </td>
+                     <td>2012 </td>
                      <td> Mt Albert Grammar </td>
                   </tr>
                   <tr>
-                     <td>Hastings 2011 </td>
+                     <td>Hastings </td>
+                     <td>2011 </td>
                      <td> Tauranga Boys’ College </td>
                   </tr>
                   <tr>
-                     <td>St Bede’s 2010 </td>
+                     <td>St Bede’s </td>
+                     <td>2010 </td>
                      <td> Christchurch BHS </td>
                   </tr>
 
@@ -114,103 +153,128 @@
                <table>
                   <tbody>
                      <tr>
-                        <td>New Plymouth 2009 </td>
+                        <td>New Plymouth</td>
+                        <td>2009</td>
                         <td> Mt Albert Grammar </td>
                      </tr>
                      <tr>
-                        <td>Wellington 2008 </td>
+                        <td>Wellington</td>
+                        <td>2008</td>
                         <td> Mt Albert Grammar </td>
                      </tr>
                      <tr>
-                        <td>Wesley 2007 </td>
+                        <td>Wesley</td>
+                        <td>2007</td>
                         <td> Palmerston North BHS </td>
                      </tr>
                      <tr>
-                        <td>Tauranga 2006 </td>
+                        <td>Tauranga</td>
+                        <td>2006</td>
                         <td> Wellington College </td>
                      </tr>
                      <tr>
-                        <td>Christchurch 2005 </td>
+                        <td>Christchurch</td>
+                        <td>2005</td>
                         <td> Christchurch BHS </td>
                      </tr>
                      <tr>
-                        <td>Hamilton 2004 </td>
+                        <td>Hamilton</td>
+                        <td>2004</td>
                         <td> Napier BHS </td>
                      </tr>
                      <tr>
-                        <td>Napier 2003 </td>
+                        <td>Napier</td>
+                        <td>2003</td>
                         <td> Napier BHS </td>
                      </tr>
                      <tr>
-                        <td>Palmerston North 2002 </td>
+                        <td>Palmerston North</td>
+                        <td>2002</td>
                         <td> Napier BHS </td>
                      </tr>
                      <tr>
-                        <td>Dunedin 2001 </td>
+                        <td>Dunedin</td>
+                        <td>2001</td>
                         <td> Auckland Grammar School </td>
                      </tr>
                      <tr>
-                        <td>Wellington 2000 </td>
+                        <td>Wellington</td>
+                        <td>2000</td>
                         <td> Hastings BHS </td>
                      </tr>
                      <tr>
-                        <td>Auckland 1999 </td>
+                        <td>Auckland </td>
+                        <td>1999 </td>
                         <td> Otago BHS </td>
                      </tr>
                      <tr>
-                        <td>Napier 1998 </td>
+                        <td>Napier</td>
+                        <td>1998 </td>
                         <td> Auckland Grammar </td>
                      </tr>
                      <tr>
-                        <td>Christchurch 1997 </td>
+                        <td>Christchurch </td>
+                        <td>1997 </td>
                         <td> Auckland Grammar </td>
                      </tr>
                      <tr>
-                        <td>Hamilton 1996 </td>
+                        <td>Hamilton</td>
+                        <td>1996 </td>
                         <td> Auckland Grammar </td>
                      </tr>
                      <tr>
-                        <td>Dunedin 1995 </td>
+                        <td>Dunedin</td>
+                        <td>1995 </td>
                         <td> Auckland Grammar </td>
                      </tr>
                      <tr>
-                        <td>Wellington 1994 </td>
+                        <td>Wellington </td>
+                        <td>1994 </td>
                         <td> Auckland Grammar </td>
                      </tr>
                      <tr>
-                        <td>Auckland 1993 </td>
+                        <td>Auckland </td>
+                        <td>1993 </td>
                         <td> Auckland Grammar </td>
                      </tr>
                      <tr>
-                        <td>Napier 1992 </td>
+                        <td>Napier </td>
+                        <td>1992 </td>
                         <td> Mt Albert Grammar </td>
                      </tr>
                      <tr>
-                        <td>Christchurch 1991 </td>
+                        <td>Christchurch </td>
+                        <td>1991 </td>
                         <td> Auckland Grammar </td>
                      </tr>
                      <tr>
-                        <td>Hamilton 1990 </td>
+                        <td>Hamilton </td>
+                        <td>1990 </td>
                         <td> St Stephen’s School </td>
                      </tr>
                      <tr>
-                        <td>Dunedin 1989 </td>
+                        <td>Dunedin </td>
+                        <td>1989 </td>
                         <td> St Stephen’s School </td>
                      </tr>
                      <tr>
-                        <td>Wellington 1988 </td>
+                        <td>Wellington </td>
+                        <td>1988 </td>
                         <td> St Stephen’s School </td>
                      </tr>
                      <tr>
-                        <td>Auckland 1987 </td>
+                        <td>Auckland </td>
+                        <td>1987 </td>
                         <td> Auckland Grammar </td>
                      </tr>
                      <tr>
-                        <td>Napier 1986 </td>
+                        <td>Napier </td>
+                        <td>1986 </td>
                         <td> Napier BHS </td>
                      </tr>
                      <tr>
-                        <td>Christchurch 1985 </td>
+                        <td>Christchurch </td>
+                        <td>1985 </td>
                         <td> Auckland Grammar </td>
                      </tr>
 
@@ -245,10 +309,12 @@
                There is rich rugby history in all schools and the passion for the game is incredible. This
                tournament
                provides young men with a wonderful opportunity to compete against high calibre teams.
-            </p>
-            <p>
+
                Enjoy your time here, and the experience - remember why we are here and please let us know if we
                can help in anyway.
+            </p>
+            <p>
+
             </p>
             <p>
                HBHS Rugby & Sports Department.
@@ -270,7 +336,9 @@
                   <div onclick="setActive(this, event, 'finals')" class="tabLinks">Finals</div>
                </div>
 
-
+               <!--
+                  links to video
+               -->
 
                <table id="mondayAM" class="tabContent">
 
@@ -363,25 +431,25 @@
 
                   <tbody>
                      <tr>
-                        <td> 1 </td>
+                        <td> 9 </td>
                         <td> D </td>
                         <td class="teamLeft">AUCKLAND GRAMMAR SCHOOL</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">MT. ALBERT GRAMMAR SCHOOL</td>
                         <td> 2:30PM </td>
-                        <td> MARIST 1 </td>
+                        <td> MARIST 2 </td>
                      </tr>
                      <tr>
-                        <td> 2 </td>
+                        <td> 10 </td>
                         <td> D </td>
                         <td class="teamLeft">PALMERSTON NORTH BHS</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">ST. BEDES COLLEGE</td>
                         <td> 2:30PM </td>
-                        <td> MARIST 2 </td>
+                        <td> MARIST 1 </td>
                      </tr>
                      <tr>
-                        <td> 3 </td>
+                        <td> 11 </td>
                         <td> B </td>
                         <td class="teamLeft">WESTLAKE BHS</td>
                         <td class="tableV">v</td>
@@ -390,34 +458,34 @@
                         <td> MARIST 3 </td>
                      </tr>
                      <tr>
-                        <td> 4 </td>
+                        <td> 12 </td>
                         <td> B </td>
                         <td class="teamLeft">ROTORUA BHS</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">ST PATS TOWN</td>
                         <td> 2:30PM </td>
-                        <td> HBHS 3 </td>
+                        <td> HBHS 2 </td>
                      </tr>
                      <tr>
-                        <td> 5 </td>
+                        <td> 13 </td>
                         <td> C </td>
                         <td class="teamLeft">HASTINGS BHS</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">OTAGO BHS</td>
                         <td> 2:30PM </td>
-                        <td> HBHS 1 </td>
+                        <td> HBHS 3 </td>
                      </tr>
                      <tr>
-                        <td> 6 </td>
+                        <td> 14 </td>
                         <td> C </td>
                         <td class="teamLeft">HAMILTON BHS</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">NAPIER BHS</td>
                         <td> 2:30PM </td>
-                        <td> HBHS 2 </td>
+                        <td> HBHS 1 </td>
                      </tr>
                      <tr>
-                        <td> 7 </td>
+                        <td> 15 </td>
                         <td> A </td>
                         <td class="teamLeft">CHRISTCHURCH BHS</td>
                         <td class="tableV">v</td>
@@ -426,7 +494,7 @@
                         <td> UNI 1 </td>
                      </tr>
                      <tr>
-                        <td> 8 </td>
+                        <td> 16 </td>
                         <td> A </td>
                         <td class="teamLeft">TAURANGA BOYS COLLEGE</td>
                         <td class="tableV">v</td>
@@ -445,7 +513,7 @@
 
                   <tbody>
                      <tr>
-                        <td> 1 </td>
+                        <td> 17 </td>
                         <td> A </td>
                         <td class="teamLeft">CHRISTCHURCH BHS</td>
                         <td class="tableV">v</td>
@@ -454,7 +522,7 @@
                         <td> UNI 1 </td>
                      </tr>
                      <tr>
-                        <td> 2 </td>
+                        <td> 18 </td>
                         <td> A </td>
                         <td class="teamLeft">WELLINGTON COLLEGE</td>
                         <td class="tableV">v</td>
@@ -463,34 +531,34 @@
                         <td> UNI 2 </td>
                      </tr>
                      <tr>
-                        <td> 3 </td>
+                        <td> 19 </td>
                         <td> B </td>
                         <td class="teamLeft">WESTLAKE BHS</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">ST PATS TOWN</td>
                         <td> 11:00AM </td>
-                        <td> HBHS 4 </td>
+                        <td> SWARBRICK 1 </td>
                      </tr>
                      <tr>
-                        <td> 4 </td>
+                        <td> 20 </td>
                         <td> B </td>
                         <td class="teamLeft">ROTORUA BHS</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">NEW PLYMOUTH BHS</td>
                         <td> 11:00AM </td>
-                        <td> HBHS 3 </td>
+                        <td> SWARBRICK 2 </td>
                      </tr>
                      <tr>
-                        <td> 5 </td>
+                        <td> 21 </td>
                         <td> C </td>
                         <td class="teamLeft">HASTINGS BHS</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">NAPIER BHS</td>
                         <td> 11:00AM </td>
-                        <td> HBHS 2 </td>
+                        <td> SWARBRICK 3 </td>
                      </tr>
                      <tr>
-                        <td> 6 </td>
+                        <td> 22 </td>
                         <td> C </td>
                         <td class="teamLeft">HAMILTON BHS</td>
                         <td class="tableV">v</td>
@@ -499,22 +567,22 @@
                         <td> HBHS 1 </td>
                      </tr>
                      <tr>
-                        <td> 7 </td>
+                        <td> 23 </td>
                         <td> D </td>
                         <td class="teamLeft">AUCKLAND GRAMMAR SCHOOL</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">ST. BEDES COLLEGE</td>
                         <td> 11:00AM </td>
-                        <td> STEEL 1 </td>
+                        <td> ST ANDREWS 1 </td>
                      </tr>
                      <tr>
-                        <td> 8 </td>
+                        <td> 24 </td>
                         <td> D </td>
                         <td class="teamLeft">PALMERSTON NORTH BHS</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">MT. ALBERT GRAMMAR SCHOOL</td>
                         <td> 11:00AM </td>
-                        <td> STEEL 2 </td>
+                        <td> ST ANDREWS 2 </td>
                      </tr>
                   </tbody>
 
@@ -526,7 +594,7 @@
 
                   <tbody>
                      <tr>
-                        <td> 1 </td>
+                        <td> 25 </td>
                         <td> pool </td>
                         <td class="teamLeft">THIRD POOL A</td>
                         <td class="tableV">v</td>
@@ -535,7 +603,7 @@
                         <td> CAMBRIDGE HS </td>
                      </tr>
                      <tr>
-                        <td> 2 </td>
+                        <td> 26 </td>
                         <td> pool </td>
                         <td class="teamLeft">FOURTH POOL A</td>
                         <td class="tableV">v</td>
@@ -544,7 +612,7 @@
                         <td> HAUTAPU 3 </td>
                      </tr>
                      <tr>
-                        <td> 3 </td>
+                        <td> 27 </td>
                         <td> pool </td>
                         <td class="teamLeft">THIRD POOL B</td>
                         <td class="tableV">v</td>
@@ -553,7 +621,7 @@
                         <td> HAUTAPU 2 </td>
                      </tr>
                      <tr>
-                        <td> 4 </td>
+                        <td> 28 </td>
                         <td> pool </td>
                         <td class="teamLeft">FOURTH POOL B</td>
                         <td class="tableV">v</td>
@@ -562,7 +630,7 @@
                         <td> HAUTAPU 1 </td>
                      </tr>
                      <tr>
-                        <td> 5 </td>
+                        <td> 29 </td>
                         <td> pool </td>
                         <td class="teamLeft">FIRST POOL B</td>
                         <td class="tableV">v</td>
@@ -571,7 +639,7 @@
                         <td> CAMBRIDGE HS </td>
                      </tr>
                      <tr>
-                        <td> 6 </td>
+                        <td> 30 </td>
                         <td> pool </td>
                         <td class="teamLeft">SECOND POOL B</td>
                         <td class="tableV">v</td>
@@ -580,7 +648,7 @@
                         <td> HAUTAPU 3 </td>
                      </tr>
                      <tr>
-                        <td> 7 </td>
+                        <td> 31 </td>
                         <td> pool </td>
                         <td class="teamLeft">FIRST POOL A</td>
                         <td class="tableV">v</td>
@@ -589,7 +657,7 @@
                         <td> HAUTAPU 2 </td>
                      </tr>
                      <tr>
-                        <td> 8 </td>
+                        <td> 32 </td>
                         <td> pool </td>
                         <td class="teamLeft">SECOND POOL A</td>
                         <td class="tableV">v</td>
@@ -607,7 +675,7 @@
 
                   <tbody>
                      <tr>
-                        <td> 1 </td>
+                        <td> 33 </td>
                         <td> pool </td>
                         <td class="teamLeft">LOSER GAME 25</td>
                         <td class="tableV">v</td>
@@ -616,7 +684,7 @@
                         <td> MARIST 3 </td>
                      </tr>
                      <tr>
-                        <td> 2 </td>
+                        <td> 34 </td>
                         <td> pool </td>
                         <td class="teamLeft">LOSER GAME 26</td>
                         <td class="tableV">v</td>
@@ -625,7 +693,7 @@
                         <td> MARIST 2 </td>
                      </tr>
                      <tr>
-                        <td> 3 </td>
+                        <td> 35 </td>
                         <td> pool </td>
                         <td class="teamLeft">WINNER GAME 25</td>
                         <td class="tableV">v</td>
@@ -634,7 +702,7 @@
                         <td> MARIST 1 </td>
                      </tr>
                      <tr>
-                        <td> 4 </td>
+                        <td> 36 </td>
                         <td> pool </td>
                         <td class="teamLeft">WINNER GAME 26</td>
                         <td class="tableV">v</td>
@@ -643,7 +711,7 @@
                         <td> MARIST 3 </td>
                      </tr>
                      <tr>
-                        <td> 5 </td>
+                        <td> 37 </td>
                         <td> pool </td>
                         <td class="teamLeft">LOSER GAME 29</td>
                         <td class="tableV">v</td>
@@ -652,7 +720,7 @@
                         <td> MARIST 2 </td>
                      </tr>
                      <tr>
-                        <td> 6 </td>
+                        <td> 38 </td>
                         <td> pool </td>
                         <td class="teamLeft">LOSER GAME 30</td>
                         <td class="tableV">v</td>
@@ -661,7 +729,7 @@
                         <td> MARIST 1 </td>
                      </tr>
                      <tr>
-                        <td> 7 </td>
+                        <td> 39 </td>
                         <td> pool </td>
                         <td class="teamLeft">WINNER GAME 29</td>
                         <td class="tableV">v</td>
@@ -670,7 +738,7 @@
                         <td> HBHS 1 </td>
                      </tr>
                      <tr>
-                        <td> 8 </td>
+                        <td> 40 </td>
                         <td> pool </td>
                         <td class="teamLeft">WINNER GAME 30</td>
                         <td class="tableV">v</td>
@@ -682,32 +750,32 @@
 
                </table>
 
-               <table id="finals" class="tabContent noPool">
+               <table id="finals" class="tabContent">
 
 
 
                   <tbody>
                      <tr>
-                        <td> 1 </td>
-                        <td> pool </td>
+                        <td> 41 </td>
+                        <td> POS 15-16 </td>
                         <td class="teamLeft">LOSER GAME 33</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">LOSER GAME 34</td>
                         <td> 10:00AM </td>
-                        <td> STEEL 2 </td>
+                        <td> ST ANDREWS 2 </td>
                      </tr>
                      <tr>
-                        <td> 2 </td>
-                        <td> pool </td>
+                        <td> 42 </td>
+                        <td> POS 13-14 </td>
                         <td class="teamLeft">WINNER GAME 33</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">WINNER GAME 34</td>
                         <td> 10:00AM </td>
-                        <td> STEEL 1 </td>
+                        <td> ST ANDERWS 1 </td>
                      </tr>
                      <tr>
-                        <td> 3 </td>
-                        <td> pool </td>
+                        <td> 43 </td>
+                        <td> POS 11-12 </td>
                         <td class="teamLeft">LOSER GAME 35</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">LOSER GAME 36</td>
@@ -715,8 +783,8 @@
                         <td> HBHS 4 </td>
                      </tr>
                      <tr>
-                        <td> 4 </td>
-                        <td> pool </td>
+                        <td> 44 </td>
+                        <td> POS 9-10 </td>
                         <td class="teamLeft">WINNER GAME 35</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">WINNER GAME 36</td>
@@ -724,8 +792,8 @@
                         <td> HBHS 3 </td>
                      </tr>
                      <tr>
-                        <td> 5 </td>
-                        <td> pool </td>
+                        <td> 45 </td>
+                        <td> POS 7-8 </td>
                         <td class="teamLeft">LOSER GAME 37</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">LOSER GAME 38</td>
@@ -733,8 +801,8 @@
                         <td> HBHS 2 </td>
                      </tr>
                      <tr>
-                        <td> 6 </td>
-                        <td> pool </td>
+                        <td> 46 </td>
+                        <td> POS 5-6 </td>
                         <td class="teamLeft">WINNER GAME 37</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">WINNER GAME 38</td>
@@ -742,8 +810,8 @@
                         <td> UNI 2 </td>
                      </tr>
                      <tr>
-                        <td> 7 </td>
-                        <td> pool </td>
+                        <td> 47 </td>
+                        <td> POS 3-4 </td>
                         <td class="teamLeft">LOSER GAME 39</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">LOSER GAME 40</td>
@@ -751,8 +819,8 @@
                         <td> UNI 1 </td>
                      </tr>
                      <tr>
-                        <td> 8 </td>
-                        <td> pool </td>
+                        <td> 48 </td>
+                        <td> POS 1-2 </td>
                         <td class="teamLeft">WINNER GAME 39</td>
                         <td class="tableV">v</td>
                         <td class="teamRight">WINNER GAME 40</td>

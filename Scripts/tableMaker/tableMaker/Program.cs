@@ -29,35 +29,13 @@ public class TableMaker
          var returned = FileStuff.FileStuff.ReadFiles(filePathTeams1, coaches, managers, acommidation);
          for (int i = 0; i < count; i++)
          {
-            coaches = returned[0];
-            managers = returned[1];
-            acommidation = returned[2];
+            sw.WriteLine("<tr class=\"tablePoints\">");
 
+            sw.WriteLine($"<td> {teams1[i]} </td>");
 
+            for (int l = 0; l < 13; l++) { sw.WriteLine("<td>0</td>"); }
 
-            foreach (var coach in coaches)
-            {
-               sw.WriteLine("<tr>");
-               sw.WriteLine($"<td>Coach</td>");
-               sw.WriteLine($"<td>{coach}</td>");
-               sw.WriteLine("</tr>");
-            }
-            foreach (var manager in managers)
-            {
-               sw.WriteLine("<tr>");
-               sw.WriteLine($"<td>Manager</td>");
-               sw.WriteLine($"<td>{manager}</td>");
-               sw.WriteLine("</tr>");
-            }
-            foreach (var acommidation in acommidation)
-            {
-               sw.WriteLine("<tr>");
-               sw.WriteLine($"<td>Acommidation</td>");
-               sw.WriteLine($"<td>{acommidation}</td>");
-               sw.WriteLine("</tr>");
-            }
-            sw.WriteLine("<!-- next team -->");
-
+            sw.WriteLine("</tr>");
          }
       }
 
