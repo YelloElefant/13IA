@@ -37,7 +37,8 @@ tr {
 #logoWrapper {
    padding-top: 27px;
    padding-bottom: 16px;
-   padding-left: 35px;
+   padding-left: 17px;
+   padding-right: 17px;
    height: 135px;
    display: flex;
    flex-direction: row;
@@ -622,4 +623,19 @@ footer {
    #toolBar {
       height: auto;
    }
+
+   .menuLink,
+   .menuListItem {
+      height: auto;
+   }
+
+   .menuListItem {
+      margin-top: 5px;
+      margin-bottom: 5px;
+   }
+
+   .menuText {
+      font-size: small;
+   }
+
 }
