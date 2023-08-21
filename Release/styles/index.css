@@ -87,10 +87,7 @@ header {
    padding-left: 35px;
    background-color: rgba(150, 38, 43, 0.59);
    height: 60px;
-   /* border: solid thin; */
-   /* border-radius: 10px; */
-   border-bottom-left-radius: 10px;
-   border-bottom-right-radius: 10px;
+
 }
 
 #toolBarList {
