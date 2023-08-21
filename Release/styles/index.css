@@ -610,6 +610,10 @@ footer {
       padding: 5px;
    }
 
+   table {
+      font-size: 11px;
+   }
+
 }
 
 @media only screen and (max-width: 1112px) {

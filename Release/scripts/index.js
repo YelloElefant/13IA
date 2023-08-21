@@ -5,7 +5,6 @@ currentPath = currentPath.split("/");
 
 
 currentPath = currentPath[currentPath.length - 1];
-console.log(currentPath)
 if (currentPath == "index.html" || currentPath == "" || currentPath == "index" || currentPath == "/") {
   currentPath = "index"
 } else {
@@ -14,9 +13,7 @@ if (currentPath == "index.html" || currentPath == "" || currentPath == "index" |
 }
 
 
-console.log(currentPath)
 let navToHighlight = document.getElementById(currentPath);
-console.log(navToHighlight);
 navToHighlight = navToHighlight.children[0].children[0];
 navToHighlight.style.color = "var(--color-gold)";
 

@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #resultsDayContainer {
@@ -75,4 +76,44 @@
     width: 100%;
     border-top: thin solid black;
     color: rgb(143, 143, 143);
+}
+
+#days {
+    font-family: var(--font-source);
+    font-weight: 600;
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#days div {
+    padding: 5px 10px 5px 10px;
+    margin: 0;
+    /* Top, left, right border solid thin white and bottom boarder thick white */
+
+    border: white thin solid;
+    border-bottom: white solid;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+#days div:hover:not(#activeDay) {
+    /* border: #111 thin solid; */
+    color: var(--color-gold) !important;
+    cursor: pointer;
+
+}
+
+.tabContent {
+    display: none;
+}
+
+
+@media only screen and (max-width: 790px) {
+    #dayTableContainer {
+        font-size: 11px;
+    }
 }
