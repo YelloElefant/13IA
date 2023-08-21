@@ -120,9 +120,9 @@ header {
    font-size: 16px;
    font-weight: 400;
    font-style: normal;
+   justify-content: center;
    box-sizing: border-box;
    width: 100%;
-
 }
 
 
@@ -204,130 +204,15 @@ header {
 
 
 
-/*box on left for quickstandings this element is a direct pearent to the ul that holds all the uls*/
-#history {
-   float: left;
-   margin-left: 2%;
-   margin-top: 10px;
-   /* margin-top: 10px; */
-   background-color: white;
-
-   padding: 3px 3px 3px 3px;
-
-
-   border-radius: 10px;
-}
-
-/*reffering to the ul that holds all of the uls for the quickStandings box direct pearnt of them*/
-#history table {
-   table-layout: auto;
-   padding: 0px 10px 0px 0px;
-   text-transform: uppercase;
-   border-collapse: collapse;
-
-}
 
 
 
-/* quickStandings table data 3px padding left and right and a 2px padding top and bottom */
-#history table td:not(#tableTitle) {
-   padding: 5px 5px 5px 8px;
-   text-transform: uppercase;
-   text-align: center;
-   color: #111;
-   font-family: var(--font-source);
-   border-top: rgb(211, 216, 221) solid thin;
-   border-bottom: rgb(211, 216, 221) solid thin;
-   font-size: small;
-}
 
 
-#history table tr {
-   background-color: white;
-}
-
-#history table tr:nth-child(even) {
-   background-color: #f2f2f2;
-}
-
-
-#history table tr td:nth-child(even) {
-   color: var(--color-gold);
-   font-weight: 600;
-}
-
-
-#tableTitle {
-   text-transform: uppercase;
-   font-size: larger;
-   color: #111;
-   font-family: var(--font-header-source);
-   text-align: center;
-
-
-
-}
-
-#showMore {
-   display: none;
-   transition: display 0.5s ease-in-out;
-}
-
-#showMoreLink {
-   text-decoration: none;
-   color: var(--color-gold);
-   font-family: var(--font-source);
-   font-weight: 600;
-   font-size: larger;
-   text-transform: uppercase;
-   text-align: center;
-   display: block;
-   margin: 0 auto;
-   width: 100%;
-   padding: 5px 0px 5px 0px;
-   border-radius: 10px;
-   background-color: white;
-   border: white thin solid;
-   border-bottom: white solid;
-   -webkit-user-select: none;
-   user-select: none;
-   cursor: pointer;
-}
 
 /* seperator for css*/
 
 
-/*wrapper element for the upcomingGames box for position purposes*/
-#wrapperUpcomingGames {
-   /* background-color: aqua; */
-   margin-top: 10px;
-   flex-wrap: wrap;
-   flex: 2;
-   display: flex;
-   border-radius: 2px;
-}
-
-
-
-/*the upcomingGames box*/
-#upcomingGames {
-   /* background-color: rgba(255, 255, 255, 0.644); */
-   background-color: white;
-   padding: 2px 4px 4px 4px;
-   /* margin-top: 10px; */
-   /* width: 1000px; */
-   border-radius: 10px;
-   text-align: center;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   height: auto;
-   width: 100%;
-   margin-left: 10px;
-   margin-right: 10px;
-
-   /* left: 50%; */
-}
 
 /*reffering to the ul that holds all the uls for the upcomingGames box direct pearnt of them*/
 table {
@@ -356,20 +241,6 @@ table tr {
 
 
 
-/*align teamLeft text to the right and align teamRight text to the left */
-.teamLeft {
-   text-align: right;
-   font-weight: 600;
-   padding-right: 10px !important;
-   padding-left: 70px !important;
-}
-
-.teamRight {
-   text-align: left;
-   font-weight: 600;
-   padding-right: 70px !important;
-   padding-left: 10px !important;
-}
 
 
 
@@ -383,38 +254,6 @@ table tbody tr:nth-child(even) {
 
 
 
-#days {
-   font-family: var(--font-source);
-   font-weight: 600;
-   font-size: larger;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   width: 100%;
-}
-
-#days div {
-   padding: 5px 10px 5px 10px;
-   margin: 0;
-   /* Top, left, right border solid thin white and bottom boarder thick white */
-
-   border: white thin solid;
-   border-bottom: white solid;
-   -webkit-user-select: none;
-   user-select: none;
-}
-
-
-#days div:hover:not(#activeDay) {
-   /* border: #111 thin solid; */
-   color: var(--color-gold) !important;
-   cursor: pointer;
-
-}
-
-.tabContent {
-   display: none;
-}
 
 
 /* seperator for css*/
@@ -423,57 +262,6 @@ table tbody tr:nth-child(even) {
 
 
 
-#wrapperBlurb {
-   /* background-color: aqua; */
-   background-color: white;
-   /* float: right; */
-   margin-top: 10px;
-   padding: 2px 3px 5px 8px;
-   flex-wrap: wrap;
-   position: relative;
-   margin-left: 10px;
-   margin-right: 10px;
-   /* border-radius: 5px; */
-   text-align: left;
-   border-radius: 10px;
-
-}
-
-
-#spacerContainer {
-   margin-top: 30px;
-   margin-bottom: 0px;
-}
-
-#spacer {
-   width: 100%;
-   background-color: rgba(150, 38, 43);
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-}
-
-#topImg {
-   width: 100%;
-   height: 125px;
-   background-color: #1a1a1a;
-   text-align: center;
-   margin: 0px 0 5px 0;
-}
-
-#topImg img {
-   width: auto;
-   height: 100%;
-}
-
-#bottomImg {
-   width: 100%;
-}
-
-#bottomImg img {
-   width: 100%;
-   height: auto;
-}
 
 
 
@@ -539,6 +327,7 @@ footer {
 #sponsors {
    display: flex;
    flex-direction: row;
+   flex-wrap: wrap;
    justify-content: space-evenly;
    align-items: center;
    padding: 10px 0px 10px 0px;
@@ -694,4 +483,143 @@ footer {
 .backWhite {
    background-color: white;
    padding: 2px;
+}
+
+/* media querry for a phone screen size */
+@media only screen and (max-width: 790px) {
+   #topImg {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+   }
+
+   #topImg img {
+      width: 100%;
+      height: auto;
+   }
+
+   #bottomImg {
+      width: 100%;
+   }
+
+   #bottomImg img {
+      width: 100%;
+      height: auto;
+   }
+
+   #briefInfoParent {
+      width: 100%;
+      margin-top: 5px;
+      display: flex;
+      padding-top: 5px;
+      flex-direction: column;
+   }
+
+   #briefInfo {
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+      align-content: center;
+      padding: 10px;
+   }
+
+   #imgWrapper {
+      width: auto;
+      padding: 0;
+      font-size: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+   }
+
+   #imgWrapper img {
+      aspect-ratio: 180/158;
+      height: auto;
+      /* max-width: 100%; */
+      display: block;
+      margin: 0;
+      /* margin-bottom: 10px; */
+   }
+
+   #info {
+      margin: 25px;
+      font-size: 14px;
+      text-align: center;
+   }
+
+   #topInfo {
+      margin-bottom: 14px;
+   }
+
+   .red {
+      color: rgba(150, 38, 43, 0.59);
+   }
+
+   #bottomLinksWrapper {
+      width: 100%;
+   }
+
+   #bottomLinks {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+   }
+
+   #bottomLinksIconWrapper {
+      /* display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: top; */
+      display: inline-block;
+      word-spacing: 5px;
+      width: 14%;
+      height: auto;
+      flex-wrap: wrap;
+      -webkit-user-select: none;
+      user-select: none;
+      padding: 10px;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+   }
+
+   .iconWrapper {
+      height: 35px;
+      width: 100%;
+   }
+
+   #Logo {
+      width: auto;
+      height: 45px;
+
+
+
+   }
+
+   #uniLogo {
+      padding: 5px;
+      margin: 10px;
+      height: 70px;
+      width: auto;
+   }
+
+   table tr td {
+      padding: 5px;
+   }
+
+}
+
+@media only screen and (max-width: 1112px) {
+   #toolBarList {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+   }
+
+   #toolBar {
+      height: auto;
+   }
 }

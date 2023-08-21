@@ -22,6 +22,7 @@
 #right {
     flex: 2;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 
@@ -33,11 +34,12 @@
     margin-top: 10px;
     /* margin-top: 10px; */
     background-color: white;
-
     padding: 3px 3px 3px 3px;
-
-
     border-radius: 10px;
+}
+
+#headingsLong th {
+    text-align: left !important;
 }
 
 #headingsLong th:first-child {
@@ -179,7 +181,6 @@
     width: 100%;
     margin-left: 10px;
     margin-right: 10px;
-
     /* left: 50%; */
 }
 
@@ -188,15 +189,15 @@
 .teamLeft {
     text-align: right;
     font-weight: 600;
-    padding-right: 10px !important;
-    padding-left: 70px !important;
+    padding-right: 10px;
+    padding-left: 70px;
 }
 
 .teamRight {
     text-align: left;
     font-weight: 600;
-    padding-right: 70px !important;
-    padding-left: 10px !important;
+    padding-right: 70px;
+    padding-left: 10px;
 }
 
 
@@ -275,6 +276,7 @@ table tr:nth-child(even) {
     /* border-radius: 5px; */
     text-align: left;
     border-radius: 10px;
+    width: auto;
 
 }
 
@@ -324,4 +326,46 @@ table tr:nth-child(even) {
 
 .centerAlign {
     text-align: center !important;
+}
+
+@media only screen and (max-width: 790px) {
+
+
+    #left {
+        width: 100%;
+
+    }
+
+    #right {
+        flex: none;
+    }
+
+    #history {
+        width: 90%;
+        margin-right: 2%;
+
+    }
+
+    #upcomingGames {
+        font-size: 11px;
+    }
+
+
+
+    .teamLeft,
+    .teamRight {
+        padding: 5px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1112px) {
+    #topContentContainer {
+        flex-wrap: wrap-reverse;
+    }
+
+    #tdstHistory tbody tr td {
+        padding: 5px;
+    }
 }
