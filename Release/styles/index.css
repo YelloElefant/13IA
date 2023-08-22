@@ -27,6 +27,7 @@ h2 {
    font-weight: 700;
    text-align: center;
    margin: 0px 0 10px 0;
+   color: var(--color-gold);
 }
 
 th,
