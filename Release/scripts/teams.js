@@ -36,6 +36,8 @@ function openUpCard(ele) {
     img.style.height = "100px";
     card.style.height = "auto";
     card.style.width = "100%";
+    window.scrollTo(0, card.offsetTop + img.height + 5);
+
 }
 
 function closeCard(ele) {
@@ -48,4 +50,6 @@ function closeCard(ele) {
     img.style.width = "auto";
     card.style.height = "387px";
     card.style.width = previousWidth;
+    window.scrollTo(0, card.offsetTop);
+
 }
