@@ -21,26 +21,47 @@ public class TableMaker
       var file = new StreamReader(filePathTeams1).ReadToEnd(); // big string
       var lines = file.Split(new char[] { '\n' });           // big array
       var count = lines.Count();                               // big number
-      var l = 1;
 
 
       using (StreamWriter sw = new StreamWriter(@"./output.html"))
       {
-         var returned = FileStuff.FileStuff.ReadFiles(filePathTeams1, coaches, managers, acommidation);
-         for (int i = 0; i < count; i++)
-         {
-            sw.WriteLine("<tr class=\"tablePoints\">");
+         var returned = FileStuff.FileStuff.ReadFiles(filePathTeams1);
 
-            sw.WriteLine($"<td> {teams1[i]} </td>");
+         sw.WriteLine(makeTable(returned));
 
-            for (int l = 0; l < 13; l++) { sw.WriteLine("<td>0</td>"); }
-
-            sw.WriteLine("</tr>");
-         }
       }
 
    }
 
+
+   public static string makeTable(List<string> inputs)
+   {
+      var output = @$"";
+
+
+
+      for (var i = 0; i < inputs.Count; i++)
+      {
+         inputs[i] = "<td>" + inputs[i] + "</td>";
+      }
+
+      var count = inputs.Count;
+      for (var i = 0; i < count / 3; i++)
+      {
+         output += "<tr>";
+         output += inputs[0];
+         output += inputs[1];
+         output += inputs[2];
+
+         inputs.RemoveRange(0, 3);
+         output += "</tr>";
+
+      }
+
+      return output;
+
+
+   }
 
 
 }
