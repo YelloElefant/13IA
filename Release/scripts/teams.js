@@ -1,27 +1,26 @@
 console.log("js loaded")
 
 let previousOpenedCard = null;
+let previousWidth = null;
+
 
 function openCard(ele) {
     let content = ele.previousSibling.previousSibling;
     console.log(content)
 
     if (content.style.display == "none") {
+        previousWidth = ele.parentElement.style.width;
         openUpCard(ele);
-
         if (previousOpenedCard != null) {
             closeCard(previousOpenedCard);
         }
         previousOpenedCard = ele;
-        console.log(previousOpenedCard)
-        console.log('card opened')
 
 
 
     } else {
         closeCard(ele);
         previousOpenedCard = null;
-        console.log('card closed')
     }
 
 
@@ -36,7 +35,7 @@ function openUpCard(ele) {
     ele.children[0].children[0].style.transform = "rotate(180deg)";
     img.style.height = "100px";
     card.style.height = "auto";
-    card.style.width = "500px";
+    card.style.width = "100%";
 }
 
 function closeCard(ele) {
@@ -48,5 +47,5 @@ function closeCard(ele) {
     img.style.height = "256px";
     img.style.width = "auto";
     card.style.height = "387px";
-    card.style.width = "400px";
+    card.style.width = previousWidth;
 }
