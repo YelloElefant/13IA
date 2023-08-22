@@ -10,10 +10,10 @@ function openCard(ele) {
 
     if (content.style.display == "none") {
         previousWidth = ele.parentElement.style.width;
-        openUpCard(ele);
         if (previousOpenedCard != null) {
             closeCard(previousOpenedCard);
         }
+        openUpCard(ele);
         previousOpenedCard = ele;
 
 
