@@ -4,5 +4,5 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./13IA/Release:/usr/share/nginx/html
+      - ../13IA/Release:/usr/share/nginx/html
     restart: unless-stopped
