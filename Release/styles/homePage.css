@@ -62,7 +62,7 @@
     padding: 0px 10px 0px 0px;
     text-transform: uppercase;
     border-collapse: collapse;
-
+    text-align: center !important;
 }
 
 
@@ -71,7 +71,7 @@
 #history table td:not(#tableTitle) {
     /* padding: 5px 5px 5px 5px; */
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     color: #111;
     font-family: var(--font-source);
     border-top: rgb(211, 216, 221) solid thin;

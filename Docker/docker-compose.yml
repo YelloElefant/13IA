@@ -1,0 +1,8 @@
+services:
+  nginx:
+    image: nginx:alpine
+    ports:
+      - 80:80
+    volumes:
+      - ../13IA/Release:/usr/share/nginx/html
+    restart: unless-stopped

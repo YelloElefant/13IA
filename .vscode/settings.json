@@ -1,3 +1,6 @@
 {
-   "dotnet.defaultSolution": "Scripts/tableMaker/tableMaker.sln"
+   "dotnet.defaultSolution": "Scripts/tableMaker/tableMaker.sln",
+   "githubPullRequests.ignoredPullRequestBranches": [
+      "master"
+   ]
 }
