@@ -62,7 +62,6 @@
    height: 100%;
    -webkit-user-select: none;
    user-select: none;
-
 }
 
 
@@ -129,5 +128,11 @@
 
    #contentContainer {
       flex-direction: column-reverse;
+   }
+
+   .popTabs {
+      font-size: 10px;
+      height: 30px !important;
+      width: 65px !important;
    }
 }
