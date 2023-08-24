@@ -40,7 +40,6 @@ function setActivePlace(ele, evt, placeName) {
    activePlace.style.color = "black";
    activePlace.id = "";
 
-   console.log("placeName: " + placeName);
 
    ele.id = "activePlace";
    if (placeName == "pa" || placeName == "don") {
@@ -48,7 +47,6 @@ function setActivePlace(ele, evt, placeName) {
       ele.style.transition = "border-color 0.5s ease-in-out";
       ele.style.borderTop = "solid black";
       ele.style.color = "var(--color-gold)";
-      console.log("true")
    } else {
       ele.style.transition = "border-color 0.5s ease-in-out";
 
@@ -60,7 +58,6 @@ function setActivePlace(ele, evt, placeName) {
 
 
       ele.style.color = "var(--color-gold)";
-      console.log("flase")
    }
    let mapIframe = document.getElementById("mapIframe")
    mapIframe.src = "https://www.google.com/maps/embed/v1/place?q=" + placesMap.get(placeName) + "&key=AIzaSyA_tMXSrrQSrdKlEB7P3_Wo8U9fq0Htn3A";

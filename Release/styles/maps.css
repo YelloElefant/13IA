@@ -123,6 +123,8 @@
 
    .tabs {
       height: 100%;
+      font-size: 10px;
+      text-align: center;
    }
 
    #contentContainer {
