@@ -15,7 +15,14 @@ placesMap.set("swarbrick", "swarbrick%20park")
 //https://www.google.com/maps/embed/v1/place?q=Marist%20Park&key=AIzaSyA_tMXSrrQSrdKlEB7P3_Wo8U9fq0Htn3A
 
 let activePlace = document.getElementById("activePlace");
-activePlace.style.borderRight = "solid black";
+
+if (window.innerWidth <= 790) {
+   activePlace.style.borderTop = "solid black";
+} else {
+   activePlace.style.borderRight = "solid black";
+}
+
+
 activePlace.style.color = "var(--color-gold)";
 //document.getElementById('activeDay').style.display = "table";
 
@@ -44,7 +51,14 @@ function setActivePlace(ele, evt, placeName) {
       console.log("true")
    } else {
       ele.style.transition = "border-color 0.5s ease-in-out";
-      ele.style.borderRight = "solid black";
+
+      if (window.innerWidth <= 790) {
+         ele.style.borderTop = "solid black";
+      } else {
+         ele.style.borderRight = "solid black";
+      }
+
+
       ele.style.color = "var(--color-gold)";
       console.log("flase")
    }
