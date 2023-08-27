@@ -132,6 +132,7 @@
 .cardContentBlurb p {
     text-align: left;
     margin: 5px;
+    font-weight: bold;
 }
 
 .cardContentContainer>div {
@@ -209,4 +210,12 @@
 .backBlack {
     background-color: black;
     padding: 2px;
+}
+
+
+@media only screen and (max-width: 790px) {
+    .card {
+        width: 100%;
+        height: auto;
+    }
 }
