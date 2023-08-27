@@ -10,12 +10,19 @@ placesMap.set("cambridge", "Cambridge%20High%20School");
 placesMap.set("hautapu", "Hautapu%20Sports%20Club");
 placesMap.set("don", "Don%20Llewellyn%20Sports%20Pavillion")
 placesMap.set("pa", "waikato%20uni%20pa")
-placesMap.set("swarbrick", "swarbrick%20park")
+placesMap.set("hob", "Hamilton%20Old%20Boys%20Rugby%20Netball%20and%20Squash%20Club")
 
 //https://www.google.com/maps/embed/v1/place?q=Marist%20Park&key=AIzaSyA_tMXSrrQSrdKlEB7P3_Wo8U9fq0Htn3A
 
 let activePlace = document.getElementById("activePlace");
-activePlace.style.borderRight = "solid black";
+
+if (window.innerWidth <= 790) {
+   activePlace.style.borderTop = "solid black";
+} else {
+   activePlace.style.borderRight = "solid black";
+}
+
+
 activePlace.style.color = "var(--color-gold)";
 //document.getElementById('activeDay').style.display = "table";
 
@@ -33,7 +40,6 @@ function setActivePlace(ele, evt, placeName) {
    activePlace.style.color = "black";
    activePlace.id = "";
 
-   console.log("placeName: " + placeName);
 
    ele.id = "activePlace";
    if (placeName == "pa" || placeName == "don") {
@@ -41,12 +47,17 @@ function setActivePlace(ele, evt, placeName) {
       ele.style.transition = "border-color 0.5s ease-in-out";
       ele.style.borderTop = "solid black";
       ele.style.color = "var(--color-gold)";
-      console.log("true")
    } else {
       ele.style.transition = "border-color 0.5s ease-in-out";
-      ele.style.borderRight = "solid black";
+
+      if (window.innerWidth <= 790) {
+         ele.style.borderTop = "solid black";
+      } else {
+         ele.style.borderRight = "solid black";
+      }
+
+
       ele.style.color = "var(--color-gold)";
-      console.log("flase")
    }
    let mapIframe = document.getElementById("mapIframe")
    mapIframe.src = "https://www.google.com/maps/embed/v1/place?q=" + placesMap.get(placeName) + "&key=AIzaSyA_tMXSrrQSrdKlEB7P3_Wo8U9fq0Htn3A";

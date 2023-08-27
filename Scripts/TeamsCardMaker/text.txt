@@ -1,0 +1,7 @@
+ip,port,user,key
+
+192.168.86.184 Natha
+192.168.1.71 GGPC
+192.168.1.34 69 root yelloelefant
+192.168.1.34 69 yelloelefant yelloelefant
+192.168.1.29 22 yelloelefant yelloelefant
