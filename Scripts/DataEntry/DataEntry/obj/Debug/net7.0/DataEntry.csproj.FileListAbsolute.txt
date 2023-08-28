@@ -1,0 +1,15 @@
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\DataEntry\DataEntry\bin\Debug\net7.0\DataEntry.exe
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\DataEntry\DataEntry\bin\Debug\net7.0\DataEntry.deps.json
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\DataEntry\DataEntry\bin\Debug\net7.0\DataEntry.runtimeconfig.json
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\DataEntry\DataEntry\bin\Debug\net7.0\DataEntry.dll
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\DataEntry\DataEntry\bin\Debug\net7.0\DataEntry.pdb
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\DataEntry\DataEntry\obj\Debug\net7.0\DataEntry.csproj.AssemblyReference.cache
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\DataEntry\DataEntry\obj\Debug\net7.0\DataEntry.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\DataEntry\DataEntry\obj\Debug\net7.0\DataEntry.AssemblyInfoInputs.cache
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\DataEntry\DataEntry\obj\Debug\net7.0\DataEntry.AssemblyInfo.cs
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\DataEntry\DataEntry\obj\Debug\net7.0\DataEntry.csproj.CoreCompileInputs.cache
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\DataEntry\DataEntry\obj\Debug\net7.0\DataEntry.dll
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\DataEntry\DataEntry\obj\Debug\net7.0\refint\DataEntry.dll
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\DataEntry\DataEntry\obj\Debug\net7.0\DataEntry.pdb
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\DataEntry\DataEntry\obj\Debug\net7.0\DataEntry.genruntimeconfig.cache
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\DataEntry\DataEntry\obj\Debug\net7.0\ref\DataEntry.dll
