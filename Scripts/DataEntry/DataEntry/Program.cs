@@ -111,7 +111,7 @@ class DataEntry
          file.WriteLine(@"<td>" + team.PF + "</td>");
          file.WriteLine(@"<td>" + team.PA + "</td>");
          file.WriteLine(@"<td>" + team.BonusPoints + "</td>");
-         file.WriteLine(@"<td>" + team.WinPoints + "</td>");
+         file.WriteLine(@"<td>" + team.Points + "</td>");
          file.WriteLine("</tr>");
       }
 
