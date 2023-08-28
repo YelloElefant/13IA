@@ -9,7 +9,7 @@
          "request": "launch",
          "preLaunchTask": "build",
          "program": "${workspaceFolder}/DataEntry/bin/Debug/net7.0/DataEntry.dll",
-         "args": ["${workspaceFolder}/DataEntry/input.csv"],
+         "args": ["${workspaceFolder}/DataEntry/input.csv", "${workspaceFolder}/DataEntry/input.html"],
          "cwd": "${workspaceFolder}/DataEntry",
          "console": "internalConsole",
          "stopAtEntry": false
