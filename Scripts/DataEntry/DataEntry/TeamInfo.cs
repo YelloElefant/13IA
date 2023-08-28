@@ -12,12 +12,15 @@ namespace DataEntry
 
       public int OldScore { get; set; }
 
-      public Team(string teamName, string newScore, string bonusPoints, string winPoints)
+      public int[] WDL { get; set; }
+
+      public Team(string teamName, string newScore, string bonusPoints, string winPoints, int[] wdl)
       {
          TeamName = teamName;
          NewScore = int.Parse(newScore);
          WinPoints = int.Parse(winPoints);
          BonusPoints = int.Parse(bonusPoints);
+         WDL = wdl;
       }
 
 
