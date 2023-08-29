@@ -4,15 +4,14 @@ public static class FileStuff
 {
 
 
-   public static List<string> ReadFiles(string filePath)
+   public static void ReadFiles(string filePath, List<string> teamList)
    {
-
       using StreamReader reader = new(filePath);
-
-      string line = reader.ReadLine();
-
-      var output = line.Split(',').ToList();
-      return output;
+      while (!reader.EndOfStream)
+      {
+         var line = reader.ReadLine();
+         teamList.Add(line);
+      }
 
    }
 }
