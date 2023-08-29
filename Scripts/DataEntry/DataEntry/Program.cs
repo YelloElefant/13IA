@@ -70,7 +70,7 @@ class DataEntry
       {
          for (int j = 0; j < teams.Count; j++)
          {
-            if (teams[j].Name.ToLower() == oldStuffLines[i][0].ToLower())
+            if (teams[j].Name.Trim().ToLower() == oldStuffLines[i][0].Trim().ToLower())
             {
                teams[j].OldPF = int.Parse(oldStuffLines[i][4]);
                teams[j].OldPA = int.Parse(oldStuffLines[i][5]);
