@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "suS/7g+VfZI1CBtjlKhkB6KyDu4IL9C5hUL9DbULTH88yeX+iAZ3hstJaGSp8AnaJpyVXp98+uLF7L3LFPH2Cg==",
+  "dgSpecHash": "TK+8dQ74NlT0CCA2zq0SwXje7SD2V40AFXhNuihc8X4Nf7XYhgJSKXjhi76ZJSMiK1uX2pUNcvKPypuKfm5pHA==",
   "success": true,
-  "projectFilePath": "/workspaces/13IA/Scripts/tableMaker/tableMaker/tableMaker.csproj",
-  "expectedPackageFiles": [
-    "/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.20/microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
-    "/home/codespace/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.20/microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512",
-    "/home/codespace/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.20/microsoft.netcore.app.host.linux-x64.6.0.20.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\tableMaker\\tableMaker\\tableMaker.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

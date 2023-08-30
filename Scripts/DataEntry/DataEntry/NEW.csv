@@ -1,8 +1,9 @@
-25,3rd Pool A,Christchurch Boys HS,48,8,4,0,Win,4th Pool C,Otago Boys HS,0,0,0,0,Loss 
-26,4th Pool A,Wesley College,15,3,0,0,loss,3rd Pool C,Napier Boys HS,24,3,3,1,win
-27,3rd Pool B,St Pats College,32,5,1,0,Win,4th Pool D,St Bedes College,31,4,4,1,Loss
-28,4th Pool B,Westlake Boys HS,27,3,0,4,Win,3rd Pool D,Mount Albert GS,24,4,2,-,loss
-29,1st Pool B,New Plymouth Boys HS,20,0,0,0,Win,2nd Pool D,Palmerston Boys HS,7,0,0,0,Loss
-30,2nd Pool B,Rotorua Boys HS,16,0,0,0,Win ,1st Pool D,Auckland Grammar ,10,0,0,0,Loss
-31,1st Pool A,Tauranga Boys College,30,0,0,0,Win,2nd Pool C,Hamilton Boys HS,24,0,0,0,Loss
-32,2nd Pool A,Wellington College,25,0,0,0,Win,1st Pool C,Hastings Boys HS,14,0,0,0,Loss
+MATCH,TEAM 1,Score ,Tries,Cons,Pens,BP,Win points,TEAM 2,Score,Tries,Cons,Pens,BP,Win points,,,,,,,,,,,
+25,Christchurch Boys HS,48,8,4,0,0,4,Otago Boys HS,0,0,0,0,0,0,,,,,,,,,,,
+26,Wesley College,15,3,0,0,0,0,Napier Boys HS,24,3,3,1,0,4,,,,,,,,,,,
+27,St Pats College,32,5,1,0,0,4,St Bedes College,31,4,4,1,0,0,,,,,,,,,,,
+28,Westlake Boys HS,27,3,0,4,0,4,Mount Albert GS,24,4,2,0,0,0,,,,,,,,,,,
+29,New Plymouth Boys HS,20,0,0,0,0,4,Palmerston Boys HS,7,0,0,0,0,0,,,,,,,,,,,
+30,Rotorua Boys HS,16,0,0,0,0,4,Auckland Grammar ,10,0,0,0,0,0,,,,,,,,,,,
+31,Tauranga Boys College,30,0,0,0,0,4,Hamilton Boys HS,24,0,0,0,0,0,,,,,,,,,,,
+32,Wellington College,25,0,0,0,0,4,Hastings Boys HS,14,0,0,0,0,0,,,,,,,,,,,

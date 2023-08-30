@@ -10,7 +10,7 @@
          "preLaunchTask": "build",
          // If you have changed target frameworks, make sure to update the program path.
          "program": "${workspaceFolder}/tableMaker/bin/Debug/net6.0/tableMaker.dll",
-         "args": ["${workspaceFolder}/tableMaker/team1.csv", "${workspaceFolder}/tableMaker/team2.csv", "10:30AM"],
+         "args": ["${workspaceFolder}/tableMaker/team1.csv", "${workspaceFolder}/tableMaker/team2.csv", "10:00AM"],
          "cwd": "${workspaceFolder}/tableMaker",
          // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
          "console": "internalConsole",
