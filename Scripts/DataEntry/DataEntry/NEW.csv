@@ -1,9 +1,8 @@
-MATCH,TEAM 1,Score ,Tries,Cons,Pens,BP,Win points,TEAM 2,Score,Tries,Cons,Pens,BP,Win points,,,,,,,,,,,
-25,Christchurch Boys HS,48,8,4,0,0,4,Otago Boys HS,0,0,0,0,0,0,,,,,,,,,,,
-26,Wesley College,15,3,0,0,0,0,Napier Boys HS,24,3,3,1,0,4,,,,,,,,,,,
-27,St Pats College,32,5,1,0,0,4,St Bedes College,31,4,4,1,0,0,,,,,,,,,,,
-28,Westlake Boys HS,27,3,0,4,0,4,Mount Albert GS,24,4,2,0,0,0,,,,,,,,,,,
-29,New Plymouth Boys HS,20,0,0,0,0,4,Palmerston Boys HS,7,0,0,0,0,0,,,,,,,,,,,
-30,Rotorua Boys HS,16,0,0,0,0,4,Auckland Grammar ,10,0,0,0,0,0,,,,,,,,,,,
-31,Tauranga Boys College,30,0,0,0,0,4,Hamilton Boys HS,24,0,0,0,0,0,,,,,,,,,,,
-32,Wellington College,25,0,0,0,0,4,Hastings Boys HS,14,0,0,0,0,0,,,,,,,,,,,
+25,CHRISTCHURCH BHS,48,8,4,0,0,4,OTAGO BHS,0,0,0,0,0,0
+26,WESLEY COLLEGE,15,3,0,0,0,0,NAPIER BHS,24,3,3,1,0,4
+27,ST PATS TOWN,32,5,1,0,0,4,ST. BEDES COLLEGE,31,4,4,1,0,0
+28,WESTLAKE BHS,27,3,0,4,0,4,MOUNT ALBERT GRAMMAR,24,4,2,0,0,0
+29,NEW PLYMOUTH BHS,20,0,0,0,0,4,PALMERSTON NORTH BHS,7,0,0,0,0,0
+30,ROTORUA BHS,16,0,0,0,0,4,AUCKLAND GRAMMAR SCHOOL,10,0,0,0,0,0
+31,TAURANGA BOYS COLLEGE,30,0,0,0,0,4,HAMILTON BHS,24,0,0,0,0,0
+32,WELLINGTON COLLEGE,25,0,0,0,0,4,HASTINGS BHS,14,0,0,0,0,0
