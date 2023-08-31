@@ -287,7 +287,7 @@
                </table>
 
             </div>
-            <button id="showMoreLink" onclick="showMore(this)">Show More</button>
+            <button class="showMoreLink" onclick="showMore(this)">Show More</button>
          </div>
 
 
@@ -299,15 +299,17 @@
       <div id="right">
 
          <div id="wrapperBlurb">
-            <h2>2023 NZSS U15 Tournament</h2>
-            <h3>Headmaster Welcome</h3>
-            <p>
-               As Headmaster of Hamilton Boys’ High School, I am pleased to take this opportunity to welcome you to
-               the
-               2023 New Zealand Secondary Schools’ U15 Rugby Tournament, and to the Waikato. We feel very fortunate
-               to
-               have the role of host school this year.
-            </p>
+            <div id="shownContent" onclick="open()">
+               <h2>2023 NZSS U15 Tournament</h2>
+               <h3>Headmaster Welcome</h3>
+               <p>
+                  As Headmaster of Hamilton Boys’ High School, I am pleased to take this opportunity to welcome you to
+                  the
+                  2023 New Zealand Secondary Schools’ U15 Rugby Tournament, and to the Waikato. We feel very fortunate
+                  to
+                  have the role of host school this year.
+               </p>
+            </div>
             <div id="hiddenContent">
                <p>
 
@@ -344,6 +346,8 @@
                   Mrs Susan Hassall, Headmaster
                </p>
             </div>
+            <button class="showMoreLink" id="headMasterButton" onclick="showMore(this)">Show More</button>
+
          </div>
 
 
