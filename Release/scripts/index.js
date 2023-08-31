@@ -57,19 +57,3 @@ function setActive(ele, evt, dayName) {
   evt.currentTarget.className += " active";
 
 }
-
-
-
-function showMore(ele) {
-  let x = document.getElementById("showMore");
-  if (x.style.display == "block") {
-    console.log("showing less");
-    x.style.display = "none";
-    ele.innerHTML = "Show More";
-
-  } else {
-    console.log("showing more");
-    x.style.display = "block";
-    ele.innerHTML = "Show Less";
-  }
-}

@@ -129,7 +129,7 @@
     width: 145px;
 }
 
-#showMoreLink {
+.showMoreLink {
     text-decoration: none;
     color: var(--color-gold);
     font-family: var(--font-source);
@@ -148,6 +148,11 @@
     -webkit-user-select: none;
     user-select: none;
     cursor: pointer;
+}
+
+#headMasterButton {
+    padding: 5px 0px 0px 0px;
+
 }
 
 /* seperator for css*/
