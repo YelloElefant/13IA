@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\DataEntry\\DataEntry\\DataEntry.csproj": {}
+    "c:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\DataEntry\\DataEntry\\DataEntry.csproj": {}
   },
   "projects": {
-    "C:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\DataEntry\\DataEntry\\DataEntry.csproj": {
+    "c:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\DataEntry\\DataEntry\\DataEntry.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\DataEntry\\DataEntry\\DataEntry.csproj",
+        "projectUniqueName": "c:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\DataEntry\\DataEntry\\DataEntry.csproj",
         "projectName": "DataEntry",
-        "projectPath": "C:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\DataEntry\\DataEntry\\DataEntry.csproj",
+        "projectPath": "c:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\DataEntry\\DataEntry\\DataEntry.csproj",
         "packagesPath": "C:\\Users\\YelloElefant\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\DataEntry\\DataEntry\\obj\\",
+        "outputPath": "c:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\DataEntry\\DataEntry\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
