@@ -7,18 +7,7 @@
 
 }
 
-.teamLeft:last-child, .teamRight:last-child, .tableV:last-child{
-    border-top: var(--color-gold);
-    border-bottom: var(--color-gold);
-}
 
-.teamLeft:last-child {
-    border-left: var(--color-gold) solid thin;
-}
-
-.teamRight:last-child {
-    border-right: var(--color-gold) solid thin;
-}
 
 
 
