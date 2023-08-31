@@ -27,15 +27,13 @@ public class TableMaker
          {
             sw.WriteLine("<tr>");
 
-            sw.WriteLine("<td>" + (i + 33) + "</td>");
-            sw.WriteLine("<td>pool</td>");
 
-            sw.WriteLine("<td class=\"teamLeft\">" + teams1[i] + "</td>");
-
-            sw.WriteLine(tableV);
-
-            sw.WriteLine("<td class=\"teamRight\">" + teams2[i] + "</td>");
             sw.WriteLine($"<td> {time} </td>");
+            sw.WriteLine("<td class=\"teamLeft\">" + teams1[i] + "</td>");
+            sw.WriteLine("<td>POINTS</td>");
+            sw.WriteLine(tableV);
+            sw.WriteLine("<td>POINTS</td>");
+            sw.WriteLine("<td class=\"teamRight\">" + teams2[i] + "</td>");
             sw.WriteLine("</tr>");
          }
          sw.WriteLine("</tbody>");
