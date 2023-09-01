@@ -478,7 +478,8 @@ footer {
    justify-content: flex-start;
 }
 
-.widget a {
+.widget a,
+.widget span {
    list-style: none;
    color: white;
    text-decoration: none;
@@ -486,6 +487,12 @@ footer {
    color: rgb(222, 221, 221);
    font-size: 14px;
    font-family: var(--font-source);
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+.widget div {
+   padding: 3px;
 }
 
 .backWhite {
