@@ -57,3 +57,51 @@ function setActive(ele, evt, dayName) {
   evt.currentTarget.className += " active";
 
 }
+
+function showOpenMore() {
+
+  const size = 5
+
+  function drawCircle(radius, semi) {
+    const thickness = 0.4;
+    const symbol = '*';
+    const rin = radius - thickness
+    const rout = radius + thickness;
+
+    if (semi) {
+      yNum = 2
+    } else {
+      yNum = radius
+    }
+
+    for (let y = yNum; y >= -radius; --y) {
+      let string = '';
+      for (let x = -radius; x < rout; x += 0.5) {
+        const value = x * x + y * y;
+        if (value >= rin * rin && value <= rout * rout) {
+          string += symbol;
+        } else {
+          string += " ";
+        }
+      }
+      if (semi) {
+        console.log("        " + string);
+        continue;
+      }
+      console.log(string + string);
+    }
+  }
+  drawCircle(size, false);
+
+  let string = "\t\t **\t\t\t\t        **\n"
+  let outputString = string;
+  for (let i = 0; i < 20; i++) {
+    outputString += string
+  }
+  console.log(outputString);
+
+  console.log("\t\t -------------------------")
+
+
+  drawCircle(size * 1.25, true)
+}
