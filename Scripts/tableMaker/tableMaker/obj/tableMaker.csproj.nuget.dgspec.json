@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\tableMaker\\tableMaker\\tableMaker.csproj": {}
+    "c:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\tableMaker\\tableMaker\\tableMaker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\tableMaker\\tableMaker\\tableMaker.csproj": {
+    "c:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\tableMaker\\tableMaker\\tableMaker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\tableMaker\\tableMaker\\tableMaker.csproj",
+        "projectUniqueName": "c:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\tableMaker\\tableMaker\\tableMaker.csproj",
         "projectName": "tableMaker",
-        "projectPath": "C:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\tableMaker\\tableMaker\\tableMaker.csproj",
+        "projectPath": "c:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\tableMaker\\tableMaker\\tableMaker.csproj",
         "packagesPath": "C:\\Users\\YelloElefant\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\tableMaker\\tableMaker\\obj\\",
+        "outputPath": "c:\\Users\\YelloElefant\\OneDrive\\Coding\\13IA\\Scripts\\tableMaker\\tableMaker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
