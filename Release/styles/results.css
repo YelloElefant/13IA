@@ -13,6 +13,9 @@
 
 }
 
+
+
+
 #dayTableContainer {
     background-color: white;
     border-radius: 10px;
@@ -38,6 +41,14 @@
     display: flex;
     flex-direction: column;
 
+}
+
+#resultsTable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .tablePointsHeading th {
@@ -110,6 +121,42 @@
 .tabContent {
     display: none;
 }
+
+#resultsTable {
+    counter-reset: cssCounter 0;
+}
+
+
+
+.cardR {
+    counter-increment: cssCounter 1;
+    border: #f2f2f2 solid thin;
+    width: 100%;
+    font-weight: normal;
+}
+
+#resultsTable div:nth-child(2) {
+    color: var(--color-gold);
+    font-weight: bold;
+}
+
+.cardR:before {
+    content: counter(cssCounter) ". ";
+}
+
+.cardRHead {
+    border-top: none;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 790px) {
