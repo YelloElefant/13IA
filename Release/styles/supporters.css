@@ -38,6 +38,7 @@
 
 #picturesContainer {
     background-color: #f2f2f2;
+    margin: 5px;
 }
 
 .picture img {
