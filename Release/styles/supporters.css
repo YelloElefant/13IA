@@ -1,6 +1,7 @@
 #contentContainer {
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #blurbContainer {
@@ -28,4 +29,12 @@
 #parentQR img {
     width: 300px;
     height: auto;
+}
+
+.picture {
+    margin: 5px;
+}
+
+.pictureContainer {
+    background-color: #f2f2f2;
 }
