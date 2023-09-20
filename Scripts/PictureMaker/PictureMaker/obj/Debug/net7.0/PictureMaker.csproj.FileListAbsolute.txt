@@ -1,0 +1,15 @@
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\PictureMaker\PictureMaker\bin\Debug\net7.0\PictureMaker.exe
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\PictureMaker\PictureMaker\bin\Debug\net7.0\PictureMaker.deps.json
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\PictureMaker\PictureMaker\bin\Debug\net7.0\PictureMaker.runtimeconfig.json
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\PictureMaker\PictureMaker\bin\Debug\net7.0\PictureMaker.dll
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\PictureMaker\PictureMaker\bin\Debug\net7.0\PictureMaker.pdb
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\PictureMaker\PictureMaker\obj\Debug\net7.0\PictureMaker.csproj.AssemblyReference.cache
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\PictureMaker\PictureMaker\obj\Debug\net7.0\PictureMaker.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\PictureMaker\PictureMaker\obj\Debug\net7.0\PictureMaker.AssemblyInfoInputs.cache
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\PictureMaker\PictureMaker\obj\Debug\net7.0\PictureMaker.AssemblyInfo.cs
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\PictureMaker\PictureMaker\obj\Debug\net7.0\PictureMaker.csproj.CoreCompileInputs.cache
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\PictureMaker\PictureMaker\obj\Debug\net7.0\PictureMaker.dll
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\PictureMaker\PictureMaker\obj\Debug\net7.0\refint\PictureMaker.dll
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\PictureMaker\PictureMaker\obj\Debug\net7.0\PictureMaker.pdb
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\PictureMaker\PictureMaker\obj\Debug\net7.0\PictureMaker.genruntimeconfig.cache
+c:\Users\YelloElefant\OneDrive\Coding\13IA\Scripts\PictureMaker\PictureMaker\obj\Debug\net7.0\ref\PictureMaker.dll
